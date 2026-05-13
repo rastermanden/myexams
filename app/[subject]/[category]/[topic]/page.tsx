@@ -6,17 +6,22 @@ import ConceptSection from "@/components/ConceptSection";
 import ImageWithCredit from "@/components/ImageWithCredit";
 import LinearRegressionDemo from "@/components/LinearRegressionDemo";
 import MaalOgEnhederDemo from "@/components/MaalOgEnhederDemo";
+import ProbabilityFromScratchDemo from "@/components/ProbabilityFromScratchDemo";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const TOPIC_DEMO_COMPONENTS: Record<string, ComponentType> = {
   "linear-regression": LinearRegressionDemo,
   "maal-og-enheder": MaalOgEnhederDemo,
+  "probability-from-scratch": ProbabilityFromScratchDemo,
 };
 
 export function generateStaticParams() {
-  const params: { subject: string; topic: string }[] = [];
+  const params: { subject: string; category: string; topic: string }[] = [];
   for (const subject of getAllSubjects()) {
-    for (const topic of subject.topics) {
-      params.push({ subject: subject.slug, topic: topic.slug });
+    for (const category of subject.categories) {
+      for (const topic of category.topics) {
+        params.push({ subject: subject.slug, category: category.slug, topic: topic.slug });
+      }
     }
   }
   return params;
@@ -25,33 +30,33 @@ export function generateStaticParams() {
 export default async function TopicPage({
   params,
 }: {
-  params: Promise<{ subject: string; topic: string }>;
+  params: Promise<{ subject: string; category: string; topic: string }>;
 }) {
-  const { subject: subjectSlug, topic: topicSlug } = await params;
-  const result = getTopic(subjectSlug, topicSlug);
+  const { subject: subjectSlug, category: categorySlug, topic: topicSlug } = await params;
+  const result = getTopic(subjectSlug, categorySlug, topicSlug);
   if (!result) notFound();
-  const { subject, topic } = result;
+  const { subject, category, topic } = result;
   const TopicDemo = topic.demoKey ? TOPIC_DEMO_COMPONENTS[topic.demoKey] : undefined;
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
-      <Link
-        href={`/${subject.slug}`}
-        className="mb-6 inline-flex items-center text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
-      >
-        ← {subject.title}
-      </Link>
+      <Breadcrumbs
+        items={[
+          { label: "Alle fag", href: "/" },
+          { label: subject.title, href: `/${subject.slug}` },
+          { label: category.title, href: `/${subject.slug}/${category.slug}` },
+          { label: topic.title },
+        ]}
+      />
 
       <header className="mb-8 flex flex-col gap-3">
         <p className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
-          {subject.emoji} {subject.title}
+          {subject.emoji} {subject.title} · {category.title}
         </p>
         <h1 className="text-4xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
           {topic.title}
         </h1>
-        <p className="text-lg text-zinc-600 dark:text-zinc-300">
-          {topic.summary}
-        </p>
+        <p className="text-lg text-zinc-600 dark:text-zinc-300">{topic.summary}</p>
       </header>
 
       {topic.hero && (
@@ -74,7 +79,7 @@ export default async function TopicPage({
           {topic.quiz.length} multiple choice-spørgsmål på gymnasieniveau.
         </p>
         <Link
-          href={`/${subject.slug}/${topic.slug}/quiz`}
+          href={`/${subject.slug}/${category.slug}/${topic.slug}/quiz`}
           className="mt-4 inline-flex min-h-12 items-center justify-center rounded-full bg-zinc-900 px-6 py-3 text-base font-medium text-white hover:bg-zinc-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200"
         >
           Start quiz

@@ -8,5 +8,13 @@ export const geografi: Subject = {
   emoji: "🌍",
   description:
     "Naturgeografi og kulturgeografi til gymnasieniveau — regionale studier, klima, pladetektonik, demografi og geopolitik.",
-  topics: [afrikasHorn, australien],
+  categories: [
+    {
+      slug: "regioner",
+      title: "Regioner",
+      summary: "Regionale case-studier med fokus på natur, samfund og udvikling.",
+      emoji: "🗺️",
+      topics: [afrikasHorn, australien],
+    },
+  ],
 };
