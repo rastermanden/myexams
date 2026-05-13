@@ -1,6 +1,7 @@
 import type { Subject } from "@/lib/types";
 import { afrikasHorn } from "./afrikas-horn";
 import { australien } from "./australien";
+import { klima } from "./klima";
 
 export const geografi: Subject = {
   slug: "geografi",
@@ -16,5 +17,6 @@ export const geografi: Subject = {
       emoji: "🗺️",
       topics: [afrikasHorn, australien],
     },
+    klima,
   ],
 };
