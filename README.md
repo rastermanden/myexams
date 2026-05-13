@@ -10,6 +10,7 @@ Built with [Next.js](https://nextjs.org) (App Router, static export) and Tailwin
   - **Regioner**: **Afrikas Horn** og **Australien**
 - **Dansk litteratur** — Kommer snart.
 - **Matematik**
+  - **Geometri**: **Geometri**
   - **Statistik**: **Lineær regression**
   - **Sandsynlighed**: **Sandsynlighedsregning fra bunden**
   - **Tal og regning**: **Brøker** og **Mål og enheder**
