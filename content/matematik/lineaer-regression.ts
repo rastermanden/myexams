@@ -15,7 +15,7 @@ export const lineaerRegression: Topic = {
     {
       heading: "Sådan bruger du demoen",
       body:
-        "Flyt sliderne for m og b for at se, hvordan regressionslinjen flytter sig i forhold til punkterne. Jo tættere linjen ligger på punkterne samlet set, jo bedre beskriver modellen data. Brug 'Randomiser punkter' til at prøve nye datasæt.",
+        "Flyt sliderne for m og b for at se, hvordan regressionslinjen flytter sig i forhold til punkterne. Jo tættere linjen ligger på punkterne samlet set, jo bedre beskriver modellen data. Brug 'Randomisér punkter' til at prøve nye datasæt.",
     },
   ],
   quiz: [

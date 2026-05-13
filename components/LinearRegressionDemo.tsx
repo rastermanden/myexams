@@ -26,6 +26,7 @@ const INITIAL_POINTS: Point[] = [
   { id: 5, x: 6, y: 7.3 },
   { id: 6, x: 7.5, y: 9.8 },
   { id: 7, x: 8.9, y: 10.6 },
+  { id: 8, x: 9.7, y: 11.8 },
 ];
 
 export default function LinearRegressionDemo() {
@@ -159,7 +160,7 @@ export default function LinearRegressionDemo() {
               onClick={() => setPoints(randomPoints())}
               className="inline-flex min-h-11 items-center justify-center rounded-full bg-zinc-900 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200"
             >
-              Randomiser punkter
+              Randomisér punkter
             </button>
           </div>
         </div>
