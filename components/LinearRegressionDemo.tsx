@@ -92,7 +92,7 @@ export default function LinearRegressionDemo() {
             />
             {points.map((point, index) => (
               <circle
-                key={`${point.x}-${point.y}-${index}`}
+                key={index}
                 cx={toSvgX(point.x)}
                 cy={toSvgY(point.y)}
                 r="5"
