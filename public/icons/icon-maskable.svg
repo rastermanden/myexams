@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="myexams">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <g transform="translate(128 184)">
+    <path d="M0 18 Q0 6 12 4 L120 0 Q128 0 128 6 V146 Q128 152 120 152 L12 148 Q0 146 0 134 Z" fill="#ffffff"/>
+    <path d="M256 18 Q256 6 244 4 L136 0 Q128 0 128 6 V146 Q128 152 136 152 L244 148 Q256 146 256 134 Z" fill="#ffffff"/>
+    <rect x="22" y="28" width="80" height="8" rx="4" fill="url(#title)"/>
+    <rect x="22" y="46" width="92" height="5" rx="2.5" fill="#c7d2fe"/>
+    <rect x="22" y="60" width="76" height="5" rx="2.5" fill="#c7d2fe"/>
+    <rect x="22" y="74" width="86" height="5" rx="2.5" fill="#c7d2fe"/>
+    <rect x="22" y="88" width="66" height="5" rx="2.5" fill="#c7d2fe"/>
+    <rect x="146" y="28" width="80" height="8" rx="4" fill="url(#title)"/>
+    <rect x="146" y="46" width="92" height="5" rx="2.5" fill="#c7d2fe"/>
+    <rect x="146" y="60" width="76" height="5" rx="2.5" fill="#c7d2fe"/>
+    <rect x="146" y="74" width="86" height="5" rx="2.5" fill="#c7d2fe"/>
+    <rect x="146" y="88" width="66" height="5" rx="2.5" fill="#c7d2fe"/>
+  </g>
+</svg>
