@@ -5,8 +5,8 @@ export function generateStaticParams() {
   const params: { subject: string; category: string }[] = [];
   for (const subject of getAllSubjects()) {
     for (const category of subject.categories) {
-      for (const topic of category.topics) {
-        params.push({ subject: subject.slug, category: topic.slug });
+      for (const legacyTopic of category.topics) {
+        params.push({ subject: subject.slug, category: legacyTopic.slug });
       }
     }
   }
