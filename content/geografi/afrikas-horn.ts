@@ -19,12 +19,12 @@ export const afrikasHorn: Topic = {
       body:
         "Afrikas Horn ligger i Nordøstafrika og rager ud i Det Indiske Ocean mellem Adenbugten i nord og Det Indiske Ocean i øst. Regionen omfatter Somalia, Etiopien, Eritrea og Djibouti. Den geopolitiske betydning er enorm: skibsruten gennem Bab el-Mandeb-strædet og Suezkanalen håndterer omkring 12 % af verdenshandlen og næsten 30 % af containertrafikken. Djibouti huser militære baser fra USA, Frankrig, Italien, Japan og — siden 2017 — Kina, hvilket gør den lille kyststat til et knudepunkt for stormagtsrivalisering.",
       image: {
-        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Hornofafrica.png?width=800",
+        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Nasa_Horn_of_Africa.JPG?width=800",
         alt: "Satellitbillede af Afrikas Horn",
         credit: "NASA via Wikimedia Commons",
         license: "Public domain",
         sourcePage:
-          "https://commons.wikimedia.org/wiki/File:Hornofafrica.png",
+          "https://commons.wikimedia.org/wiki/File:Nasa_Horn_of_Africa.JPG",
       },
     },
     {
@@ -57,11 +57,11 @@ export const afrikasHorn: Topic = {
       body:
         "Tanasøen i det etiopiske højland er kilde til Den Blå Nil, der leverer omkring 85 % af Nilens samlede vandføring. Etiopien har siden 2011 bygget Grand Ethiopian Renaissance Dam (GERD) — Afrikas største vandkraftværk med 6.450 MW kapacitet. Dæmningen er central i en eskalerende vandkonflikt med Egypten og Sudan, der frygter for vandforsyningen nedstrøms. Konflikten illustrerer begrebet hydropolitik: når en flod krydser landegrænser, bliver vand til geopolitik. I de tørre lavlande er der nærmest ingen permanente floder, og befolkningen er afhængig af grundvand og sæsonbestemte wadis.",
       image: {
-        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Tana_NASA.jpg?width=800",
-        alt: "Satellitbillede af Tanasøen i Etiopien",
-        credit: "NASA via Wikimedia Commons",
-        license: "Public domain",
-        sourcePage: "https://commons.wikimedia.org/wiki/File:Lake_Tana_NASA.jpg",
+        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Lake_tana.jpg?width=800",
+        alt: "Tanasøen i Etiopien",
+        credit: "Wikimedia Commons",
+        license: "Se kildeside",
+        sourcePage: "https://commons.wikimedia.org/wiki/File:Lake_tana.jpg",
       },
     },
     {
@@ -82,12 +82,12 @@ export const afrikasHorn: Topic = {
       body:
         "Alle fire lande ligger lavt på Human Development Index (HDI): Etiopien 0,49, Eritrea 0,49, Djibouti 0,52, Somalia ~0,38 (2022-tal). Den primære sektor — særligt subsistenslandbrug og husdyrhold — beskæftiger 60-80 % af arbejdsstyrken, men bidrager forholdsmæssigt lidt til BNP. Etiopien har siden 2010'erne forsøgt at hoppe stadier i industrialiseringen gennem statslige industriparker, der eksporterer tekstiler og fodtøj. Djibouti satser på sin havn og fungerer som logistikknudepunkt for Etiopiens import-/eksporttrafik. Remitter fra diaspora (især somaliere i Golfen, Europa og USA) udgør 20-35 % af Somalias BNP og er en kritisk indkomstkilde.",
       image: {
-        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Port_of_Djibouti_satellite_image.jpg?width=800",
-        alt: "Satellitbillede af Djiboutis havn",
-        credit: "NASA via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Satellite_images_of_Djibouti_during_the_night.png?width=800",
+        alt: "Natligt satellitbillede af Djibouti",
+        credit: "NASA Earth Observatory via Wikimedia Commons",
         license: "Public domain",
         sourcePage:
-          "https://commons.wikimedia.org/wiki/File:Port_of_Djibouti_satellite_image.jpg",
+          "https://commons.wikimedia.org/wiki/File:Satellite_images_of_Djibouti_during_the_night.png",
       },
     },
     {
@@ -108,12 +108,12 @@ export const afrikasHorn: Topic = {
       body:
         "Afrikas Horn er en testcase for globaliseringens geografi. Kina har siden 2017 drevet sin første oversøiske militærbase i Djibouti og finansieret Addis Abeba–Djibouti-jernbanen som led i Belt and Road-initiativet. USA driver Camp Lemonnier — sin største afrikanske base — i samme by. Golfstaterne (UAE, Saudi-Arabien, Tyrkiet) investerer aggressivt i havne langs Det Røde Hav som proxy-magt-spil. Internt forsøger Etiopien at sikre havadgang efter Eritreas løsrivelse i 1993 gjorde landet kystløst — et klassisk eksempel på, hvordan landenes geografi former udenrigspolitik. Houthi-angreb på skibsfart i Det Røde Hav siden 2023 har desuden gjort Bab el-Mandeb til en af verdens mest udsatte trafikflaskehalse.",
       image: {
-        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Bab-el-Mandeb.jpg?width=800",
+        url: "https://commons.wikimedia.org/wiki/Special:FilePath/Bab_el_Mandeb_NASA.jpg?width=800",
         alt: "Satellitbillede af Bab el-Mandeb-strædet mellem Djibouti og Yemen",
         credit: "NASA via Wikimedia Commons",
         license: "Public domain",
         sourcePage:
-          "https://commons.wikimedia.org/wiki/File:Bab-el-Mandeb.jpg",
+          "https://commons.wikimedia.org/wiki/File:Bab_el_Mandeb_NASA.jpg",
       },
     },
   ],
