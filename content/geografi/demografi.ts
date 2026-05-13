@@ -104,7 +104,7 @@ export const demografi: Topic = {
       prompt: "Hvad er et eksempel på en push-faktor i migration?",
       options: [
         { id: "a", text: "Højere løn i modtagerlandet" },
-        { id: "b", text: "Krævende boligpriser i afsenderlandet" },
+        { id: "b", text: "Høje boligpriser i afsenderlandet" },
         { id: "c", text: "Krig og usikkerhed i afsenderlandet" },
         { id: "d", text: "Bedre universiteter i modtagerlandet" },
       ],
