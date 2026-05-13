@@ -218,7 +218,7 @@ function naturtalExercise(difficulty: DifficultyLevel, format: AnswerFormat): Ge
     }?`,
     options: makeOptions(correct, alternatives),
     correctOption: correct,
-    hint: "Divider tæller med nævner først, og omregn derefter til ønsket format.",
+    hint: "Divider tælleren med nævneren først, og omregn derefter til det ønskede format.",
     explanationSteps: [
       `${randomNumerator}/${denominator} forkortes til ${fraction.numerator}/${fraction.denominator}.`,
       `Decimaltal: ${formatDa(toDecimal(fraction))}.`,
