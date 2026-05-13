@@ -25,9 +25,19 @@ export const islam: Topic = {
         "Sunni-islam: ca. 85-90 % af alle muslimer. Anerkender de fire 'retsindige' kaliffer efter Muhammad og bygger på Koranen, sunna (profetens praksis) og fire klassiske retsskoler (hanafi, maliki, shafi'i, hanbali). Shia-islam: ca. 10-15 %, dominerende i Iran (~90 %), Irak (~65 %), Aserbajdsjan, Bahrain og Libanon. Mener at lederskabet (imamatet) skulle være gået til Ali, Muhammads svigersøn, og hans efterkommere. Største undergren er tolverne (Iran). Sufisme er en mystisk strømning på tværs af sunni og shia med vægt på indre erfaring, dhikr (Gudserindring) og ordener (tariqa) som naqshbandi og mevlevi (de 'dansende dervisher'). Mindre retninger: ibaditer (Oman), ahmadiyya (Sydasien, omstridt), alevitter (Tyrkiet), drusere (Levanten — selvstændig religion med rødder i shia).",
     },
     {
+      heading: "Centrale begreber",
+      body:
+        "Tawhid: Guds absolutte enhed. Allah: 'Gud' på arabisk. Shahāda, salāt, sawm, zakāt, hajj: de fem søjler. Koran: hellig åbenbaring til Muhammad. Hadith: overleverede beretninger om profetens ord og handlinger. Sunna: profetens praksis som forbillede. Sharia: 'vejen' — Guds lov udledt af Koran og sunna. Fiqh: retsvidenskab og fortolkning af sharia. Ulama: de religiøst lærde. Ummah: det globale muslimske fællesskab. Halal / haram: tilladt / forbudt. Jihad: 'anstrengelse' — indre kamp eller (mere snævert) væbnet kamp. Kalifat: politisk-religiøs ledelse efter Muhammad (sunni). Imamat: lederskab gennem Alis efterkommere (shia). Sufi: mystiker. Dhikr: gudserindring/recitation. Ijtihād: selvstændig fortolkning. Ijmāʿ: konsensus blandt lærde.",
+    },
+    {
       heading: "Geografi og verdensbefolkning",
       body:
         "I modsætning til en udbredt forestilling bor flertallet af verdens muslimer ikke i den arabiske verden. Asien-Stillehavsregionen rummer ca. 60 % af alle muslimer. De fire største muslimske lande er Indonesien (~240 mio.), Pakistan (~230 mio.), Indien (~210 mio., største muslimske mindretal) og Bangladesh (~150 mio.). Mellemøsten og Nordafrika: ca. 25 % (Egypten, Tyrkiet, Iran, Saudi-Arabien). Afrika syd for Sahara: ca. 15 % og hurtigt voksende (Nigeria, Senegal, Mali). I Europa udgør muslimer ca. 5 % og i USA under 2 %. Islam vokser globalt hurtigere end andre verdensreligioner — primært pga. høj fertilitet og ung aldersstruktur, ikke pga. konversion.",
+    },
+    {
+      heading: "Religion i Danmark",
+      body:
+        "Islam er Danmarks næststørste religion: ca. 320.000 muslimer (~5,5 % af befolkningen, 2024). Største oprindelseslande: Tyrkiet, Irak, Libanon, Pakistan, Somalia, Syrien, Bosnien, Iran og Afghanistan. Sunni-islam er klart dominerende, med mindre shia- og ahmadiyya-grupper. Hamad bin Khalifa Civilization Center i Rovsingsgade (åbnet 2014) er Danmarks første store kuppelmoské, finansieret af Qatar. Dansk Tyrkisk Diyanet og Dansk Islamisk Trossamfund er blandt de største foreninger. Islamic Council, Muslimernes Fællesråd og Imam Ali-moskéen (shia) er andre aktører. Halalslagtning kun med forudgående bedøvelse siden 2014. Niqab/burka-forbud i offentligheden (tildækningsforbuddet) trådte i kraft 2018. Folketinget genindførte 2023 et delvist forbud mod offentlig afbrænding af hellige skrifter efter koranafbrændinger i 2022-23 skabte diplomatisk krise med Tyrkiet, Iran og OIC-lande.",
     },
     {
       heading: "Ligheder og fælles myter med andre religioner",
@@ -38,6 +48,11 @@ export const islam: Topic = {
       heading: "Forskelle til andre religioner",
       body:
         "Til kristendommen: islam afviser treenigheden og guddommeliggørelsen af Jesus. Koranen siger eksplicit, at Jesus ikke blev korsfæstet, men taget op til Gud. Frelsen sker ved underkastelse (selve betydningen af islām) og lovlydighed, ikke ved Jesu sonoffer. Til jødedommen: islam anerkender Tora og Indjil (evangeliet) som tidligere åbenbaringer, men mener at Koranen er den endelige og uforfalskede åbenbaring og afløser den jødiske særpagt med et universelt budskab. Til buddhismen: islam er strengt teistisk med én personlig, transcendent Gud (Allah), mens buddhismen er non-teistisk. Islam lærer lineær tid og kropslig opstandelse — buddhismen cyklisk genfødsel. Til naturreligionerne: islam er åbenbaringsreligion med én ophavsmand, hellig skrift og global udbredelse; naturreligioner er typisk polyteistiske/animistiske og knyttet til specifikke landskaber og folkeslag.",
+    },
+    {
+      heading: "Aktuelle problemstillinger",
+      body:
+        "Integration og parallelsamfundsdebat i Vesten, herunder de danske 'ghettolister' og 'parallelsamfundspakker' (2018, 2021). Hovedtørklædediskussion i skoler, retssale (forbud for danske dommere 2009) og arbejdsmarked. Islamofobi og højreradikal mobilisering vs. militant islamisme (al-Qaida, IS, Hamas, Boko Haram, Taliban) — to gensidigt forstærkende ekstremismer. Saudi-Arabien vs. Iran som sunni- og shia-poler i regionale stedfortræderkrige (Yemen, Syrien, Libanon, Irak). Reform-islam og 'Euro-islam' (Tariq Ramadan, Mona Siddiqui) over for traditionalisme. Kvinder og ligestilling: hovedtørklæde, mahr, vidne- og arveregler — kvinder-leder-bønner og kvindelige imamer (Amina Wadud) er omstridte. Klima og islamisk miljøetik: khalīfa-konceptet om mennesket som Guds forvalter (Islamic Declaration on Global Climate Change, 2015). Koranafbrændinger og blasfemilov. Israel/Palæstina-spørgsmålet rammer dansk-muslimsk politik. Afghanistan efter 2021: Talibans behandling af kvinder.",
     },
     {
       heading: "Ninian Smarts syv dimensioner — islam",

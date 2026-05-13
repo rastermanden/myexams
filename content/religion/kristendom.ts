@@ -25,9 +25,19 @@ export const kristendom: Topic = {
         "Det store skisma i 1054 delte kirken i en romersk-katolsk vestkirke (paven i Rom som overhoved, ca. 1,3 mia. tilhængere) og en østortodoks kirke (selvstændige patriarkater, ca. 220 mio.). Reformationen i 1517 (Martin Luther) gav protestantismen, der i dag tæller lutheranere, reformerte/calvinister, anglikanere, baptister, metodister og pinsekirker — tilsammen ca. 800-900 mio. Pinsebevægelsen og karismatiske kirker vokser hurtigt i Latinamerika, Afrika og Asien. Mindre orientalske kirker (koptere, etiopisk-ortodokse, syrisk-ortodokse, armensk-apostolske) brød ud allerede efter koncilet i Chalkedon (451) og tæller ca. 60 mio. Folkekirken i Danmark er evangelisk-luthersk og rummer ca. 71 % af befolkningen.",
     },
     {
+      heading: "Centrale begreber",
+      body:
+        "Treenighed: én Gud i tre personer (Fader, Søn, Helligånd). Inkarnation: Gud blev menneske i Jesus. Kristologi: læren om Jesu person og to naturer. Soteriologi: læren om frelsen. Nåde (gratia): ufortjent gave fra Gud. Sola gratia / sola fide / sola scriptura: reformationens 'kun ved nåde / tro / skriften'. Synd og syndefald: brud på forholdet til Gud. Dåb og nadver: sakramenter, der formidler nåden. Eskatologi: lære om de sidste tider, Kristi genkomst og dommedag. Messias / Kristus: 'den salvede'. Evangelium: 'glædeligt budskab'. Økumeni: bestræbelse på enhed mellem kirkesamfund. Helligånd: Guds nærvær i kirken og verden. Reformation: 1517-bruddet med pavekirken.",
+    },
+    {
       heading: "Geografi og verdensbefolkning",
       body:
         "Kristendommen er den eneste verdensreligion med betydelig tilstedeværelse på alle beboede kontinenter. Europa (ca. 550 mio., aldrende og sekulariserende), Latinamerika (ca. 600 mio., overvejende katolsk men med kraftig pinsevækst), Afrika syd for Sahara (ca. 650 mio. og hurtigt voksende — verdens kristne tyngdepunkt er flyttet sydpå), Nordamerika (ca. 260 mio.), Asien (ca. 290 mio., især Filippinerne, Kina, Sydkorea og Indien). Andelen af jordens befolkning har ligget stabilt omkring 31-33 % i 100 år, men den indre geografi har ændret sig dramatisk: i 1910 boede 66 % af verdens kristne i Europa, i dag under 25 %.",
+    },
+    {
+      heading: "Religion i Danmark",
+      body:
+        "Den danske folkekirke er evangelisk-luthersk og grundlovsfæstet (§4). Ca. 71 % af befolkningen er medlemmer (2024) — andelen falder ca. 0,5-1 procentpoint årligt. Strukturen omfatter ti stifter med biskopper, ~100 provstier og ~2.000 sogne; præster aflønnes via kirkeskat (statslig opkrævning). Folkekirken indførte kvindelige præster i 1948, kvindelige biskopper i 1995 og kirkelig vielse af to af samme køn i 2012. Vækkelsesbevægelser i 1800-tallet (Grundtvigianismen og Indre Mission) præger stadig dansk kristen kultur. Søren Kierkegaard og N.F.S. Grundtvig er centrale danske religionstænkere; sidstnævnte formede højskolerne. Frikirker tæller baptister, metodister, pinsekirker, Apostolsk Kirke, Mosaisk Vestkystmission m.fl. Katolikker udgør ca. 50.000, ortodokse ca. 10.000 (især russisk, serbisk, rumænsk). Dåb, konfirmation, kirkelig vielse og begravelse er stadig dominerende livsovergangsritualer, men sekulært stigende.",
     },
     {
       heading: "Ligheder og fælles myter med andre religioner",
@@ -38,6 +48,11 @@ export const kristendom: Topic = {
       heading: "Forskelle til andre religioner",
       body:
         "Til jødedommen: kristendommen ser Jesus som den lovede Messias og Guds søn, mens jødedommen afviser dette og venter stadig på Messias. Treenighedslæren skiller kristendommen fra både jødedom og islam, der opfatter Gud som strengt én. Til islam: Jesus er i islam en profet — ikke Gud — og blev ifølge Koranen ikke korsfæstet. Frelsen i kristendommen sker ved nåde gennem tro; i islam ved underkastelse (islām) og lovlydighed. Til buddhismen: kristendommen er teistisk (én personlig Gud) og lineær (skabelse → frelse → dom), mens buddhismen er non-teistisk og cyklisk (samsara) med nirvana som mål for at slippe ud af genfødslen. Til naturreligionerne: kristendommen er monoteistisk og åbenbaringsreligion med en hellig skrift, hvor naturreligioner ofte er polyteistiske/animistiske og overleveres mundtligt.",
+    },
+    {
+      heading: "Aktuelle problemstillinger",
+      body:
+        "Sekulariseringen i Vesten fortsætter — folkekirkens medlemstal falder, dåbsprocenten er under 60 %, og 'kulturkristne' uden tro fylder mere. Samtidigt vokser den globale kristendom hurtigt i syd, særligt karismatisk-pentekostalt. Spændinger mellem traditionalisme og progressivisme: kvindelige præster, samkønnede vielser (lovligt i folkekirken siden 2012, omstridt globalt), abortspørgsmålet (skarpt i katolicismen og evangelikalismen). Pave Frans' encyklika Laudato Si' (2015) gjorde klimakrise og skabelsesteologi til centralt katolsk anliggende. Kristne mindretal er under voldsomt pres i Mellemøsten (Syrien, Irak, Egypten), Pakistan, Nigeria og Nordkorea — Open Doors World Watch List dokumenterer forfølgelse. Kulturkamp i USA omkring abort (Roe v. Wade omstødt 2022) og LGBTQ-rettigheder. Pinsekirkernes politiske rolle i Brasilien og det globale syd. Debat om migration og kristen næstekærlighed. Sognesammenlægninger og kirkelukninger i hele Europa.",
     },
     {
       heading: "Ninian Smarts syv dimensioner — kristendom",

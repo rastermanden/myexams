@@ -25,9 +25,19 @@ export const joededom: Topic = {
         "Ortodoks jødedom holder fast i Toraens og Talmuds bindende autoritet og praktiserer strict halakha (jødisk lov). Underretninger: moderne-ortodoks (engagement i det moderne samfund) og haredisk/ultraortodoks (afskærmet samfund, sort tøj, store familier — vokser hurtigt). Inden for haredisk findes chasidisme (mystisk vækkelsesbevægelse fra 1700-tallets Østeuropa, opdelt i hoffer som Lubavitch/Chabad, Satmar, Bobov, Belz) og litvisk (yeshiva-baseret, mere rationalistisk). Konservativ jødedom (USA: ca. 18 % af amerikanske jøder) holder fast i halakha, men tillader historisk-kritisk fortolkning. Reformjødedommen opstod i 1800-tallets Tyskland og tilpasser ritualer og lov til moderne samfund — kvindelige rabbinere, blandede ægteskaber tolereres. Rekonstruktionistisk og humanistisk jødedom er mindre, mere progressive grene. Sefardim (fra Iberien) og mizrahim (fra Mellemøsten) udgør distinkte kulturelle traditioner ved siden af ashkenazim (fra Nord- og Østeuropa).",
     },
     {
+      heading: "Centrale begreber",
+      body:
+        "Tora: de fem Mosebøger — kernen i den hellige skrift. Tanakh: hele den hebraiske bibel (Tora + Neviʾim + Ketuvim). Talmud: Mishna (lov) + Gemara (kommentar) — rabbinsk hovedværk. Halakha: jødisk lov og levevejledning. Mitzvot: bud (613 i alt). Brit: pagten mellem Gud og Israels folk. Tikkun olam: 'at reparere verden' — etisk-eskatologisk ideal. Shabbat: ugentlig hviledag fra fredag aften til lørdag aften. Kashrut: kosher-spiseregler. Bar/bat mitzva: religiøs myndighedsalder (13/12 år). Kabbala: jødisk mystik. Diaspora (galut/tfutza): tilværelse uden for Israels land. Zionisme: moderne nationalbevægelse for et jødisk hjemland. Messias (mashiach): forventet salvet befrier — endnu ikke kommet. Shoah: hebraisk betegnelse for Holocaust. Ortodoks / konservativ / reform: de tre store moderne retninger.",
+    },
+    {
       heading: "Geografi og verdensbefolkning",
       body:
         "De ca. 15 mio. jøder fordeler sig hovedsageligt på Israel (~7,1 mio., ca. 47 %) og USA (~6,3 mio., ca. 42 %). Resten bor primært i Frankrig (~440.000), Canada, Storbritannien, Argentina, Rusland, Tyskland og Australien. Danmark har ca. 6.000-8.000. Før Holocaust boede flertallet af verdens jøder i Europa (særligt Polen, Ukraine, Tyskland og Ungarn) — i dag er Europas jødiske befolkning under en tredjedel af før-krigs-tallet. Diaspora (galut/tfutza) — livet uden for Israels land — er et nøglebegreb. Staten Israel blev grundlagt i 1948 efter Holocaust og som resultat af zionismen (Theodor Herzl, 1890'erne). Antallet af verdens jøder er stadig mindre end før 1939.",
+    },
+    {
+      heading: "Religion i Danmark",
+      body:
+        "Ca. 6.000-8.000 jøder i Danmark, hovedsageligt ashkenaziske, organiseret under Det Jødiske Samfund i Danmark (DJS, grundlagt 1684). Synagogen i Krystalgade (indviet 1833) er hovedhelligdom; Mosaisk Vestre Begravelsesplads stammer fra 1693. Carolineskolen i København er traditionsrig jødisk privatskool. Danmark er internationalt kendt for redningsaktionen i oktober 1943, hvor civilsamfundet — fiskere, præster, læger, politifolk — bragte ca. 7.200 jøder over Øresund til Sverige, hvilket gjorde Danmark til ét af få lande, hvor flertallet af de jødiske borgere overlevede Holocaust. Terrorangrebet ved synagogen 14.-15. februar 2015 (frivillig vagt Dan Uzan blev dræbt) markerer en ny sikkerhedsrealitet. Auschwitz-dagen 27. januar er officiel mindedag siden 2003. Centrale danske jødiske stemmer: forfatteren Henri Nathansen (Indenfor murene), journalisten Herbert Pundik, rabbiner Bent Lexner og Bent Melchior.",
     },
     {
       heading: "Ligheder og fælles myter med andre religioner",
@@ -38,6 +48,11 @@ export const joededom: Topic = {
       heading: "Forskelle til andre religioner",
       body:
         "Til kristendommen: jøder anerkender ikke Jesus som Messias eller Guds søn, afviser treenigheden og Det Nye Testamente. Frelsen er ikke et individuelt sjæleanliggende efter døden, men handler om at leve i pagten og bidrage til verden her og nu (tikkun olam). Til islam: jødedommen ser Tora som den blivende og fyldige åbenbaring, ikke en forløber for senere skrifter. Muhammad anerkendes ikke som profet. Sabbatten falder lørdag, ikke fredag eller søndag. Til buddhismen: jødedom er teistisk, lineær, historisk forankret i et folks pagt med Gud — buddhismen er non-teistisk, cyklisk og universel. Til naturreligionerne: jødedommen er strengt monoteistisk åbenbaringsreligion med absolut billedforbud (det andet bud) — naturreligioner er typisk polyteistiske/animistiske med rig billedbrug. En central jødisk særtræk: man fødes som jøde gennem mor (matrilineær), og konversion er muligt men sjældent prioriteret.",
+    },
+    {
+      heading: "Aktuelle problemstillinger",
+      body:
+        "Antisemitismen stiger i Europa (CST, FRA-rapporter dokumenterer stigninger 2014, 2019, 2023), især i forbindelse med Israel/Palæstina-eskalationer (Gaza-krigene 2008/09, 2014, 2021, 2023-24). Sikkerhedsforanstaltninger omkring synagoger og jødiske skoler er nu standard. BDS-bevægelsen (Boycott, Divestment, Sanctions) opfattes af mange jøder som antisemitisk, af tilhængere som menneskerettighedsaktivisme — IHRA's arbejdsdefinition af antisemitisme er omstridt. Omskæringsdebatten i Danmark, Island og Norge (forslag om aldersgrænser eller forbud) opfattes som eksistentiel trussel mod jødisk liv. Kosherslagtning uden forudgående bedøvelse er forbudt i Danmark siden 2014. Israels indre demografi: ultraortodokse (haredim) udgør stigende andel og er fritaget for militærtjeneste — kilde til skarp samfundsspænding. Holocaust-erindringen i en tid med færre øjenvidner: hvordan bevares hukommelsen, og hvordan undgås både banalisering og instrumentalisering? Voksende konflikter mellem progressiv jødedom i USA og højreorienterede regeringer i Israel.",
     },
     {
       heading: "Ninian Smarts syv dimensioner — jødedom",
