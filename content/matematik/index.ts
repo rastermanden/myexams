@@ -6,6 +6,7 @@ import { trigonometri } from "./categories/trigonometri";
 import { statistik } from "./categories/statistik";
 import { sandsynlighed } from "./categories/sandsynlighed";
 import { talOgRegning } from "./categories/tal-og-regning";
+import { tvaergaaendeFaerdigheder } from "./categories/tvaergaaende-faerdigheder";
 
 export const matematik: Subject = {
   slug: "matematik",
@@ -21,5 +22,6 @@ export const matematik: Subject = {
     statistik,
     sandsynlighed,
     talOgRegning,
+    tvaergaaendeFaerdigheder,
   ],
 };
