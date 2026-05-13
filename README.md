@@ -7,11 +7,12 @@ Built with [Next.js](https://nextjs.org) (App Router, static export) and Tailwin
 ## Subjects
 
 - **Geografi** — Naturgeografi & kulturgeografi.
-  - **Pladetektonik**: **Pladetektonik**
+  - **Pladetektonik**: **Jordens opbygning, plader og pladegrænser**
   - **Regioner**: **Afrikas Horn** og **Australien**
 - **Dansk litteratur** — Kommer snart.
 - **Matematik**
-  - **Geometri**: **Geometri**
+  - **Algebra**: **Ligninger og isolering af x**
+  - **Geometri**: **Vinkler, areal og rumgeometri**
   - **Statistik**: **Lineær regression**
   - **Tal og regning**: **Brøker**
 
