@@ -4,9 +4,11 @@ import type { ComponentType } from "react";
 import { getAllSubjects, getTopic } from "@/content";
 import ConceptSection from "@/components/ConceptSection";
 import EquationSolverDemo from "@/components/EquationSolverDemo";
+import FunktionerDemo from "@/components/FunktionerDemo";
 import GeometriDemo from "@/components/GeometriDemo";
 import ImageWithCredit from "@/components/ImageWithCredit";
 import LinearRegressionDemo from "@/components/LinearRegressionDemo";
+import MaalOgEnhederDemo from "@/components/MaalOgEnhederDemo";
 import ProbabilityFromScratchDemo from "@/components/ProbabilityFromScratchDemo";
 import RisikoforholdDemo from "@/components/RisikoforholdDemo";
 import TrigonometriDemo from "@/components/TrigonometriDemo";
@@ -14,8 +16,10 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 const TOPIC_DEMO_COMPONENTS: Record<string, ComponentType> = {
   "equation-solver": EquationSolverDemo,
+  funktioner: FunktionerDemo,
   geometri: GeometriDemo,
   "linear-regression": LinearRegressionDemo,
+  "maal-og-enheder": MaalOgEnhederDemo,
   "probability-from-scratch": ProbabilityFromScratchDemo,
   risikoforhold: RisikoforholdDemo,
   trigonometri: TrigonometriDemo,
