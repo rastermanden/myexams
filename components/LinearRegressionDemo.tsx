@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 
-type Point = { x: number; y: number };
+type Point = { id: number; x: number; y: number };
 
 const MIN_X = 0;
 const MAX_X = 10;
@@ -16,27 +16,30 @@ const RANDOM_SLOPE_RANGE = 2;
 const RANDOM_INTERCEPT_MIN = 1;
 const RANDOM_INTERCEPT_RANGE = 5;
 const NOISE_AMPLITUDE = 2.5;
+const POINT_COUNT = 8;
 
 const INITIAL_POINTS: Point[] = [
-  { x: 1, y: 2.1 },
-  { x: 2.4, y: 3.6 },
-  { x: 3.2, y: 4.2 },
-  { x: 4.8, y: 6.8 },
-  { x: 6, y: 7.3 },
-  { x: 7.5, y: 9.8 },
-  { x: 8.9, y: 10.6 },
+  { id: 1, x: 1, y: 2.1 },
+  { id: 2, x: 2.4, y: 3.6 },
+  { id: 3, x: 3.2, y: 4.2 },
+  { id: 4, x: 4.8, y: 6.8 },
+  { id: 5, x: 6, y: 7.3 },
+  { id: 6, x: 7.5, y: 9.8 },
+  { id: 7, x: 8.9, y: 10.6 },
 ];
+
+let pointIdCounter = INITIAL_POINTS.length + 1;
 
 function randomPoints(): Point[] {
   const targetSlope = Math.random() * RANDOM_SLOPE_RANGE + RANDOM_SLOPE_MIN;
   const targetIntercept =
     Math.random() * RANDOM_INTERCEPT_RANGE + RANDOM_INTERCEPT_MIN;
-  const pointCount = 8;
-  return Array.from({ length: pointCount }, (_, i) => {
-    const x = MIN_X + (i / (pointCount - 1)) * (MAX_X - MIN_X);
+  return Array.from({ length: POINT_COUNT }, (_, i) => {
+    const x = MIN_X + (i / (POINT_COUNT - 1)) * (MAX_X - MIN_X);
     const noise = (Math.random() - 0.5) * NOISE_AMPLITUDE;
     const y = targetSlope * x + targetIntercept + noise;
     return {
+      id: pointIdCounter++,
       x,
       y: Math.max(MIN_Y, Math.min(MAX_Y, y)),
     };
@@ -100,9 +103,9 @@ export default function LinearRegressionDemo() {
               stroke="currentColor"
               strokeWidth="3"
             />
-            {points.map((point, index) => (
+            {points.map((point) => (
               <circle
-                key={index}
+                key={point.id}
                 cx={toSvgX(point.x)}
                 cy={toSvgY(point.y)}
                 r="5"
