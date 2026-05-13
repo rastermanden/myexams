@@ -5,6 +5,14 @@ import { risikoforhold } from "./risikoforhold";
 import { sandsynlighedsregningFraBunden } from "./sandsynlighedsregning-fra-bunden";
 import { broeker } from "./broeker";
 import { geometri } from "./geometri";
+import { variableOgBogstavregning } from "./variable-og-bogstavregning";
+import { reduktionAfUdtryk } from "./reduktion-af-udtryk";
+import { parenteser } from "./parenteser";
+import { ulighederMedEnUbekendt } from "./uligheder-med-en-ubekendt";
+import { toLigningerMedToUbekendte } from "./to-ligninger-med-to-ubekendte";
+import { andengradsligninger } from "./andengradsligninger";
+import { algebraiskeBroeker } from "./algebraiske-broeker";
+import { kvadratsaetningerOgNotableIdentiteter } from "./kvadratsaetninger-og-notable-identiteter";
 
 export const matematik: Subject = {
   slug: "matematik",
@@ -16,9 +24,20 @@ export const matematik: Subject = {
     {
       slug: "algebra",
       title: "Algebra",
-      summary: "Ligninger, variable og isolering af x med trinvis progression.",
+      summary:
+        "Variable, udtryk, ligninger, uligheder, andengrad og algebraiske brøker fra folkeskole til gymnasium.",
       emoji: "🧮",
-      topics: [ligningerOgIsoleringAfX],
+      topics: [
+        variableOgBogstavregning,
+        reduktionAfUdtryk,
+        parenteser,
+        ligningerOgIsoleringAfX,
+        ulighederMedEnUbekendt,
+        toLigningerMedToUbekendte,
+        andengradsligninger,
+        algebraiskeBroeker,
+        kvadratsaetningerOgNotableIdentiteter,
+      ],
     },
     {
       slug: "geometri",
