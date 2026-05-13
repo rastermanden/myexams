@@ -5,6 +5,7 @@ import { risikoforhold } from "./risikoforhold";
 import { sandsynlighedsregningFraBunden } from "./sandsynlighedsregning-fra-bunden";
 import { broeker } from "./broeker";
 import { geometri } from "./geometri";
+import { talOgRegningFraBunden } from "./tal-og-regning-fra-bunden";
 
 export const matematik: Subject = {
   slug: "matematik",
@@ -46,7 +47,7 @@ export const matematik: Subject = {
       title: "Tal og regning",
       summary: "Grundlæggende talforståelse, brøker og regneregler.",
       emoji: "➗",
-      topics: [broeker],
+      topics: [talOgRegningFraBunden, broeker],
     },
   ],
 };
