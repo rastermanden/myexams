@@ -169,6 +169,7 @@ export function primeFactors(n: number): number[] {
       factors.push(divisor);
       value /= divisor;
     }
+    // Efter 2 behøver vi kun teste ulige divisorer.
     divisor = divisor === 2 ? 3 : divisor + 2;
   }
 
@@ -193,9 +194,9 @@ function makeOptions(correct: string, alternatives: string[]): string[] {
 
 function naturtalExercise(difficulty: DifficultyLevel, format: AnswerFormat): GeneratedExercise {
   const scale = difficulty === 1 ? 10 : difficulty === 2 ? 100 : 1000;
-  const originalNumerator = randomInt(1, scale);
+  const randomNumerator = randomInt(1, scale);
   const denominator = choice([2, 4, 5, 8, 10]);
-  const fraction = simplifyFraction({ numerator: originalNumerator, denominator });
+  const fraction = simplifyFraction({ numerator: randomNumerator, denominator });
   const correct = asDisplayValue(fraction, format);
   const alternatives = [
     asDisplayValue({ numerator: fraction.numerator + 1, denominator: fraction.denominator }, format),
@@ -213,7 +214,7 @@ function naturtalExercise(difficulty: DifficultyLevel, format: AnswerFormat): Ge
     correctOption: correct,
     hint: "Divider tæller med nævner først, og omregn derefter til ønsket format.",
     explanationSteps: [
-      `${originalNumerator}/${denominator} forkortes til ${fraction.numerator}/${fraction.denominator}.`,
+      `${randomNumerator}/${denominator} forkortes til ${fraction.numerator}/${fraction.denominator}.`,
       `Decimaltal: ${formatDa(toDecimal(fraction))}.`,
       `Procent: ${formatDa(toPercent(fraction), 1)}%.`,
     ],
