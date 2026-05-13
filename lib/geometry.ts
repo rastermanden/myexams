@@ -60,6 +60,9 @@ export function pythagorasHypotenuse(a: number, b: number): number {
 }
 
 export function pythagorasLeg(hypotenuse: number, knownLeg: number): number {
+  if (knownLeg >= hypotenuse) {
+    throw new RangeError("knownLeg must be smaller than hypotenuse");
+  }
   return Math.sqrt(hypotenuse * hypotenuse - knownLeg * knownLeg);
 }
 

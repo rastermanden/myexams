@@ -26,7 +26,6 @@ import {
 } from "@/lib/geometry";
 
 type PythagorasExercise = {
-  id: number;
   prompt: string;
   expected: number;
   explanation: string;
@@ -50,7 +49,6 @@ function randomPythagorasExercise(): PythagorasExercise {
 
   if (Math.random() < 0.5) {
     return {
-      id: Date.now() + Math.floor(Math.random() * 1000),
       prompt: `Beregn hypotenusen c, når kateterne er a = ${a} og b = ${b}.`,
       expected: pythagorasHypotenuse(a, b),
       explanation: `c = √(a² + b²) = √(${a}² + ${b}²) = ${c}`,
@@ -58,7 +56,6 @@ function randomPythagorasExercise(): PythagorasExercise {
   }
 
   return {
-    id: Date.now() + Math.floor(Math.random() * 1000),
     prompt: `Beregn kateten a, når hypotenusen er c = ${c} og den anden katete er b = ${b}.`,
     expected: pythagorasLeg(c, b),
     explanation: `a = √(c² - b²) = √(${c}² - ${b}²) = ${a}`,
