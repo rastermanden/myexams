@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 
 type Point = { id: number; x: number; y: number };
 
@@ -28,28 +28,27 @@ const INITIAL_POINTS: Point[] = [
   { id: 7, x: 8.9, y: 10.6 },
 ];
 
-let pointIdCounter = INITIAL_POINTS.length + 1;
-
-function randomPoints(): Point[] {
-  const targetSlope = Math.random() * RANDOM_SLOPE_RANGE + RANDOM_SLOPE_MIN;
-  const targetIntercept =
-    Math.random() * RANDOM_INTERCEPT_RANGE + RANDOM_INTERCEPT_MIN;
-  return Array.from({ length: POINT_COUNT }, (_, i) => {
-    const x = MIN_X + (i / (POINT_COUNT - 1)) * (MAX_X - MIN_X);
-    const noise = (Math.random() - 0.5) * NOISE_AMPLITUDE;
-    const y = targetSlope * x + targetIntercept + noise;
-    return {
-      id: pointIdCounter++,
-      x,
-      y: Math.max(MIN_Y, Math.min(MAX_Y, y)),
-    };
-  });
-}
-
 export default function LinearRegressionDemo() {
   const [slope, setSlope] = useState(1);
   const [intercept, setIntercept] = useState(0);
   const [points, setPoints] = useState<Point[]>(INITIAL_POINTS);
+  const pointIdCounter = useRef(INITIAL_POINTS.length + 1);
+
+  const randomPoints = (): Point[] => {
+    const targetSlope = Math.random() * RANDOM_SLOPE_RANGE + RANDOM_SLOPE_MIN;
+    const targetIntercept =
+      Math.random() * RANDOM_INTERCEPT_RANGE + RANDOM_INTERCEPT_MIN;
+    return Array.from({ length: POINT_COUNT }, (_, i) => {
+      const x = MIN_X + (i / (POINT_COUNT - 1)) * (MAX_X - MIN_X);
+      const noise = (Math.random() - 0.5) * NOISE_AMPLITUDE;
+      const y = targetSlope * x + targetIntercept + noise;
+      return {
+        id: pointIdCounter.current++,
+        x,
+        y: Math.max(MIN_Y, Math.min(MAX_Y, y)),
+      };
+    });
+  };
 
   const linePoints = useMemo(() => {
     const y1 = slope * MIN_X + intercept;
