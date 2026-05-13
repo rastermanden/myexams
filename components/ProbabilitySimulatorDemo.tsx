@@ -97,7 +97,8 @@ export default function ProbabilitySimulatorDemo() {
             value={experiment}
             onChange={(e) => {
               setExperiment(e.target.value as ExperimentType);
-              handleReset();
+              setResults(null);
+              setTotal(0);
             }}
             className="rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-50"
           >
@@ -119,7 +120,7 @@ export default function ProbabilitySimulatorDemo() {
             max={10000}
             step={100}
             value={runs}
-            onChange={(e) => { setRuns(Number(e.target.value)); handleReset(); }}
+            onChange={(e) => setRuns(Number(e.target.value))}
             className="w-48 accent-zinc-900 dark:accent-zinc-50"
           />
         </div>

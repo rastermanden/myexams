@@ -69,12 +69,12 @@ export const stokastiskeVariable: Topic = {
       prompt: "Hvad måler variansen Var(X)?",
       options: [
         { id: "a", text: "Det forventede resultat" },
-        { id: "b", text: "Spredningen around gennemsnittet" },
+        { id: "b", text: "Spredningen omkring gennemsnittet" },
         { id: "c", text: "Det maksimale udfald" },
         { id: "d", text: "Sandsynligheden for E(X)" },
       ],
       correctOptionId: "b",
-      explanation: "Varians mål spredning: E((X−μ)²).",
+      explanation: "Varians måler spredning: E((X−μ)²).",
     },
     {
       id: "q5",

@@ -84,7 +84,7 @@ export const taelletraeerOgProduktreglen: Topic = {
         { id: "a", text: "Summen af grenenes sandsynligheder" },
         { id: "b", text: "Produktet af grenenes sandsynligheder" },
         { id: "c", text: "Gennemsnittet af grenenes sandsynligheder" },
-        { id: "d", text: "Det maksimale sandsynlighed langs stien" },
+        { id: "d", text: "Den maksimale sandsynlighed langs stien" },
       ],
       correctOptionId: "b",
       explanation: "Stisandsynlighed = produkt af sandsynligheder langs vejen fra rod til blad.",

@@ -94,12 +94,12 @@ export const binomialfordelingen: Topic = {
       prompt: "X ~ B(6, 0,4). Hvad er σ (standardafvigelse)?",
       options: [
         { id: "a", text: "2,4" },
-        { id: "b", text: "√2,4 ≈ 1,55" },
+        { id: "b", text: "√1,44 = 1,20" },
         { id: "c", text: "0,4" },
         { id: "d", text: "0,24" },
       ],
       correctOptionId: "b",
-      explanation: "σ = √(n·p·(1−p)) = √(6·0,4·0,6) = √1,44 ≈ 1,20... Vent: √(6·0,4·0,6) = √1,44 = 1,20.",
+      explanation: "σ = √(n·p·(1−p)) = √(6·0,4·0,6) = √1,44 = 1,20.",
     },
     {
       id: "q7",

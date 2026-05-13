@@ -110,7 +110,7 @@ export const betingetSandsynlighed: Topic = {
         { id: "d", text: "Marginal" },
       ],
       correctOptionId: "c",
-      explanation: "P(B) kallas priori-sandsynlighed (før ny observation).",
+      explanation: "P(B) kaldes priori-sandsynlighed (før ny observation).",
     },
     {
       id: "q8",
