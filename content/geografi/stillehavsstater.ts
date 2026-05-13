@@ -29,7 +29,7 @@ export const stillehavsstater: Topic = {
     {
       heading: "Naturgeografi: atoller, vulkaner & korallrev",
       body:
-        "Stillehavsøerne dannes på to måder: vulkansk aktivitet (hotspots og pladegrænser) og koralvækst. Høje vulkanske øer som Fiji, Hawaii og Vanuatu er geologisk yngre og mere topografisk varierede. Atoller — som Kiribati, Tuvalu og Marshall-øerne — er lave koralkransøer dannet over sunkne vulkaner. De fleste atol­ler er under 2 m over havniveau. Korallrevene er verdens mest biologisk mangfoldige marine økosystemer og udgør livsgrundlaget for kystfiskeriet.",
+        "Stillehavsøerne dannes på to måder: vulkansk aktivitet (hotspots og pladegrænser) og koralvækst. Høje vulkanske øer som Fiji, Hawaii og Vanuatu er geologisk yngre og mere topografisk varierede. Atoller — som Kiribati, Tuvalu og Marshall-øerne — er lave koralkransøer dannet over sunkne vulkaner. De fleste atoller er under 2 m over havniveau. Korallrevene er verdens mest biologisk mangfoldige marine økosystemer og udgør livsgrundlaget for kystfiskeriet.",
     },
     {
       heading: "Klimaforandringer: den eksistentielle trussel",

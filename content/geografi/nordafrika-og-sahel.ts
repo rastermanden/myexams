@@ -29,7 +29,7 @@ export const nordafrikaOgSahel: Topic = {
     {
       heading: "Klima, Sahara & ørkendannelse",
       body:
-        "Sahara er verdens største hedørken (~9,2 mio. km²). Den klassificeres som BWh (Köppens system) med under 25 mm regn om året de fleste steder. Sahara er imidlertid ikke statisk: for 10.000–5.000 år siden var området markant grønnere (Grøn Sahara/African Humid Period) pga. ændrede jordbaneparametre og stærkere afrikansk monsun. I dag accelererer ørkendannelse (desertifikation) i Sahel: afskove­ning, overgræsning og klimaforandringer ødelægger jordbunden og driver syd-grænsen for Sahara frem.",
+        "Sahara er verdens største hedørken (~9,2 mio. km²). Den klassificeres som BWh (Köppens system) med under 25 mm regn om året de fleste steder. Sahara er imidlertid ikke statisk: for 10.000–5.000 år siden var området markant grønnere (Grøn Sahara/African Humid Period) pga. ændrede jordbaneparametre og stærkere afrikansk monsun. I dag accelererer ørkendannelse (desertifikation) i Sahel: afskovning, overgræsning og klimaforandringer ødelægger jordbunden og driver syd-grænsen for Sahara frem.",
       image: {
         url: "https://commons.wikimedia.org/wiki/Special:FilePath/Desertification_map.png?width=800",
         alt: "Globalt kort over sårbarhed for desertifikation",
@@ -60,7 +60,7 @@ export const nordafrikaOgSahel: Topic = {
     {
       heading: "Nilen & vandressourcer",
       body:
-        "Nil-floden er Nordafrikas livsnerve — Egypten er 95 % afhængig af Nilen for landbrugsvand og drikkevand. Egyptens befolkning (ca. 105 mio.) er koncentreret i det 3 % af landet, der er frugtbar mark langs Nilen og i Nilens delta. Som tidligere nævnt er GERD-dæmningen i Etiopien en stridspunkt. Libyens Menneskeskabte Flod (Great Man-Made River) er verdens største vandinfrastrukturprojekt: den pumper fossilt grundvand fra Sahara-akviferer til kystbyerne.",
+        "Nil-floden er Nordafrikas livsnerve — Egypten er 95 % afhængig af Nilen for landbrugsvand og drikkevand. Egyptens befolkning (ca. 105 mio.) er koncentreret i det 3 % af landet, der er frugtbar mark langs Nilen og i Nilens delta. GERD-dæmningen (Grand Ethiopian Renaissance Dam) er et stridspunkt: Etiopien opdæmmer Den Blå Nil, som leverer ca. 85 % af Nilens vandføring, hvilket truer Egyptens vandforsyning. Libyens Menneskeskabte Flod (Great Man-Made River) er verdens største vandinfrastrukturprojekt: den pumper fossilt grundvand fra Sahara-akviferer til kystbyerne.",
     },
     {
       heading: "Energi, råvarer & udvikling",

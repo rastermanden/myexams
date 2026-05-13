@@ -4,7 +4,7 @@ export const sydoestasien: Topic = {
   slug: "sydoestasien",
   title: "Sydøstasien",
   summary:
-    "Sydøstasien — fra fastlandsstater som Vietnam og Thailand til øriget ASEAN-zone: naturgeografi, monsun, demografi og regional økonomi.",
+    "Sydøstasien — fra fastlandsstater som Vietnam og Thailand til ørige ASEAN-zone: naturgeografi, monsun, demografi og regional økonomi.",
   hero: {
     url: "https://commons.wikimedia.org/wiki/Special:FilePath/Southeast_Asia_(orthographic_projection).svg?width=800",
     alt: "Sydøstasien fremhævet på en globus",

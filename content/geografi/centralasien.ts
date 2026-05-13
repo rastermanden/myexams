@@ -30,7 +30,7 @@ export const centralasien: Topic = {
     {
       heading: "Klima, landforms & naturressourcer",
       body:
-        "Centralasien har et udpræget kontinentalt klima (Dfa/Dfb/BS/BW) med ekstreme temperaturforskelle: sommertemperaturer over 40 °C i Karakum- og Kyzylkum-ørkenerne, vintertemperaturer ned til −40 °C i Kasakhstans stepper. Tien Shan- og Pamir-bjergkæderne i øst og syd hæver sig til over 7.000 m. Floderne Amu Darya og Syr Darya er regionale livsnerve­r. Regionen er rig på olie, gas (Turkmenistan har verdens fjerde største naturgasreserver) og mineraler (Kasakhstans uran udgør ~43 % af verdens produktion).",
+        "Centralasien har et udpræget kontinentalt klima (Dfa/Dfb/BS/BW) med ekstreme temperaturforskelle: sommertemperaturer over 40 °C i Karakum- og Kyzylkum-ørkenerne, vintertemperaturer ned til −40 °C i Kasakhstans stepper. Tien Shan- og Pamir-bjergkæderne i øst og syd hæver sig til over 7.000 m. Floderne Amu Darya og Syr Darya er regionale livsnerver. Regionen er rig på olie, gas (Turkmenistan har verdens fjerde største naturgasreserver) og mineraler (Kasakhstans uran udgør ~43 % af verdens produktion).",
       image: {
         url: "https://commons.wikimedia.org/wiki/Special:FilePath/Pamir_mountains.jpg?width=800",
         alt: "Pamir-bjergene i Tadsjikistan",
@@ -61,7 +61,7 @@ export const centralasien: Topic = {
     {
       heading: "Befolkning, styreformer & udfordringer",
       body:
-        "Centralasien er en region med autoritære eller semi-autoritære styrer (Freedom House: de fleste rangerer som 'Not Free'). Kirgisistan er den relative undtagelse med mere pluralistisk politik men hyppige magtskift. Islam er dominerende religion, og religiøs radikalisering har bekymret regionens regeringer og stormægler Rusland. Vandkonflikter (fx Kasakhstan vs. Kirgisistan/Tadsjikistan) er tilbagevendende. Klimaforandringer smelter gletschere i Tien Shan og Pamir, der er livsvagtigt for landbrugsvanding.",
+        "Centralasien er en region med autoritære eller semi-autoritære styrer (Freedom House: de fleste rangerer som 'Not Free'). Kirgisistan er den relative undtagelse med mere pluralistisk politik men hyppige magtskift. Islam er dominerende religion, og religiøs radikalisering har bekymret regionens regeringer og stormagt Rusland. Vandkonflikter (fx Kasakhstan vs. Kirgisistan/Tadsjikistan) er tilbagevendende. Klimaforandringer smelter gletschere i Tien Shan og Pamir, der er livsvagtigt for landbrugsvanding.",
     },
   ],
   quiz: [
