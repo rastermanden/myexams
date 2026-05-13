@@ -3,10 +3,12 @@ import { notFound } from "next/navigation";
 import type { ComponentType } from "react";
 import { getAllSubjects, getTopic } from "@/content";
 import ConceptSection from "@/components/ConceptSection";
+import EquationSolverDemo from "@/components/EquationSolverDemo";
 import ImageWithCredit from "@/components/ImageWithCredit";
 import LinearRegressionDemo from "@/components/LinearRegressionDemo";
 
 const TOPIC_DEMO_COMPONENTS: Record<string, ComponentType> = {
+  "equation-solver": EquationSolverDemo,
   "linear-regression": LinearRegressionDemo,
 };
 
