@@ -111,7 +111,8 @@ function level2Exercise(): EquationExercise {
       steps: [
         {
           equation: `${a}x = ${b}`,
-          explanation: "x er ganget med et tal. Ophæv gange ved at dividere begge sider med samme tal (≠ 0).",
+          explanation:
+            "x er ganget med et tal. Ophæv det ved at dividere begge sider med samme tal (≠ 0).",
           correctAction: correct,
           actions: actionSet(correct, [
             { id: "mul-a", label: `Gang med ${a} på begge sider` },
@@ -158,7 +159,10 @@ function level2Exercise(): EquationExercise {
 
 function level3Exercise(): EquationExercise {
   const a = randomInt(2, 9);
-  const b = randomInt(-12, 12) || 4;
+  let b = randomInt(-12, 12);
+  if (b === 0) {
+    b = randomInt(1, 12) * (Math.random() < 0.5 ? -1 : 1);
+  }
   const x = randomInt(1, 12);
   const c = a * x + b;
   const firstAction =
@@ -299,7 +303,7 @@ function level5Exercise(): EquationExercise {
       steps: [
         {
           equation: `${factor}(x + ${inner}) = ${rhs}`,
-          explanation: "Ophæv først faktoren uden for parentesen.",
+          explanation: "Ophæv først faktor uden for parentesen.",
           correctAction: {
             id: "div-factor",
             label: `Dividér med ${factor} på begge sider`,
@@ -312,7 +316,7 @@ function level5Exercise(): EquationExercise {
               { id: "add-inner", label: `Læg ${inner} til på begge sider` },
             ],
           ),
-          hint: "Du kan dele hele venstre side med faktoren foran parentesen.",
+          hint: "Du kan dele hele venstre side med faktor foran parentesen.",
         },
         {
           equation: `x + ${inner} = ${rhs / factor}`,
