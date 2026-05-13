@@ -39,7 +39,7 @@ export default function EquationSolverDemo() {
   const handleAction = (actionId: string) => {
     if (!currentStep?.correctAction) return;
     if (actionId === currentStep.correctAction.id) {
-      setStepIndex((value) => Math.min(value + 1, exercise.steps.length - 1));
+      setStepIndex((prevIndex) => Math.min(prevIndex + 1, exercise.steps.length - 1));
       setFeedback({
         type: "success",
         text: "Korrekt! Godt valg af regel.",

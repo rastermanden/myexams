@@ -20,12 +20,13 @@ export type EquationExercise = {
   steps: ExerciseStep[];
 };
 
+const MAX_ACTION_CHOICES = 4;
+
 function randomInt(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-
-function shuffled<T>(values: T[]) {
+function shuffle<T>(values: T[]) {
   const clone = [...values];
   for (let i = clone.length - 1; i > 0; i -= 1) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -49,7 +50,7 @@ function formatLinear(coeff: number, constant: number): string {
 }
 
 function createShuffledActions(correct: ExerciseAction, wrong: ExerciseAction[]) {
-  return shuffled([correct, ...wrong]).slice(0, 4);
+  return shuffle([correct, ...wrong]).slice(0, MAX_ACTION_CHOICES);
 }
 
 function level1Exercise(): EquationExercise {
