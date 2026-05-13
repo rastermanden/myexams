@@ -4,6 +4,7 @@ import type { ComponentType } from "react";
 import { getAllSubjects, getTopic } from "@/content";
 import ConceptSection from "@/components/ConceptSection";
 import EquationSolverDemo from "@/components/EquationSolverDemo";
+import DemografiDemo from "@/components/DemografiDemo";
 import GeometriDemo from "@/components/GeometriDemo";
 import ImageWithCredit from "@/components/ImageWithCredit";
 import LinearRegressionDemo from "@/components/LinearRegressionDemo";
@@ -12,6 +13,7 @@ import RisikoforholdDemo from "@/components/RisikoforholdDemo";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 const TOPIC_DEMO_COMPONENTS: Record<string, ComponentType> = {
+  demografi: DemografiDemo,
   "equation-solver": EquationSolverDemo,
   geometri: GeometriDemo,
   "linear-regression": LinearRegressionDemo,
