@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getAllSubjects, getTopic } from "@/content";
 import ConceptSection from "@/components/ConceptSection";
 import ImageWithCredit from "@/components/ImageWithCredit";
+import LinearRegressionDemo from "@/components/LinearRegressionDemo";
 
 export function generateStaticParams() {
   const params: { subject: string; topic: string }[] = [];
@@ -54,6 +55,10 @@ export default async function TopicPage({
       {topic.sections.map((section, i) => (
         <ConceptSection key={i} section={section} />
       ))}
+
+      {subject.slug === "matematik" && topic.slug === "lineaer-regression" && (
+        <LinearRegressionDemo />
+      )}
 
       <div className="mt-12 rounded-2xl border border-zinc-200 bg-white p-6 text-center dark:border-zinc-800 dark:bg-zinc-900">
         <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-50">
