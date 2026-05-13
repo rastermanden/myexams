@@ -1,4 +1,5 @@
 import type { Subject } from "@/lib/types";
+import { litteratur } from "./categories/litteratur";
 
 export const dansk: Subject = {
   slug: "dansk",
@@ -6,5 +7,5 @@ export const dansk: Subject = {
   emoji: "📚",
   description:
     "Tekstanalyse, perioder og forfatterskaber — fra oplysningstiden til moderne dansk litteratur.",
-  categories: [],
+  categories: [litteratur],
 };
