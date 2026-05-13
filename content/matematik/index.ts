@@ -1,5 +1,6 @@
 import type { Subject } from "@/lib/types";
 import { lineaerRegression } from "./lineaer-regression";
+import { sandsynlighedsregningFraBunden } from "./sandsynlighedsregning-fra-bunden";
 import { broeker } from "./broeker";
 
 export const matematik: Subject = {
@@ -15,6 +16,13 @@ export const matematik: Subject = {
       summary: "Dataanalyse, modeller og tolkning af variation i datasæt.",
       emoji: "📊",
       topics: [lineaerRegression],
+    },
+    {
+      slug: "sandsynlighed",
+      title: "Sandsynlighed",
+      summary: "Sandsynlighedsregning fra intuition til formelle beregninger.",
+      emoji: "🎲",
+      topics: [sandsynlighedsregningFraBunden],
     },
     {
       slug: "tal-og-regning",

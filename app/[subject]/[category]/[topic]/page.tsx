@@ -5,10 +5,12 @@ import { getAllSubjects, getTopic } from "@/content";
 import ConceptSection from "@/components/ConceptSection";
 import ImageWithCredit from "@/components/ImageWithCredit";
 import LinearRegressionDemo from "@/components/LinearRegressionDemo";
+import ProbabilityFromScratchDemo from "@/components/ProbabilityFromScratchDemo";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 const TOPIC_DEMO_COMPONENTS: Record<string, ComponentType> = {
   "linear-regression": LinearRegressionDemo,
+  "probability-from-scratch": ProbabilityFromScratchDemo,
 };
 
 export function generateStaticParams() {
