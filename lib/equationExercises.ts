@@ -21,8 +21,15 @@ export type EquationExercise = {
   steps: ExerciseStep[];
 };
 
+let exerciseIdCounter = 0;
+
 function randomInt(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function createExerciseId(prefix: string) {
+  exerciseIdCounter += 1;
+  return `${prefix}-${exerciseIdCounter}`;
 }
 
 function shuffled<T>(values: T[]) {
@@ -74,7 +81,7 @@ function level1Exercise(): EquationExercise {
       ];
 
   return {
-    id: `l1-${Date.now()}-${Math.random()}`,
+    id: createExerciseId("l1"),
     level: 1,
     title: "Niveau 1: x ± a = b",
     solution: x,
@@ -104,7 +111,7 @@ function level2Exercise(): EquationExercise {
     const b = a * x;
     const correct = { id: "div-a", label: `Dividér med ${a} på begge sider` };
     return {
-      id: `l2m-${Date.now()}-${Math.random()}`,
+      id: createExerciseId("l2m"),
       level: 2,
       title: "Niveau 2: ax = b",
       solution: x,
@@ -133,7 +140,7 @@ function level2Exercise(): EquationExercise {
   const solution = a * b;
   const correct = { id: "mul-a", label: `Gang med ${a} på begge sider` };
   return {
-    id: `l2d-${Date.now()}-${Math.random()}`,
+    id: createExerciseId("l2d"),
     level: 2,
     title: "Niveau 2: x / a = b",
     solution,
@@ -173,7 +180,7 @@ function level3Exercise(): EquationExercise {
   const secondAction = { id: "div-a", label: `Dividér med ${a} på begge sider` };
 
   return {
-    id: `l3-${Date.now()}-${Math.random()}`,
+    id: createExerciseId("l3"),
     level: 3,
     title: "Niveau 3: ax + b = c",
     solution: x,
@@ -233,7 +240,7 @@ function level4Exercise(): EquationExercise {
   };
 
   return {
-    id: `l4-${Date.now()}-${Math.random()}`,
+    id: createExerciseId("l4"),
     level: 4,
     title: "Niveau 4: ax + b = cx + d",
     solution: x,
@@ -296,7 +303,7 @@ function level5Exercise(): EquationExercise {
     const x = randomInt(1, 10);
     const rhs = factor * (x + inner);
     return {
-      id: `l5p-${Date.now()}-${Math.random()}`,
+      id: createExerciseId("l5p"),
       level: 5,
       title: "Niveau 5: parenteser",
       solution: x,
@@ -348,7 +355,7 @@ function level5Exercise(): EquationExercise {
   const rhs = randomInt(2, 12);
   const x = divisor * rhs - inner;
   return {
-    id: `l5f-${Date.now()}-${Math.random()}`,
+    id: createExerciseId("l5f"),
     level: 5,
     title: "Niveau 5: brøker",
     solution: x,
