@@ -175,7 +175,7 @@ export function primeFactors(n: number): number[] {
       factors.push(divisor);
       value /= divisor;
     }
-    // Efter 2 behøves kun test af ulige divisorer.
+    // Efter 2 behøver vi kun teste ulige divisorer.
     divisor = divisor === 2 ? 3 : divisor + 2;
   }
 
@@ -273,15 +273,14 @@ function percentExercise(difficulty: DifficultyLevel, format: AnswerFormat): Gen
   const base = difficulty === 1 ? randomInt(20, 200) : difficulty === 2 ? randomInt(50, 500) : randomInt(100, 1000);
   const percent = choice([5, 10, 15, 20, 25, 30, 40]);
   const mode = choice(["of", "growth", "decrease"] as const);
-
-  const rawResult =
+  const resultFraction = simplifyFraction(
     mode === "of"
-      ? percentOf(base, percent)
+      ? { numerator: base * percent, denominator: 100 }
       : mode === "growth"
-        ? applyPercentGrowth(base, percent)
-        : applyPercentDecrease(base, percent);
-
-  const resultFraction = simplifyFraction({ numerator: Math.round(rawResult * 100), denominator: 100 });
+        ? { numerator: base * (100 + percent), denominator: 100 }
+        : { numerator: base * (100 - percent), denominator: 100 },
+  );
+  const rawResult = toDecimal(resultFraction);
   const correct = asDisplayValue(resultFraction, format);
 
   return {

@@ -18,7 +18,7 @@ const SUBTOPIC_META: Record<SubtopicSlug, { title: string; description: string }
   },
   broeker: {
     title: "Brøker",
-    description: "Forkort, forlæng, addér, subtraher, gang og dividér.",
+    description: "Forkort, forlæng, addér, subtraher, multiplicér og dividér.",
   },
   procentregning: {
     title: "Procentregning",
