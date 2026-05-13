@@ -2,8 +2,9 @@ import type { Category, Subject, SubjectSlug, Topic } from "@/lib/types";
 import { geografi } from "./geografi";
 import { dansk } from "./dansk";
 import { matematik } from "./matematik";
+import { religion } from "./religion";
 
-const subjects: Subject[] = [geografi, dansk, matematik];
+const subjects: Subject[] = [geografi, dansk, matematik, religion];
 
 export function getAllSubjects(): Subject[] {
   return subjects;
