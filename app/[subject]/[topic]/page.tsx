@@ -3,10 +3,12 @@ import { notFound } from "next/navigation";
 import type { ComponentType } from "react";
 import { getAllSubjects, getTopic } from "@/content";
 import ConceptSection from "@/components/ConceptSection";
+import GeometriDemo from "@/components/GeometriDemo";
 import ImageWithCredit from "@/components/ImageWithCredit";
 import LinearRegressionDemo from "@/components/LinearRegressionDemo";
 
 const TOPIC_DEMO_COMPONENTS: Record<string, ComponentType> = {
+  geometri: GeometriDemo,
   "linear-regression": LinearRegressionDemo,
 };
 
