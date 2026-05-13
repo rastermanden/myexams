@@ -70,6 +70,24 @@ export const joededom: Topic = {
         "Jewish Virtual Library. DellaPergola, Sergio: World Jewish Population (årlig opgørelse). Pew Research Center: Jewish Americans in 2020. Den Store Danske: 'Jødedom'. Smart, Ninian: The World's Religions.",
     },
   ],
+  audioPrompt: {
+    intro:
+      "Fokus: Tanakh og Talmud, halakha som handlingsreligion, ortodoks/konservativ/reform, diaspora og Shoah, jødedommen i Danmark (oktober 1943-redningen) og Smarts dimensioner.",
+    prompt: `Lav en audio-overview på dansk til en gymnasieelev (STX-religion) som forberedelse til mundtlig eksamen om jødedommen. Brug en samtaleform mellem to værter på 12–15 minutter, faglig men letforståelig.
+
+Behandl præcis disse punkter i denne rækkefølge:
+1) Nøglefakta: den ældste abrahamitiske religion, opstod blandt israelitterne i Levanten i 2. årtusinde f.Kr. Stamfædre Abraham, Isak, Jakob; Moses og udgangen af Egypten; kongerne David og Salomon. Hellig skrift: Tanakh (Tora + Neviʾim + Ketuvim) + Talmud (Mishna + Gemara, ca. 500 e.Kr.). Shema Yisrael som trosbekendelse. ~15 mio. tilhængere — historisk decimeret af Holocaust (~6 mio. myrdet 1933–45).
+2) Retninger: ortodoks (inkl. moderne-ortodoks og haredisk/ultraortodoks med chasidisme og litvisk yeshiva-tradition), konservativ jødedom, reformjødedom (1800-tallets Tyskland — kvindelige rabbinere). Sefardim, mizrahim og ashkenazim som kulturelle traditioner.
+3) Centrale begreber: Tora, halakha (jødisk lov), 613 mitzvot, brit (pagten), tikkun olam (at reparere verden), shabbat, kashrut, bar/bat mitzva, kabbala, diaspora (galut/tfutza), Messias som endnu ikke kommet, Shoah.
+4) Geografi: ~7,1 mio. i Israel og ~6,3 mio. i USA (tilsammen ~89 % af verdens jøder); resten primært Frankrig, Canada, Storbritannien, Argentina. Før Holocaust boede flertallet i Europa — i dag mindre end en tredjedel af før-krigs-tallet.
+5) Jødedom i Danmark: ~6.000-8.000 jøder, synagogen i Krystalgade (1833), Det Jødiske Samfund (1684). Oktober 1943: civilsamfundet reddede ~7.200 jøder over Øresund — Danmark blandt få lande hvor flertallet overlevede Holocaust. Terrorangrebet ved synagogen 2015. Omskæringsdebat som eksistentiel.
+6) Centralt: jødedommen er en ortopraksi — det er vigtigere hvad man GØR (mitzvot, halakha) end præcis hvad man tror. Det skiller jødedommen fra kristendommens doxa-fokus.
+7) Ligheder og forskelle: deler Abraham, Moses, profeterne og store dele af GT/Koranen med kristendom og islam. Men: afviser Jesus som Messias og Guds søn, afviser treenigheden, afviser Muhammad som profet. Pesach er forløber for kristen påske.
+8) Ninian Smarts syv dimensioner anvendt på jødedommen — udfold alle syv med konkrete eksempler (udgangen af Egypten = mytisk-fortællende, pagten og Maimonides' 13 trosartikler = doktrinær, de 613 mitzvot og kosher = etisk-juridisk, sabbat og seder = rituel, chasidisk gudsglæde og kabbalaens mystik = erfaringsmæssig, synagoge, rabbinat og staten Israel = social-institutionel, Tora-rulle, kippa, tallit, Klagemuren = materiel). Fremhæv at den etisk-juridiske dimension er særligt dominerende.
+9) Aktuelle problemstillinger: stigende antisemitisme i Europa, Israel/Palæstina-konflikten, BDS-bevægelsen, IHRA-arbejdsdefinitionen, omskæringsdebat, haredim og militærtjeneste i Israel, Holocaust-erindring med færre øjenvidner.
+
+Tone: respektfuld, præcis. Forklar hebraiske fagudtryk. Afslut med 3–4 spørgsmål eleven bør kunne svare på.`,
+  },
   quiz: [
     {
       id: "q1",

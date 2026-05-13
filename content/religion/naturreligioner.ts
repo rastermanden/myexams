@@ -70,6 +70,24 @@ export const naturreligioner: Topic = {
         "Pew Research Center: Global Religious Landscape (2012). Harvey, Graham: Indigenous Religions — A Companion. Smart, Ninian: The World's Religions (1989/1998) og Dimensions of the Sacred (1996). Den Store Danske: 'Naturreligion', 'Animisme', 'Shamanisme'. Eliade, Mircea: Le sacré et le profane.",
     },
   ],
+  audioPrompt: {
+    intro:
+      "Fokus: animisme, shamanisme, polyteisme, eksempler (Yoruba, aboriginal Dreamtime, shinto, asatro), at begrebet selv er en vestlig konstruktion, og at Smarts model passer særligt godt her.",
+    prompt: `Lav en audio-overview på dansk til en gymnasieelev (STX-religion) som forberedelse til mundtlig eksamen om naturreligioner. Brug en samtaleform mellem to værter på 12–15 minutter, faglig men letforståelig.
+
+Behandl præcis disse punkter i denne rækkefølge:
+1) Begrebsafklaring: 'naturreligion' er en vestlig samlebetegnelse — andre udtryk er etniske religioner, primale religioner, oprindelige religioner, indigenous religions. Diskutér at begrebet er en kategorial konstruktion med rødder i oplysningstidens evolutionistiske religionsteori (Tylor, Frazer), kritiseret af Talal Asad og J.Z. Smith som kolonial epistemologi.
+2) Nøglefakta: ingen historisk grundlægger, ingen hellig kanontekst, typisk mundtligt overleveret, knyttet til specifikke folkeslag, landskaber og økosystemer. ~400-450 mio. udøvere (5-6 % af verden), men tal er usikre pga. synkretisme.
+3) Centrale begreber: animisme (ånder/sjæl bebor naturen — Tylor 1871, nyere: Descolas alternative ontologi), shamanisme (specialist rejser i ekstase til åndeverdenen — ord fra tungus-saman), polyteisme, totemisme, forfædredyrkelse, mana (kraft), tapu/tabu, axis mundi, overgangsriter (van Gennep), trickster-figurer.
+4) Varianter og eksempler — gå konkret igennem: afrikanske (Yoruba med orisha, Akan, Zulu, Dogon, San), amerindianske (Lakota, Navajo, Hopi, Inuit, Maya/Aztek), sibirisk shamanisme, australsk aboriginal religion med Dreamtime/Tjukurpa og Uluru, oceaniske (maori med atua, tapu, mana), asiatiske (shinto i Japan med kami og helligdomme; daoistisk folkereligion; bön i Tibet), synkretiske afro-amerikanske (vodou på Haiti, santería på Cuba, candomblé i Brasilien), og nyhedenske bevægelser (wicca, asatro).
+5) Geografi: største koncentrationer i Kina (folkelig religion ~290 mio.), Afrika syd for Sahara, Indien (adivasi), Sydøstasien, Sibirien, Andesregionen og Amazonas, Nordamerika, Oceanien.
+6) Naturreligioner i Danmark: Forn Sed Danmark (asatro) — officielt anerkendt trossamfund siden 2003, ~1.000 medlemmer, blot ved solhverv og jævndøgn til æser og vaner (Odin, Thor, Frej, Freja) rekonstrueret fra Edda og sagaerne. Forn Sed afgrænser sig udtrykkeligt fra højrenationalistisk brug af nordisk hedendom (Asatru Folk Assembly i USA). Grønlandsk inuit-religion og samisk religion som nordisk kontekst. Folkelige rester: solhverv, sankthansbål, majstang, varsler.
+7) Ligheder og forskelle: skabelsesfortællinger og syndflodsmotivet deles med abrahamitiske religioner. Verdensaksen (Yggdrasil, ceiba, kalpavriksha) er tværkulturel. MEN: typisk polyteistiske/animistiske (immanens frem for transcendens), ingen hellig skrift, ingen mission, knyttet til folk og sted frem for universelt budskab. Cyklisk frem for lineær tid. Etikken handler om balance, fællesskab og respekt for naturen.
+8) Ninian Smarts syv dimensioner — anvend dem særligt opmærksomt her, fordi Smart udviklede modellen netop for at kunne sammenligne religioner UDEN skrift på lige fod. Udfold alle syv med konkrete eksempler (trickster-fortællinger og Dreamtime = mytisk-fortællende, mana og tapu = doktrinær, sædvaneret og forfædre-respekt = etisk, shamanrejser og overgangsriter = rituel, trance og vision = erfaringsmæssig, stamme/klan/shaman som specialist = social-institutionel, totempæle, masker, trommer, Uluru = materiel — som ofte er særligt rig).
+9) Aktuelle problemstillinger: repatriering af hellige genstande fra vestlige museer (NAGPRA 1990), Standing Rock som model for indigenous miljøaktivisme, FN's UNDRIP 2007, Amazonas-skovning truer skovfolks åndelige liv, kulturel appropriation (ayahuasca-turisme, smudging), højrenationalistisk misbrug af nordisk hedendom, neopaganisme i Vesten knyttet til økofeminisme og klimakrise.
+
+Tone: metodisk omhyggelig, ikke-eksotiserende. Understreg pluraliteten — der findes ikke ÉN naturreligion. Afslut med 3–4 spørgsmål eleven bør kunne svare på.`,
+  },
   quiz: [
     {
       id: "q1",
