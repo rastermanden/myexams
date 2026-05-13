@@ -3,19 +3,27 @@ import { notFound } from "next/navigation";
 import type { ComponentType } from "react";
 import { getAllSubjects, getTopic } from "@/content";
 import ConceptSection from "@/components/ConceptSection";
+import BinomialDistributionDemo from "@/components/BinomialDistributionDemo";
+import CountingTreeDemo from "@/components/CountingTreeDemo";
 import EquationSolverDemo from "@/components/EquationSolverDemo";
 import GeometriDemo from "@/components/GeometriDemo";
 import ImageWithCredit from "@/components/ImageWithCredit";
 import LinearRegressionDemo from "@/components/LinearRegressionDemo";
+import NormalDistributionDemo from "@/components/NormalDistributionDemo";
 import ProbabilityFromScratchDemo from "@/components/ProbabilityFromScratchDemo";
+import ProbabilitySimulatorDemo from "@/components/ProbabilitySimulatorDemo";
 import RisikoforholdDemo from "@/components/RisikoforholdDemo";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 const TOPIC_DEMO_COMPONENTS: Record<string, ComponentType> = {
+  "binomial-distribution": BinomialDistributionDemo,
+  "counting-tree": CountingTreeDemo,
   "equation-solver": EquationSolverDemo,
   geometri: GeometriDemo,
   "linear-regression": LinearRegressionDemo,
+  "normal-distribution": NormalDistributionDemo,
   "probability-from-scratch": ProbabilityFromScratchDemo,
+  "probability-simulator": ProbabilitySimulatorDemo,
   risikoforhold: RisikoforholdDemo,
 };
 
