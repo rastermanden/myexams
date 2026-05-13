@@ -6,7 +6,7 @@ Built with [Next.js](https://nextjs.org) (App Router, static export) and Tailwin
 
 ## Subjects
 
-- **Geografi** — Naturgeografi & kulturgeografi. First topic: **Afrikas Horn**.
+- **Geografi** — Naturgeografi & kulturgeografi. Topics: **Afrikas Horn** og **Australien**.
 - **Dansk litteratur** — Kommer snart.
 - **Matematik** — Kommer snart.
 
