@@ -14,6 +14,10 @@ export type UnitDefinition = {
   metric?: boolean;
 };
 
+const DECIMAL_SHIFT_TOLERANCE = 1e-9;
+const MIN_ABSOLUTE_TOLERANCE = 1e-3;
+const RELATIVE_TOLERANCE = 0.01;
+
 export const UNIT_DEFINITIONS: Record<UnitCategory, UnitDefinition[]> = {
   laengde: [
     { id: "mm", label: "mm", toBaseFactor: 0.001, metric: true },
@@ -37,6 +41,7 @@ export const UNIT_DEFINITIONS: Record<UnitCategory, UnitDefinition[]> = {
     { id: "m3", label: "m³", toBaseFactor: 1000, metric: true },
   ],
   masse: [
+    // Baseenhed i denne kategori er gram.
     { id: "mg", label: "mg", toBaseFactor: 0.001, metric: true },
     { id: "g", label: "g", toBaseFactor: 1, metric: true },
     { id: "kg", label: "kg", toBaseFactor: 1000, metric: true },
@@ -47,7 +52,7 @@ export const UNIT_DEFINITIONS: Record<UnitCategory, UnitDefinition[]> = {
     { id: "min", label: "minut", toBaseFactor: 60, metric: true },
     { id: "h", label: "time", toBaseFactor: 3600, metric: true },
     { id: "doegn", label: "døgn", toBaseFactor: 86400, metric: true },
-    // Standardår på 365 døgn, så opgaverne matcher folkeskole/gymnasie-niveau.
+    // Standardår på 365 døgn (skudår ignoreres), så opgaverne matcher skolekontekst.
     { id: "aar", label: "år", toBaseFactor: 31536000, metric: true },
   ],
   hastighed: [
@@ -105,7 +110,7 @@ export function getDecimalShift(
   const shift = Math.log10(ratio);
   const rounded = Math.round(shift);
 
-  if (Math.abs(shift - rounded) > 1e-9) return null;
+  if (Math.abs(shift - rounded) > DECIMAL_SHIFT_TOLERANCE) return null;
   return rounded;
 }
 
@@ -211,7 +216,7 @@ export function generateContextTask(): ContextTask {
 
 export function isAnswerClose(expected: number, actual: number): boolean {
   if (!Number.isFinite(actual)) return false;
-  const tolerance = Math.max(1e-3, Math.abs(expected) * 0.01);
+  const tolerance = Math.max(MIN_ABSOLUTE_TOLERANCE, Math.abs(expected) * RELATIVE_TOLERANCE);
   return Math.abs(expected - actual) <= tolerance;
 }
 
