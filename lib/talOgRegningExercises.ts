@@ -44,11 +44,8 @@ export const SUBTOPIC_ORDER: SubtopicSlug[] = [
   "talsystemer",
 ];
 
-let exerciseCounter = 0;
-
 function nextExerciseId(prefix: string): string {
-  exerciseCounter += 1;
-  return `${prefix}-${exerciseCounter}`;
+  return `${prefix}-${crypto.randomUUID()}`;
 }
 
 function randomInt(min: number, max: number): number {
@@ -172,7 +169,7 @@ export function primeFactors(n: number): number[] {
       factors.push(divisor);
       value /= divisor;
     }
-    divisor += 1;
+    divisor = divisor === 2 ? 3 : divisor + 2;
   }
 
   return factors;
@@ -196,9 +193,9 @@ function makeOptions(correct: string, alternatives: string[]): string[] {
 
 function naturtalExercise(difficulty: DifficultyLevel, format: AnswerFormat): GeneratedExercise {
   const scale = difficulty === 1 ? 10 : difficulty === 2 ? 100 : 1000;
-  const numerator = randomInt(1, scale);
+  const originalNumerator = randomInt(1, scale);
   const denominator = choice([2, 4, 5, 8, 10]);
-  const fraction = simplifyFraction({ numerator, denominator });
+  const fraction = simplifyFraction({ numerator: originalNumerator, denominator });
   const correct = asDisplayValue(fraction, format);
   const alternatives = [
     asDisplayValue({ numerator: fraction.numerator + 1, denominator: fraction.denominator }, format),
@@ -216,7 +213,7 @@ function naturtalExercise(difficulty: DifficultyLevel, format: AnswerFormat): Ge
     correctOption: correct,
     hint: "Divider tæller med nævner først, og omregn derefter til ønsket format.",
     explanationSteps: [
-      `${fraction.numerator}/${fraction.denominator} forkortes allerede til ${fraction.numerator}/${fraction.denominator}.`,
+      `${originalNumerator}/${denominator} forkortes til ${fraction.numerator}/${fraction.denominator}.`,
       `Decimaltal: ${formatDa(toDecimal(fraction))}.`,
       `Procent: ${formatDa(toPercent(fraction), 1)}%.`,
     ],

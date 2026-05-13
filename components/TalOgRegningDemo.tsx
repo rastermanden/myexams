@@ -91,7 +91,6 @@ function renderVisualization(
   }
 
   const percent = Math.max(0, Math.min(1, visual.value));
-  const angle = percent * 360;
   return (
     <div className="rounded-xl border border-zinc-200 p-3 dark:border-zinc-700">
       <p className="text-xs font-medium uppercase tracking-wide text-zinc-500">{visual.label}</p>
@@ -107,7 +106,7 @@ function renderVisualization(
             stroke="currentColor"
             strokeWidth="5"
             strokeDasharray={`${percent * 100} ${100 - percent * 100}`}
-            transform={`rotate(${angle > 0 ? -90 : 0} 21 21)`}
+            transform="rotate(-90 21 21)"
             strokeLinecap="round"
           />
         </svg>
