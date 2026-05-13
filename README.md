@@ -10,10 +10,12 @@ Built with [Next.js](https://nextjs.org) (App Router, static export) and Tailwin
   - **Regioner**: **Afrikas Horn** og **Australien**
 - **Dansk litteratur** — Kommer snart.
 - **Matematik**
+  - **Algebra**: **Variable og bogstavregning**, **Reduktion af udtryk**, **Parenteser**, **Ligninger og isolering af x**, **Uligheder med én ubekendt**, **To ligninger med to ubekendte**, **Andengradsligninger**, **Algebraiske brøker**, **Kvadratsætninger og notable identiteter**
   - **Funktioner**: **Funktioner og grafer**
   - **Geometri**: **Geometri**
   - **Statistik**: **Lineær regression**
-  - **Tal og regning**: **Brøker**
+  - **Sandsynlighed**: **Sandsynlighedsregning fra bunden**
+  - **Tal og regning**: **Brøker** og **Mål og enheder**
 
 Each topic explains its key concepts and ends with a multiple-choice quiz with explanations and a best-score tracker.
 
