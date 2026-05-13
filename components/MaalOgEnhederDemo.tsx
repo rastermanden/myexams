@@ -17,6 +17,10 @@ import {
   type UnitCategory,
 } from "@/lib/maal-og-enheder";
 
+function getUnitLabel(category: UnitCategory, unitId: string): string {
+  return UNIT_DEFINITIONS[category].find((unit) => unit.id === unitId)?.label ?? unitId;
+}
+
 export default function MaalOgEnhederDemo() {
   const [category, setCategory] = useState<UnitCategory>("laengde");
   const [fromUnitId, setFromUnitId] = useState("cm");
@@ -148,18 +152,8 @@ export default function MaalOgEnhederDemo() {
 
           <p className="text-sm text-zinc-700 dark:text-zinc-300">
             Omregn <span className="font-semibold">{conversionTask.value}</span> {" "}
-            {
-              UNIT_DEFINITIONS[conversionTask.category].find(
-                (unit) => unit.id === conversionTask.fromUnitId,
-              )?.label
-            }{" "}
-            til {" "}
-            {
-              UNIT_DEFINITIONS[conversionTask.category].find(
-                (unit) => unit.id === conversionTask.toUnitId,
-              )?.label
-            }
-            .
+            {getUnitLabel(conversionTask.category, conversionTask.fromUnitId)} til{" "}
+            {getUnitLabel(conversionTask.category, conversionTask.toUnitId)}.
           </p>
 
           <div className="flex flex-wrap items-end gap-2">
