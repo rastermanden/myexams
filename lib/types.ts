@@ -37,7 +37,7 @@ export type Topic = {
   quiz: QuizQuestion[];
 };
 
-export type SubjectSlug = "geografi" | "dansk" | "matematik";
+export type SubjectSlug = "geografi" | "dansk" | "matematik" | "religion";
 
 export type Category = {
   slug: string;
