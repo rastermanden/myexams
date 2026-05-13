@@ -35,7 +35,7 @@ export default function LinearRegressionDemo() {
   const [points, setPoints] = useState<Point[]>(INITIAL_POINTS);
   const pointIdCounter = useRef(INITIAL_POINTS.length + 1);
 
-  const randomPoints = (): Point[] => {
+  const generateRandomPoints = (): Point[] => {
     const targetSlope = Math.random() * RANDOM_SLOPE_RANGE + RANDOM_SLOPE_MIN;
     const targetIntercept =
       Math.random() * RANDOM_INTERCEPT_RANGE + RANDOM_INTERCEPT_MIN;
@@ -157,7 +157,7 @@ export default function LinearRegressionDemo() {
             </button>
             <button
               type="button"
-              onClick={() => setPoints(randomPoints())}
+              onClick={() => setPoints(generateRandomPoints())}
               className="inline-flex min-h-11 items-center justify-center rounded-full bg-zinc-900 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200"
             >
               Randomisér punkter
