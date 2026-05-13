@@ -5,9 +5,11 @@ import { getAllSubjects, getTopic } from "@/content";
 import ConceptSection from "@/components/ConceptSection";
 import ImageWithCredit from "@/components/ImageWithCredit";
 import LinearRegressionDemo from "@/components/LinearRegressionDemo";
+import RisikoforholdDemo from "@/components/RisikoforholdDemo";
 
 const TOPIC_DEMO_COMPONENTS: Record<string, ComponentType> = {
   "linear-regression": LinearRegressionDemo,
+  risikoforhold: RisikoforholdDemo,
 };
 
 export function generateStaticParams() {
