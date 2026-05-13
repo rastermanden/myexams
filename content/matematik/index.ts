@@ -6,6 +6,7 @@ import { sandsynlighedsregningFraBunden } from "./sandsynlighedsregning-fra-bund
 import { broeker } from "./broeker";
 import { maalOgEnheder } from "./maal-og-enheder";
 import { geometri } from "./geometri";
+import { trigonometri } from "./trigonometri";
 import { funktionerOgGrafer } from "./funktioner-og-grafer";
 import { variableOgBogstavregning } from "./variable-og-bogstavregning";
 import { reduktionAfUdtryk } from "./reduktion-af-udtryk";
@@ -55,6 +56,13 @@ export const matematik: Subject = {
       summary: "Plangeometri, rumgeometri og vektorer fra folkeskole til gymnasium.",
       emoji: "📐",
       topics: [geometri],
+    },
+    {
+      slug: "trigonometri",
+      title: "Trigonometri",
+      summary: "Retvinklet og generel trigonometri med enhedscirkel og funktioner.",
+      emoji: "📏",
+      topics: [trigonometri],
     },
     {
       slug: "statistik",
