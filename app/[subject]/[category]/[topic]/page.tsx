@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { ComponentType } from "react";
 import { getAllSubjects, getTopic } from "@/content";
 import ConceptSection from "@/components/ConceptSection";
+import CalculusOverviewDemo from "@/components/CalculusOverviewDemo";
 import EquationSolverDemo from "@/components/EquationSolverDemo";
 import GeometriDemo from "@/components/GeometriDemo";
 import ImageWithCredit from "@/components/ImageWithCredit";
@@ -12,6 +13,7 @@ import RisikoforholdDemo from "@/components/RisikoforholdDemo";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 const TOPIC_DEMO_COMPONENTS: Record<string, ComponentType> = {
+  "calculus-overview": CalculusOverviewDemo,
   "equation-solver": EquationSolverDemo,
   geometri: GeometriDemo,
   "linear-regression": LinearRegressionDemo,

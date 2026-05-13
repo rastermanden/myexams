@@ -5,6 +5,7 @@ import { risikoforhold } from "./risikoforhold";
 import { sandsynlighedsregningFraBunden } from "./sandsynlighedsregning-fra-bunden";
 import { broeker } from "./broeker";
 import { geometri } from "./geometri";
+import { differentialOgIntegralregning } from "./differential-og-integralregning";
 
 export const matematik: Subject = {
   slug: "matematik",
@@ -26,6 +27,13 @@ export const matematik: Subject = {
       summary: "Plangeometri, rumgeometri og vektorer fra folkeskole til gymnasium.",
       emoji: "📐",
       topics: [geometri],
+    },
+    {
+      slug: "differential-og-integralregning",
+      title: "Differential- og integralregning",
+      summary: "Grænseværdier, afledte og integraler på gymnasiets B- og A-niveau.",
+      emoji: "📈",
+      topics: [differentialOgIntegralregning],
     },
     {
       slug: "statistik",
