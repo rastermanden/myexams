@@ -1,5 +1,6 @@
 import type { Subject } from "@/lib/types";
 import { lineaerRegression } from "./lineaer-regression";
+import { sandsynlighedsregningFraBunden } from "./sandsynlighedsregning-fra-bunden";
 
 export const matematik: Subject = {
   slug: "matematik",
@@ -7,5 +8,5 @@ export const matematik: Subject = {
   emoji: "📐",
   description:
     "Funktioner, differential- og integralregning, statistik og sandsynlighed — kerneområder fra gymnasiet.",
-  topics: [lineaerRegression],
+  topics: [lineaerRegression, sandsynlighedsregningFraBunden],
 };
