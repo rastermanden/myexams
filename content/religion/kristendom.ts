@@ -62,7 +62,7 @@ export const kristendom: Topic = {
     {
       heading: "Formuleringer der imponerer læreren",
       body:
-        "Brug disse sætninger til at vise religionsfaglig dybde. ► 'Kristendommen er paradigmatisk soteriologisk: frelsen forstås ikke som meritbaseret lovlydighed, men som nådesgave (sola gratia), medieret kristologisk og tilegnet sakramentalt — det er netop denne soteriologiske grammatik, der adskiller den fra både den jødiske halakha-tradition og islamisk underkastelsesetik.' ► 'Treenighedsdogmet, formuleret i de økumeniske koncilier i Nikæa (325) og Konstantinopel (381), er ikke triteisme, men en hypostatisk præcisering af den ene Guds tre relationelle væremåder — en theologumenon, der gør kristendommens monoteisme strukturelt forskellig fra både jødedommens og islams strenge tawhid.' ► 'Reformationen kan med Max Weber læses som en religiøs forudsætning for den kapitalistiske rationalitet: lutheranismens kaldsetik og calvinismens prædestinationslære transformerede helliggørelsen fra et klosterligt opus operatum til en inderverdslig askese.' ► 'Den dramatiske demografiske forskydning af kristendommens tyngdepunkt fra det globale nord til det globale syd — særligt Afrika syd for Sahara og Latinamerika — bryder definitivt den eurocentriske antagelse om kristendom som kulturelt vestlig fænomen og illustrerer Philip Jenkins' tese om en 'next Christendom'.' ► 'Anvender man Ninian Smarts dimensionsmodel, er det iøjnefaldende, at den protestantiske gren historisk har nedtonet den rituelle og materielle dimension til fordel for den doktrinære og etiske — hvilket forklarer både ikonoklasme, sola scriptura og den protestantiske arbejdsetiks affinitet med modernitetens sekulariseringsproces.'",
+        "Brug disse sætninger til at vise religionsfaglig dybde — vælg mellem korte, klare formuleringer eller tungere fagsprog efter situationen. ► KORT OG KLART: 'Kristendommen handler grundlæggende om frelse — ikke om at fortjene noget, men om at modtage en gave fra Gud gennem troen på Jesus. Det er det, der adskiller den fra både jødedommen og islam, hvor man følger en lov.' ► KORT OG KLART: 'Bruger man Ninian Smarts syv dimensioner, kan man se, at protestantismen især har vægtet lære og etik, mens katolicismen og ortodoksien har holdt mere fast i ritualer og materielle udtryk som ikoner og relikvier.' ► 'Kristendommen er paradigmatisk soteriologisk: frelsen forstås ikke som meritbaseret lovlydighed, men som nådesgave (sola gratia), medieret kristologisk og tilegnet sakramentalt — det er netop denne soteriologiske grammatik, der adskiller den fra både den jødiske halakha-tradition og islamisk underkastelsesetik.' ► 'Treenighedsdogmet, formuleret i de økumeniske koncilier i Nikæa (325) og Konstantinopel (381), er ikke triteisme, men en hypostatisk præcisering af den ene Guds tre relationelle væremåder — en theologumenon, der gør kristendommens monoteisme strukturelt forskellig fra både jødedommens og islams strenge tawhid.' ► 'Reformationen kan med Max Weber læses som en religiøs forudsætning for den kapitalistiske rationalitet: lutheranismens kaldsetik og calvinismens prædestinationslære transformerede helliggørelsen fra et klosterligt opus operatum til en inderverdslig askese.' ► 'Den dramatiske demografiske forskydning af kristendommens tyngdepunkt fra det globale nord til det globale syd — særligt Afrika syd for Sahara og Latinamerika — bryder definitivt den eurocentriske antagelse om kristendom som kulturelt vestlig fænomen og illustrerer Philip Jenkins' tese om en 'next Christendom'.' ► 'Anvender man Ninian Smarts dimensionsmodel, er det iøjnefaldende, at den protestantiske gren historisk har nedtonet den rituelle og materielle dimension til fordel for den doktrinære og etiske — hvilket forklarer både ikonoklasme, sola scriptura og den protestantiske arbejdsetiks affinitet med modernitetens sekulariseringsproces.'",
     },
     {
       heading: "Kilder",
@@ -148,6 +148,84 @@ export const kristendom: Topic = {
       correctOptionId: "b",
       explanation:
         "Moses (Musa i Koranen) er central i alle tre abrahamitiske religioner. Udgangen af Egypten er en fælles fortælling.",
+    },
+    {
+      id: "q7",
+      prompt: "Juleevangeliet om Jesu fødsel i stalden i Betlehem fortælles hvert år i kirken. Hvilken af Smarts dimensioner er det et eksempel på?",
+      options: [
+        { id: "a", text: "Den mytisk-fortællende dimension" },
+        { id: "b", text: "Den etiske dimension" },
+        { id: "c", text: "Den materielle dimension" },
+        { id: "d", text: "Den social-institutionelle dimension" },
+      ],
+      correctOptionId: "a",
+      explanation:
+        "Den mytisk-fortællende dimension handler om religionens fortællinger — skabelse, Jesu liv, opstandelsen osv. Juleevangeliet er en klassisk fortælling fra denne dimension.",
+    },
+    {
+      id: "q8",
+      prompt: "Treenighedslæren — at Gud er én i tre personer — er et eksempel på hvilken dimension?",
+      options: [
+        { id: "a", text: "Den rituelle dimension" },
+        { id: "b", text: "Den doktrinære (filosofiske) dimension" },
+        { id: "c", text: "Den materielle dimension" },
+        { id: "d", text: "Den erfaringsmæssige dimension" },
+      ],
+      correctOptionId: "b",
+      explanation:
+        "Trosbekendelser, dogmer og læresætninger som treenigheden hører til den doktrinære dimension — religionens tankegods og lære.",
+    },
+    {
+      id: "q9",
+      prompt: "Jesu bud om at elske sin næste som sig selv hører bedst hjemme i hvilken dimension?",
+      options: [
+        { id: "a", text: "Den mytiske dimension" },
+        { id: "b", text: "Den rituelle dimension" },
+        { id: "c", text: "Den etiske dimension" },
+        { id: "d", text: "Den materielle dimension" },
+      ],
+      correctOptionId: "c",
+      explanation:
+        "Næstekærlighedsbudet er en regel for, hvordan man bør handle. Den etiske dimension handler netop om religionens leveregler og moral.",
+    },
+    {
+      id: "q10",
+      prompt: "En pinsekristen taler i tunger og oplever Helligånden meget personligt under en gudstjeneste. Hvilken dimension passer bedst?",
+      options: [
+        { id: "a", text: "Den erfaringsmæssige (emotionelle) dimension" },
+        { id: "b", text: "Den doktrinære dimension" },
+        { id: "c", text: "Den etiske dimension" },
+        { id: "d", text: "Den social-institutionelle dimension" },
+      ],
+      correctOptionId: "a",
+      explanation:
+        "Intense religiøse oplevelser — omvendelse, tungetale, mystik — hører til den erfaringsmæssige/emotionelle dimension.",
+    },
+    {
+      id: "q11",
+      prompt: "Folkekirken har biskopper, sogne, præster og menighedsråd. Det er et eksempel på hvilken dimension?",
+      options: [
+        { id: "a", text: "Den materielle dimension" },
+        { id: "b", text: "Den mytiske dimension" },
+        { id: "c", text: "Den social-institutionelle dimension" },
+        { id: "d", text: "Den etiske dimension" },
+      ],
+      correctOptionId: "c",
+      explanation:
+        "Hvordan en religion er organiseret — kirker, embeder, ordener — hører til den social-institutionelle dimension.",
+    },
+    {
+      id: "q12",
+      prompt: "En gotisk katedral med glasmosaikker, alterkrucifiks og orgel viser tydeligst hvilken af Smarts dimensioner?",
+      options: [
+        { id: "a", text: "Den materielle dimension" },
+        { id: "b", text: "Den rituelle dimension" },
+        { id: "c", text: "Den erfaringsmæssige dimension" },
+        { id: "d", text: "Den doktrinære dimension" },
+      ],
+      correctOptionId: "a",
+      explanation:
+        "Bygninger, billeder, beklædning og musik — alt det fysiske, religionen efterlader sig — er den materielle dimension.",
     },
   ],
 };

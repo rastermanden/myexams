@@ -62,7 +62,7 @@ export const islam: Topic = {
     {
       heading: "Formuleringer der imponerer læreren",
       body:
-        "Strategiske formuleringer til mundtlig eksamen. ► 'Islams kerne er ikke primært en kristologi eller en frelseslære, men en strikt ortopraksi forankret i tawhid: Guds absolutte enhed udelukker både hypostatisk inkarnation og enhver form for shirk (associationisme), hvilket forklarer hvorfor både kristendommens treenighed og hinduismens billedrelaterede gudsforestilling teologisk afvises.' ► 'Sunni-shia-splittelsen kan ikke reduceres til en politisk konflikt om successionen efter Profeten — den er over tid blevet et fuldt udfoldet teologisk system med distinkte hermeneutikker: shiismens imamatlære indebærer en charismatisk-esoterisk autoritet (walāya), som strukturelt minder om gnostisk-platoniske emanationsmodeller, mens sunnismens ijmāʿ-tradition er konsensualistisk og rationelt-juridisk.' ► 'Sufismen er ikke en sekundær eller heterodoks tilbygning, men en internalisering af islams ortopraksi: idéen om ihsān — at tilbede Gud som om man så ham — gør den mystiske dimension til selve aksiologisk fuldendelse af shahāda, hvilket Smart ville klassificere som den erfaringsmæssige dimensions kulmination.' ► 'Den udbredte forestilling om islam som arabisk religion er en orientalistisk fejlslutning: 60 % af verdens muslimer bor i Asien-Stillehavsregionen, og den største muslimske befolkning findes i Indonesien — en empirisk realitet, der underminerer både Huntingtons civilisationsteser og essentialistiske kulturanalyser.' ► 'Sharia er ikke en monolitisk lovbog, men en metode (uṣūl al-fiqh): de fire klassiske sunni-retsskoler opererer med differentieret hierarki mellem Koranen, sunna, ijmāʿ og qiyās — hvilket gør islamisk retstænkning epistemologisk plural og åbner for ijtihād som hermeneutisk fornyelse.'",
+        "Strategiske formuleringer til mundtlig eksamen — start gerne med en kort, klar sætning, før du udfolder fagsproget. ► KORT OG KLART: 'I islam er det vigtigste, at Gud er én — det kaldes tawhid. Derfor afvises både den kristne treenighed og billeder af Gud. Tilbedelse vises mest gennem handling: de fem søjler.' ► KORT OG KLART: 'Når man bruger Ninian Smarts dimensioner på islam, falder det i øjnene, at den rituelle dimension (bøn fem gange om dagen, faste, pilgrimsfærd) fylder usædvanlig meget — religionen er først og fremmest noget, man gør.' ► 'Islams kerne er ikke primært en kristologi eller en frelseslære, men en strikt ortopraksi forankret i tawhid: Guds absolutte enhed udelukker både hypostatisk inkarnation og enhver form for shirk (associationisme), hvilket forklarer hvorfor både kristendommens treenighed og hinduismens billedrelaterede gudsforestilling teologisk afvises.' ► 'Sunni-shia-splittelsen kan ikke reduceres til en politisk konflikt om successionen efter Profeten — den er over tid blevet et fuldt udfoldet teologisk system med distinkte hermeneutikker: shiismens imamatlære indebærer en charismatisk-esoterisk autoritet (walāya), som strukturelt minder om gnostisk-platoniske emanationsmodeller, mens sunnismens ijmāʿ-tradition er konsensualistisk og rationelt-juridisk.' ► 'Sufismen er ikke en sekundær eller heterodoks tilbygning, men en internalisering af islams ortopraksi: idéen om ihsān — at tilbede Gud som om man så ham — gør den mystiske dimension til selve aksiologisk fuldendelse af shahāda, hvilket Smart ville klassificere som den erfaringsmæssige dimensions kulmination.' ► 'Den udbredte forestilling om islam som arabisk religion er en orientalistisk fejlslutning: 60 % af verdens muslimer bor i Asien-Stillehavsregionen, og den største muslimske befolkning findes i Indonesien — en empirisk realitet, der underminerer både Huntingtons civilisationsteser og essentialistiske kulturanalyser.' ► 'Sharia er ikke en monolitisk lovbog, men en metode (uṣūl al-fiqh): de fire klassiske sunni-retsskoler opererer med differentieret hierarki mellem Koranen, sunna, ijmāʿ og qiyās — hvilket gør islamisk retstænkning epistemologisk plural og åbner for ijtihād som hermeneutisk fornyelse.'",
     },
     {
       heading: "Kilder",
@@ -148,6 +148,84 @@ export const islam: Topic = {
       correctOptionId: "b",
       explanation:
         "Den kristne treenighed (Fader, Søn og Helligånd) afvises i islam, der fastholder tawhid — Guds absolutte enhed. Jesus er profet, ikke Gud.",
+    },
+    {
+      id: "q7",
+      prompt: "Fortællingen om Muhammads natterejse (al-Isrāʾ) fra Mekka til Jerusalem og videre op gennem himlene er et eksempel på hvilken af Smarts dimensioner?",
+      options: [
+        { id: "a", text: "Den etiske dimension" },
+        { id: "b", text: "Den mytisk-fortællende dimension" },
+        { id: "c", text: "Den materielle dimension" },
+        { id: "d", text: "Den social-institutionelle dimension" },
+      ],
+      correctOptionId: "b",
+      explanation:
+        "Den mytisk-fortællende dimension dækker religionens fortællinger — Muhammads liv, profeternes historier, dommedag osv. Natterejsen er en klassisk fortælling fra denne dimension.",
+    },
+    {
+      id: "q8",
+      prompt: "Tawhid — læren om Guds absolutte enhed — hører til hvilken dimension?",
+      options: [
+        { id: "a", text: "Den rituelle dimension" },
+        { id: "b", text: "Den materielle dimension" },
+        { id: "c", text: "Den doktrinære dimension" },
+        { id: "d", text: "Den erfaringsmæssige dimension" },
+      ],
+      correctOptionId: "c",
+      explanation:
+        "Tawhid er en læresætning om, hvem Gud er. Læresætninger og dogmer hører til den doktrinære (filosofiske) dimension.",
+    },
+    {
+      id: "q9",
+      prompt: "Reglerne om halal og haram — hvilken mad og handling der er tilladt eller forbudt — hører til hvilken dimension?",
+      options: [
+        { id: "a", text: "Den etisk-juridiske dimension" },
+        { id: "b", text: "Den mytiske dimension" },
+        { id: "c", text: "Den erfaringsmæssige dimension" },
+        { id: "d", text: "Den materielle dimension" },
+      ],
+      correctOptionId: "a",
+      explanation:
+        "Regler for, hvad man må og ikke må — halal/haram, sharia, almisser, familieliv — er den etisk-juridiske dimension.",
+    },
+    {
+      id: "q10",
+      prompt: "En muslim beder de fem daglige bønner (salāt) vendt mod Mekka. Hvilken dimension er det først og fremmest?",
+      options: [
+        { id: "a", text: "Den doktrinære dimension" },
+        { id: "b", text: "Den rituelle dimension" },
+        { id: "c", text: "Den etiske dimension" },
+        { id: "d", text: "Den materielle dimension" },
+      ],
+      correctOptionId: "b",
+      explanation:
+        "Bønnen er en konkret, gentagen handling — det er kernen i den rituelle (praktiske) dimension.",
+    },
+    {
+      id: "q11",
+      prompt: "Ummaen — det globale muslimske fællesskab på tværs af lande — hører til hvilken dimension?",
+      options: [
+        { id: "a", text: "Den mytiske dimension" },
+        { id: "b", text: "Den materielle dimension" },
+        { id: "c", text: "Den social-institutionelle dimension" },
+        { id: "d", text: "Den etiske dimension" },
+      ],
+      correctOptionId: "c",
+      explanation:
+        "Hvordan religionen er organiseret og hvilke fællesskaber den danner — moskéer, ulema, sufiordener, ummaen — er den social-institutionelle dimension.",
+    },
+    {
+      id: "q12",
+      prompt: "En moské med kuppel, minaret og smuk arabisk kalligrafi i stedet for billeder af mennesker viser tydeligst hvilken dimension?",
+      options: [
+        { id: "a", text: "Den materielle dimension" },
+        { id: "b", text: "Den doktrinære dimension" },
+        { id: "c", text: "Den etiske dimension" },
+        { id: "d", text: "Den mytiske dimension" },
+      ],
+      correctOptionId: "a",
+      explanation:
+        "Bygninger, kunst, klædedragt og kalligrafi er den materielle dimension. Forbuddet mod figurative billeder af Gud og Muhammad er grunden til, at islamisk kunst er så stærk i kalligrafi og geometri.",
     },
   ],
 };
