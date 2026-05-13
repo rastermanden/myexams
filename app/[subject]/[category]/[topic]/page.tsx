@@ -11,6 +11,7 @@ import MaalOgEnhederDemo from "@/components/MaalOgEnhederDemo";
 import ProbabilityFromScratchDemo from "@/components/ProbabilityFromScratchDemo";
 import RisikoforholdDemo from "@/components/RisikoforholdDemo";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import SaveToDesktopButton from "@/components/SaveToDesktopButton";
 
 const TOPIC_DEMO_COMPONENTS: Record<string, ComponentType> = {
   "equation-solver": EquationSolverDemo,
@@ -76,6 +77,12 @@ export default async function TopicPage({
       ))}
 
       {TopicDemo && <TopicDemo />}
+
+      <SaveToDesktopButton
+        topic={topic}
+        subjectTitle={subject.title}
+        categoryTitle={category.title}
+      />
 
       <div className="mt-12 rounded-2xl border border-zinc-200 bg-white p-6 text-center dark:border-zinc-800 dark:bg-zinc-900">
         <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-50">
