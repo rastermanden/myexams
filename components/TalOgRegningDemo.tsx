@@ -9,7 +9,7 @@ import {
   generateTalOgRegningExercise,
 } from "@/lib/talOgRegningExercises";
 
-const TARGET_TASKS_PER_SUBTOPIC = 8;
+const TARGET_TASKS_PER_SUBTOPIC = 8; // Issuekrav: mindst 8–10 opgaver pr. underemne.
 
 const SUBTOPIC_META: Record<SubtopicSlug, { title: string; description: string }> = {
   "naturtal-heltal-decimaltal": {

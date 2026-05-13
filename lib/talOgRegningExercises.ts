@@ -44,6 +44,12 @@ export const SUBTOPIC_ORDER: SubtopicSlug[] = [
   "talsystemer",
 ];
 
+const DIFFICULTY_SCALES: Record<DifficultyLevel, number> = {
+  1: 10,
+  2: 100,
+  3: 1000,
+};
+
 function nextExerciseId(prefix: string): string {
   return `${prefix}-${crypto.randomUUID()}`;
 }
@@ -193,7 +199,7 @@ function makeOptions(correct: string, alternatives: string[]): string[] {
 }
 
 function naturtalExercise(difficulty: DifficultyLevel, format: AnswerFormat): GeneratedExercise {
-  const scale = difficulty === 1 ? 10 : difficulty === 2 ? 100 : 1000;
+  const scale = DIFFICULTY_SCALES[difficulty];
   const randomNumerator = randomInt(1, scale);
   const denominator = choice([2, 4, 5, 8, 10]);
   const fraction = simplifyFraction({ numerator: randomNumerator, denominator });
