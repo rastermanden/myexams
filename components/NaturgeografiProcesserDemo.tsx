@@ -36,13 +36,34 @@ export default function NaturgeografiProcesserDemo() {
               className="animate-ping fill-amber-500"
               aria-label="Markør for aflejring"
             />
-            <text x="70" y="30" fontSize="14" fill="currentColor" className="text-zinc-700 dark:text-zinc-200">
+            <text
+              x="70"
+              y="30"
+              fontSize="14"
+              fill="currentColor"
+              className="text-zinc-700 dark:text-zinc-200"
+              aria-hidden="true"
+            >
               Isbevægelse
             </text>
-            <text x="330" y="140" fontSize="14" fill="currentColor" className="text-zinc-700 dark:text-zinc-200">
+            <text
+              x="330"
+              y="140"
+              fontSize="14"
+              fill="currentColor"
+              className="text-zinc-700 dark:text-zinc-200"
+              aria-hidden="true"
+            >
               Smeltevand
             </text>
-            <text x="470" y="210" fontSize="14" fill="currentColor" className="text-zinc-700 dark:text-zinc-200">
+            <text
+              x="470"
+              y="210"
+              fontSize="14"
+              fill="currentColor"
+              className="text-zinc-700 dark:text-zinc-200"
+              aria-hidden="true"
+            >
               Aflejring
             </text>
           </svg>
