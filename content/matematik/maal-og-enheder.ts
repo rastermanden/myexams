@@ -84,7 +84,7 @@ export const maalOgEnheder: Topic = {
       ],
       correctOptionId: "b",
       explanation:
-        "2 × 50.000 cm = 100.000 cm = 1.000 m (eller 1 km).",
+        "2 × 50.000 cm = 100.000 cm = 1.000 m, som er det samme som 1 km.",
     },
     {
       id: "q6",

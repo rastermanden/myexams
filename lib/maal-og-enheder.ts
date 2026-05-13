@@ -47,6 +47,9 @@ export const UNIT_DEFINITIONS: Record<UnitCategory, UnitDefinition[]> = {
     { id: "kg", label: "kg", toBaseFactor: 1000, metric: true },
     { id: "t", label: "t", toBaseFactor: 1e6, metric: true },
   ],
+  /**
+   * Tid bruger sekund som baseenhed. År er forenklet til 365 døgn af didaktiske grunde.
+   */
   tid: [
     { id: "s", label: "sekund", toBaseFactor: 1, metric: true },
     { id: "min", label: "minut", toBaseFactor: 60, metric: true },
