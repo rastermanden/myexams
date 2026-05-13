@@ -44,6 +44,13 @@ export const SUBTOPIC_ORDER: SubtopicSlug[] = [
   "talsystemer",
 ];
 
+let exerciseCounter = 0;
+
+function nextExerciseId(prefix: string): string {
+  exerciseCounter += 1;
+  return `${prefix}-${exerciseCounter}`;
+}
+
 function randomInt(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -200,7 +207,7 @@ function naturtalExercise(difficulty: DifficultyLevel, format: AnswerFormat): Ge
   ];
 
   return {
-    id: `naturtal-${Date.now()}`,
+    id: nextExerciseId("naturtal"),
     subtopic: "naturtal-heltal-decimaltal",
     prompt: `Hvad er ${fraction.numerator}/${fraction.denominator} skrevet som ${
       format === "fraction" ? "forkortet brøk" : format === "decimal" ? "decimaltal" : "procent"
@@ -239,7 +246,7 @@ function fractionExercise(difficulty: DifficultyLevel, format: AnswerFormat): Ge
   ];
 
   return {
-    id: `broeker-${Date.now()}`,
+    id: nextExerciseId("broeker"),
     subtopic: "broeker",
     prompt: `Beregn: ${a.numerator}/${a.denominator} ${operation} ${b.numerator}/${b.denominator}`,
     options: makeOptions(correct, alternatives),
@@ -274,7 +281,7 @@ function percentExercise(difficulty: DifficultyLevel, format: AnswerFormat): Gen
   const correct = asDisplayValue(resultFraction, format);
 
   return {
-    id: `procent-${Date.now()}`,
+    id: nextExerciseId("procent"),
     subtopic: "procentregning",
     prompt:
       mode === "of"
@@ -311,7 +318,7 @@ function negativeExercise(difficulty: DifficultyLevel): GeneratedExercise {
   const correct = String(result);
 
   return {
-    id: `negative-${Date.now()}`,
+    id: nextExerciseId("negative"),
     subtopic: "negative-tal",
     prompt: `Beregn: ${a} ${op} (${b})`,
     options: makeOptions(correct, [String(result + 2), String(result - 2), String(-result)]),
@@ -335,7 +342,7 @@ function hierarchyExercise(difficulty: DifficultyLevel): GeneratedExercise {
   const result = evaluateOrderExpression(a, b, c, d);
 
   return {
-    id: `hierarki-${Date.now()}`,
+    id: nextExerciseId("hierarki"),
     subtopic: "regnehierarki",
     prompt: `Beregn: ${a} + ${b} × ${c} - ${d}`,
     options: makeOptions(String(result), [String((a + b) * c - d), String(a + b * (c - d)), String(a + b + c - d)]),
@@ -351,7 +358,7 @@ function powersExercise(difficulty: DifficultyLevel): GeneratedExercise {
   const result = base ** exponent;
 
   return {
-    id: `potens-${Date.now()}`,
+    id: nextExerciseId("potens"),
     subtopic: "potenser-og-roedder",
     prompt: exponent === 2 ? `Hvad er ${base}²?` : `Hvad er ${base}³?`,
     options: makeOptions(String(result), [String(result + base), String(result - base), String(base * exponent)]),
@@ -371,7 +378,7 @@ function primeExercise(difficulty: DifficultyLevel): GeneratedExercise {
   const correct = factors.join(" · ");
 
   return {
-    id: `primtal-${Date.now()}`,
+    id: nextExerciseId("primtal"),
     subtopic: "primtal-faktorisering-divisorer",
     prompt: `Primtalsfaktorisér tallet ${n}.`,
     options: makeOptions(correct, [
@@ -391,7 +398,7 @@ function numberSystemsExercise(difficulty: DifficultyLevel): GeneratedExercise {
   const correct = toBinary(value);
 
   return {
-    id: `talsystem-${Date.now()}`,
+    id: nextExerciseId("talsystem"),
     subtopic: "talsystemer",
     prompt: `Skriv ${value} (10-talssystem) i binær.`,
     options: makeOptions(correct, [
