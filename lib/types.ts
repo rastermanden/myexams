@@ -32,6 +32,7 @@ export type Topic = {
   title: string;
   summary: string;
   hero?: ImageRef;
+  demoKey?: "linear-regression";
   sections: ConceptSection[];
   quiz: QuizQuestion[];
 };

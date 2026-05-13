@@ -5,6 +5,7 @@ export const lineaerRegression: Topic = {
   title: "Lineær regression",
   summary:
     "Forstå sammenhængen mellem datapunkter og linjen y = m·x + b med en interaktiv visualisering.",
+  demoKey: "linear-regression",
   sections: [
     {
       heading: "Hvad er lineær regression?",
