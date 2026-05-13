@@ -1,4 +1,5 @@
 import type { Subject } from "@/lib/types";
+import { naturgeografi } from "./categories/naturgeografi";
 import { regioner } from "./categories/regioner";
 import { demografi } from "./categories/demografi";
 
@@ -8,5 +9,5 @@ export const geografi: Subject = {
   emoji: "🌍",
   description:
     "Naturgeografi og kulturgeografi til gymnasieniveau — regionale studier, klima, pladetektonik, demografi og geopolitik.",
-  categories: [regioner, demografi],
+  categories: [naturgeografi, regioner, demografi],
 };
