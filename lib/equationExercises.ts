@@ -58,7 +58,11 @@ function formatLinear(coeff: number, constant: number): string {
 }
 
 function createShuffledActions(correct: ExerciseAction, wrong: ExerciseAction[]) {
-  return shuffle([correct, ...wrong]).slice(0, MAX_ACTION_CHOICES);
+  const shuffledWrong = shuffle(wrong).slice(0, Math.max(MAX_ACTION_CHOICES - 1, 0));
+  const insertIndex = randomInt(0, shuffledWrong.length);
+  const result = [...shuffledWrong];
+  result.splice(insertIndex, 0, correct);
+  return result;
 }
 
 function level1Exercise(): EquationExercise {
@@ -405,7 +409,6 @@ export function generateEquationExercise(level: DifficultyLevel): EquationExerci
     case 4:
       return level4Exercise();
     case 5:
-    default:
       return level5Exercise();
   }
 }

@@ -58,7 +58,7 @@ export default function EquationSolverDemo() {
         Interaktiv demo: ligninger og isolering af x
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">
-        Træn reglen <strong>{'"gør det samme på begge sider af lighedstegnet"'}</strong> med
+        Træn reglen <strong>&quot;gør det samme på begge sider af lighedstegnet&quot;</strong> med
         trinvise ligninger.
       </p>
 
