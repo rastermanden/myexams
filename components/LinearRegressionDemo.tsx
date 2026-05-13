@@ -11,6 +11,11 @@ const MAX_Y = 15;
 const SVG_WIDTH = 640;
 const SVG_HEIGHT = 360;
 const SVG_MARGIN = 36;
+const RANDOM_SLOPE_MIN = 0.3;
+const RANDOM_SLOPE_RANGE = 2;
+const RANDOM_INTERCEPT_MIN = 1;
+const RANDOM_INTERCEPT_RANGE = 5;
+const NOISE_AMPLITUDE = 2.5;
 
 const INITIAL_POINTS: Point[] = [
   { x: 1, y: 2.1 },
@@ -23,12 +28,13 @@ const INITIAL_POINTS: Point[] = [
 ];
 
 function randomPoints(): Point[] {
-  const targetSlope = Math.random() * 2 + 0.3;
-  const targetIntercept = Math.random() * 5 + 1;
+  const targetSlope = Math.random() * RANDOM_SLOPE_RANGE + RANDOM_SLOPE_MIN;
+  const targetIntercept =
+    Math.random() * RANDOM_INTERCEPT_RANGE + RANDOM_INTERCEPT_MIN;
   const pointCount = 8;
   return Array.from({ length: pointCount }, (_, i) => {
     const x = MIN_X + (i / (pointCount - 1)) * (MAX_X - MIN_X);
-    const noise = (Math.random() - 0.5) * 2.5;
+    const noise = (Math.random() - 0.5) * NOISE_AMPLITUDE;
     const y = targetSlope * x + targetIntercept + noise;
     return {
       x,
