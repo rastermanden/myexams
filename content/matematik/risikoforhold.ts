@@ -1,11 +1,12 @@
 import type { Topic } from "@/lib/types";
+import RisikoforholdDemo from "@/components/RisikoforholdDemo";
 
 export const risikoforhold: Topic = {
   slug: "risikoforhold",
   title: "Risikoforhold",
   summary:
     "Beregn og fortolk risikoforhold (relativ risiko) fra en 2×2 krydstabel med en interaktiv demo.",
-  demoKey: "risikoforhold",
+  demoComponent: RisikoforholdDemo,
   sections: [
     {
       heading: "Hvad er et risikoforhold?",

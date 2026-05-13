@@ -1,11 +1,12 @@
 import type { Topic } from "@/lib/types";
+import TrigonometriDemo from "@/components/TrigonometriDemo";
 
 export const trigonometri: Topic = {
   slug: "trigonometri-fra-retvinklet-til-generel",
   title: "Trigonometri",
   summary:
     "Fra retvinklede trekanter til enhedscirkel, sinus- og cosinusrelation samt trigonometriske funktioner og ligninger.",
-  demoKey: "trigonometri",
+  demoComponent: TrigonometriDemo,
   sections: [
     {
       heading: "sin, cos og tan i retvinklede trekanter",

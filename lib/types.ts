@@ -32,7 +32,7 @@ export type Topic = {
   title: string;
   summary: string;
   hero?: ImageRef;
-  demoKey?: string;
+  demoComponent?: import("react").ComponentType;
   sections: ConceptSection[];
   quiz: QuizQuestion[];
 };

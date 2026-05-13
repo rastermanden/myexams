@@ -1,11 +1,12 @@
 import type { Topic } from "@/lib/types";
+import TalOgRegningDemo from "@/components/TalOgRegningDemo";
 
 export const talOgRegningFraBunden: Topic = {
   slug: "tal-og-regning-fra-bunden",
   title: "Tal og regning fra bunden",
   summary:
     "Grundlæggende talforståelse med interaktive øvelser i naturlige tal, brøker, procent, regnehierarki og mere.",
-  demoKey: "tal-og-regning-basics",
+  demoComponent: TalOgRegningDemo,
   sections: [
     {
       heading: "Naturlige tal, hele tal og decimaltal",

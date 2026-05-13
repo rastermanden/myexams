@@ -1,11 +1,12 @@
 import type { Topic } from "@/lib/types";
+import LinearRegressionDemo from "@/components/LinearRegressionDemo";
 
 export const lineaerRegression: Topic = {
   slug: "lineaer-regression",
   title: "Lineær regression",
   summary:
     "Forstå sammenhængen mellem datapunkter og linjen y = m·x + b med en interaktiv visualisering.",
-  demoKey: "linear-regression",
+  demoComponent: LinearRegressionDemo,
   sections: [
     {
       heading: "Hvad er lineær regression?",
