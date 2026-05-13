@@ -7,12 +7,14 @@ import GeometriDemo from "@/components/GeometriDemo";
 import ImageWithCredit from "@/components/ImageWithCredit";
 import LinearRegressionDemo from "@/components/LinearRegressionDemo";
 import ProbabilityFromScratchDemo from "@/components/ProbabilityFromScratchDemo";
+import RisikoforholdDemo from "@/components/RisikoforholdDemo";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 const TOPIC_DEMO_COMPONENTS: Record<string, ComponentType> = {
   geometri: GeometriDemo,
   "linear-regression": LinearRegressionDemo,
   "probability-from-scratch": ProbabilityFromScratchDemo,
+  risikoforhold: RisikoforholdDemo,
 };
 
 export function generateStaticParams() {
