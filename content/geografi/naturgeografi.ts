@@ -65,7 +65,6 @@ export const gletsjere: Topic = {
   title: "Gletsjere",
   summary:
     "Opbygning, bevægelse og afsmeltning af gletsjere samt deres betydning for havniveau og landskab.",
-  demoKey: "naturgeografi-processer",
   hero: {
     url: "https://commons.wikimedia.org/wiki/Special:FilePath/Muir_Glacier.jpg?width=1200",
     alt: "Stor dalgletsjer med isfront",
@@ -132,7 +131,6 @@ export const floderOgVandloeb: Topic = {
   title: "Floder og vandløb",
   summary:
     "Erosion, transport og aflejring i flodsystemer fra kildeområder til delta og kyst.",
-  demoKey: "naturgeografi-processer",
   sections: [
     {
       heading: "Tre nøgleprocesser",
