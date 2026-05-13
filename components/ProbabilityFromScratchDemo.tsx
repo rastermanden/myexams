@@ -159,7 +159,7 @@ const LESSON_STEPS: LessonStep[] = [
 ];
 
 function toDecimal({ numerator, denominator }: Fraction): string {
-  return (numerator / denominator).toFixed(3).replace(/\.0+$/, "").replace(/(\.[0-9]*[1-9])0+$/, "$1");
+  return Number((numerator / denominator).toFixed(3)).toString();
 }
 
 function toPercent({ numerator, denominator }: Fraction): string {
@@ -440,7 +440,10 @@ export default function ProbabilityFromScratchDemo() {
                 className="rounded-lg border border-zinc-300 px-3 py-2 text-left text-sm dark:border-zinc-700"
               >
                 Møntkast →{" "}
-                <span key={`coin-${coinAnimationTick}`} className="inline-block animate-spin">
+                <span
+                  key={`coin-${coinAnimationTick}`}
+                  className="inline-block animate-spin motion-reduce:animate-none"
+                >
                   {coinResult}
                 </span>
               </button>
@@ -450,7 +453,10 @@ export default function ProbabilityFromScratchDemo() {
                 className="rounded-lg border border-zinc-300 px-3 py-2 text-left text-sm dark:border-zinc-700"
               >
                 Terningekast →{" "}
-                <span key={`die-${dieAnimationTick}`} className="inline-block animate-bounce">
+                <span
+                  key={`die-${dieAnimationTick}`}
+                  className="inline-block animate-bounce motion-reduce:animate-none"
+                >
                   {dieResult ?? "—"}
                 </span>
               </button>
@@ -460,7 +466,10 @@ export default function ProbabilityFromScratchDemo() {
                 className="rounded-lg border border-zinc-300 px-3 py-2 text-left text-sm dark:border-zinc-700"
               >
                 Træk kugle fra pose (3 røde, 2 blå) →{" "}
-                <span key={`draw-${drawAnimationTick}`} className="animate-pulse font-medium">
+                <span
+                  key={`draw-${drawAnimationTick}`}
+                  className="animate-pulse font-medium motion-reduce:animate-none"
+                >
                   {drawResult}
                 </span>
               </button>
