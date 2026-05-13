@@ -8,7 +8,7 @@ Built with [Next.js](https://nextjs.org) (App Router, static export) and Tailwin
 
 - **Geografi** — Naturgeografi & kulturgeografi. Topics: **Afrikas Horn** og **Australien**.
 - **Dansk litteratur** — Kommer snart.
-- **Matematik** — Kommer snart.
+- **Matematik** — Emner: **Lineær regression**, **Regneregler for brøker** og **Mål og enheder**.
 
 Each topic explains its key concepts and ends with a multiple-choice quiz with explanations and a best-score tracker.
 

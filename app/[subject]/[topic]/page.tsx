@@ -5,9 +5,11 @@ import { getAllSubjects, getTopic } from "@/content";
 import ConceptSection from "@/components/ConceptSection";
 import ImageWithCredit from "@/components/ImageWithCredit";
 import LinearRegressionDemo from "@/components/LinearRegressionDemo";
+import MaalOgEnhederDemo from "@/components/MaalOgEnhederDemo";
 
 const TOPIC_DEMO_COMPONENTS: Record<string, ComponentType> = {
   "linear-regression": LinearRegressionDemo,
+  "maal-og-enheder": MaalOgEnhederDemo,
 };
 
 export function generateStaticParams() {
