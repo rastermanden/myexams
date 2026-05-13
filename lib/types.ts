@@ -39,10 +39,18 @@ export type Topic = {
 
 export type SubjectSlug = "geografi" | "dansk" | "matematik";
 
+export type Category = {
+  slug: string;
+  title: string;
+  summary: string;
+  emoji?: string;
+  topics: Topic[];
+};
+
 export type Subject = {
   slug: SubjectSlug;
   title: string;
   emoji: string;
   description: string;
-  topics: Topic[];
+  categories: Category[];
 };
