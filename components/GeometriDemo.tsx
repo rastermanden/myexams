@@ -552,7 +552,7 @@ export default function GeometriDemo() {
 
           <div className="mt-4 space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
             <p>
-              |A| = {formatNumber(lengthA)} · |B| = {formatNumber(lengthB)}
+              |A| = {formatNumber(lengthA)}, |B| = {formatNumber(lengthB)}
             </p>
             <p>
               A + B = ({sumVector.x}, {sumVector.y}, {sumVector.z})
