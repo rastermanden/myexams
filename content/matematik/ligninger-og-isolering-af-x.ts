@@ -1,11 +1,12 @@
 import type { Topic } from "@/lib/types";
+import EquationSolverDemo from "@/components/EquationSolverDemo";
 
 export const ligningerOgIsoleringAfX: Topic = {
   slug: "ligninger-og-isolering-af-x",
   title: "Ligninger og isolering af x",
   summary:
     "Lær at løse simple og mere komplekse ligninger trin for trin ved at bruge de grundlæggende regneregler på begge sider af lighedstegnet.",
-  demoKey: "equation-solver",
+  demoComponent: EquationSolverDemo,
   sections: [
     {
       heading: "Kerneidé: balance i en ligning",

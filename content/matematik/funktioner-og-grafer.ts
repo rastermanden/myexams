@@ -1,11 +1,12 @@
 import type { Topic } from "@/lib/types";
+import FunktionerDemo from "@/components/FunktionerDemo";
 
 export const funktionerOgGrafer: Topic = {
   slug: "funktioner-og-grafer",
   title: "Funktioner og grafer",
   summary:
     "Få styr på funktionsbegrebet, aflæsning i koordinatsystemet og de vigtigste funktionstyper med en interaktiv grafdemo.",
-  demoKey: "funktioner",
+  demoComponent: FunktionerDemo,
   sections: [
     {
       heading: "Funktionsbegrebet",

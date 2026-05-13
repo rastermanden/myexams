@@ -1,34 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import type { ComponentType } from "react";
 import { getAllSubjects, getTopic } from "@/content";
 import ConceptSection from "@/components/ConceptSection";
-import DemografiDemo from "@/components/DemografiDemo";
-import EquationSolverDemo from "@/components/EquationSolverDemo";
-import FunktionerDemo from "@/components/FunktionerDemo";
-import GeometriDemo from "@/components/GeometriDemo";
 import ImageWithCredit from "@/components/ImageWithCredit";
-import LinearRegressionDemo from "@/components/LinearRegressionDemo";
-import MaalOgEnhederDemo from "@/components/MaalOgEnhederDemo";
-import ProbabilityFromScratchDemo from "@/components/ProbabilityFromScratchDemo";
-import RisikoforholdDemo from "@/components/RisikoforholdDemo";
-import TalOgRegningDemo from "@/components/TalOgRegningDemo";
-import TrigonometriDemo from "@/components/TrigonometriDemo";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SaveToDesktopButton from "@/components/SaveToDesktopButton";
-
-const TOPIC_DEMO_COMPONENTS: Record<string, ComponentType> = {
-  demografi: DemografiDemo,
-  "equation-solver": EquationSolverDemo,
-  funktioner: FunktionerDemo,
-  geometri: GeometriDemo,
-  "linear-regression": LinearRegressionDemo,
-  "maal-og-enheder": MaalOgEnhederDemo,
-  "probability-from-scratch": ProbabilityFromScratchDemo,
-  risikoforhold: RisikoforholdDemo,
-  "tal-og-regning-basics": TalOgRegningDemo,
-  trigonometri: TrigonometriDemo,
-};
 
 export function generateStaticParams() {
   const params: { subject: string; category: string; topic: string }[] = [];
@@ -51,7 +27,7 @@ export default async function TopicPage({
   const result = getTopic(subjectSlug, categorySlug, topicSlug);
   if (!result) notFound();
   const { subject, category, topic } = result;
-  const TopicDemo = topic.demoKey ? TOPIC_DEMO_COMPONENTS[topic.demoKey] : undefined;
+  const TopicDemo = topic.demoComponent;
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">

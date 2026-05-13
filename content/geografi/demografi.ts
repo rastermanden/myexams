@@ -1,11 +1,12 @@
 import type { Topic } from "@/lib/types";
+import DemografiDemo from "@/components/DemografiDemo";
 
 export const demografi: Topic = {
   slug: "demografi",
   title: "Demografi",
   summary:
     "Befolkningsudvikling, migration og urbanisering fra folkeskole til gymnasium — med interaktiv befolkningspyramide, tidslinje og landesammenligning.",
-  demoKey: "demografi",
+  demoComponent: DemografiDemo,
   sections: [
     {
       heading: "Befolkningstal og vækst",

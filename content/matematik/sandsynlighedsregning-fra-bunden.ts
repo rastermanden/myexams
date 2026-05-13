@@ -1,11 +1,12 @@
 import type { Topic } from "@/lib/types";
+import ProbabilityFromScratchDemo from "@/components/ProbabilityFromScratchDemo";
 
 export const sandsynlighedsregningFraBunden: Topic = {
   slug: "sandsynlighedsregning-fra-bunden",
   title: "Sandsynlighedsregning fra bunden",
   summary:
     "Lær sandsynlighed trin for trin med en langsom start, mange små opgaver og interaktive eksperimenter.",
-  demoKey: "probability-from-scratch",
+  demoComponent: ProbabilityFromScratchDemo,
   sections: [
     {
       heading: "Trin 1 — Intuition: hvad er sandsynlighed?",

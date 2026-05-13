@@ -1,11 +1,12 @@
 import type { Topic } from "@/lib/types";
+import MaalOgEnhederDemo from "@/components/MaalOgEnhederDemo";
 
 export const maalOgEnheder: Topic = {
   slug: "maal-og-enheder",
   title: "Mål og enheder",
   summary:
     "Lær længde, areal, rumfang, masse, tid, hastighed, temperatur og målestoksforhold med omregningstræning.",
-  demoKey: "maal-og-enheder",
+  demoComponent: MaalOgEnhederDemo,
   sections: [
     {
       heading: "Overblik over enheder",

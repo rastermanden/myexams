@@ -1,11 +1,12 @@
 import type { Topic } from "@/lib/types";
+import GeometriDemo from "@/components/GeometriDemo";
 
 export const geometri: Topic = {
   slug: "geometri",
   title: "Geometri",
   summary:
     "Plangeometri, rumgeometri og vektorer fra folkeskole til gymnasium med interaktive øvelser.",
-  demoKey: "geometri",
+  demoComponent: GeometriDemo,
   sections: [
     {
       heading: "Vinkler, trekanter og Pythagoras",
