@@ -52,7 +52,7 @@ export const UNIT_DEFINITIONS: Record<UnitCategory, UnitDefinition[]> = {
     { id: "min", label: "minut", toBaseFactor: 60, metric: true },
     { id: "h", label: "time", toBaseFactor: 3600, metric: true },
     { id: "doegn", label: "døgn", toBaseFactor: 86400, metric: true },
-    // Standardår på 365 døgn (skudår ignoreres), så opgaverne matcher skolekontekst.
+    // Standardår på 365 døgn × 86.400 sekunder (skudår ignoreres).
     { id: "aar", label: "år", toBaseFactor: 31536000, metric: true },
   ],
   hastighed: [
