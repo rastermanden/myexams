@@ -27,6 +27,11 @@ export type QuizQuestion = {
   explanation: string;
 };
 
+export type AudioPrompt = {
+  intro: string;
+  prompt: string;
+};
+
 export type Topic = {
   slug: string;
   title: string;
@@ -34,6 +39,7 @@ export type Topic = {
   hero?: ImageRef;
   demoComponent?: import("react").ComponentType;
   sections: ConceptSection[];
+  audioPrompt?: AudioPrompt;
   quiz: QuizQuestion[];
 };
 

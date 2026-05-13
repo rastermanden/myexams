@@ -75,6 +75,24 @@ export const buddhisme: Topic = {
         "Pew Research Center: Buddhists, Global Religious Landscape (2012, opdateringer 2022). Harvey, Peter: An Introduction to Buddhism. Den Store Danske: 'Buddhisme'. Smart, Ninian: The World's Religions.",
     },
   ],
+  audioPrompt: {
+    intro:
+      "Fokus: De Fire Ædle Sandheder, Den Ottefoldige Vej, anicca/dukkha/anatta, karma og samsara, theravada/mahayana/vajrayana, mindfulness i Danmark og Smarts dimensioner.",
+    prompt: `Lav en audio-overview på dansk til en gymnasieelev (STX-religion) som forberedelse til mundtlig eksamen om buddhismen. Brug en samtaleform mellem to værter på 12–15 minutter, faglig men letforståelig.
+
+Behandl præcis disse punkter i denne rækkefølge:
+1) Nøglefakta: non-teistisk religion grundlagt i Nordindien/Nepal i 5.-4. årh. f.Kr. af Siddhartha Gautama (~563–483 f.Kr.), kendt som Buddha — 'den opvågnede'. ~520 mio. tilhængere (verdens fjerdestørste). Hellig skrift: Tipitaka (theravada, pali) og mahayana-sutraer.
+2) Kernelæren: De Fire Ædle Sandheder (lidelsen findes, har en årsag, kan ophøre, der findes en vej til ophør) og Den Ottefoldige Vej (rette syn, hensigt, tale, handling, levevis, anstrengelse, opmærksomhed, koncentration). De tre kendetegn ved tilværelsen: anicca (forgængelighed), dukkha (lidelse), anatta (ikke-selv).
+3) Karma og samsara er fælles arvegods fra indisk tankegods — målet er nirvana (slukning af begær, had og uvidenhed; udgang af genfødslens kredsløb). Karma drives af cetanā (hensigt) — det er en intentionalitetsetik, ikke en mekanisk gengældelse.
+4) Retninger: theravada ('de ældstes lære' — Sri Lanka, Myanmar, Thailand, Laos, Cambodja, arhat-idealet og vipassana). Mahayana (Kina, Korea, Japan, Vietnam, bodhisattva-idealet — inkluderer Rent Land, zen/chan og Nichiren). Vajrayana ('diamantfartøjet' — Tibet, Bhutan, Mongoliet, ritualer, mantraer, mandalaer, lærer-discipel-relationer, Dalai Lama).
+5) Geografi: ~99 % af buddhister bor i Asien-Stillehavsregionen. Største: Kina (~245 mio.), Thailand (~65 mio.), Japan (~45 mio.), Myanmar (~38 mio.). Indien — buddhismens oprindelsessted — har i dag kun ~0,7 % buddhister.
+6) Buddhisme i Danmark: ~20.000-25.000 buddhister, både asiatisk diaspora og dansk-konverteret. Tibetansk vajrayana via Karma Kagyu Buddhist Centre. Zen, theravada og vipassana repræsenteret. Mindfulness (Jon Kabat-Zinn, MBCT) er udbredt i skoler og sundhedsvæsen — diskutér om mindfulness er religiøst eller sekulært. Dalai Lamas Danmarks-besøg har udløst kinesiske protester.
+7) Ligheder og forskelle: deler karma, samsara, dharma og meditation med hinduismen, men afviser de evige Vedaer, kasteordenen og atman-læren. Kontrast til de abrahamitiske religioner: non-teistisk (ingen skabergud), cyklisk tid (ikke lineær), frelsen er indsigt (prajna) — ikke nåde eller åbenbaring.
+8) Ninian Smarts syv dimensioner anvendt på buddhismen — udfold alle syv med konkrete eksempler (Buddhas livshistorie og de fire syn = mytisk-fortællende, De Fire Ædle Sandheder, anatta og Nagarjunas tomhed = doktrinær, de fem leveregler og vinaya = etisk, meditation/vipassana/zazen = rituel, satori og opvågnen = erfaringsmæssig, sanghaen og dalai lama-institutionen = social-institutionel, stupaer, buddha-statuer, dharmachakra, mandalaer, thangkaer = materiel).
+9) Aktuelle problemstillinger: Tibet-Kina og Dalai Lamas arvefølge, buddhistisk nationalisme og vold (Myanmar, Sri Lanka — afliv myten om buddhisme som rent pacifistisk), 'McMindfulness'-kritikken, Engaged Buddhism (Thich Nhat Hanh), kvindelige bhikkhuni-ordinationer.
+
+Tone: præcis, undgå romantisering. Forklar at non-teisme ikke er ateisme. Afslut med 3–4 spørgsmål eleven bør kunne svare på.`,
+  },
   quiz: [
     {
       id: "q1",
