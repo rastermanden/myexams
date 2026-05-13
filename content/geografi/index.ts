@@ -1,6 +1,7 @@
 import type { Subject } from "@/lib/types";
 import { afrikasHorn } from "./afrikas-horn";
 import { australien } from "./australien";
+import { pladetektonik } from "./pladetektonik";
 
 export const geografi: Subject = {
   slug: "geografi",
@@ -9,6 +10,14 @@ export const geografi: Subject = {
   description:
     "Naturgeografi og kulturgeografi til gymnasieniveau — regionale studier, klima, pladetektonik, demografi og geopolitik.",
   categories: [
+    {
+      slug: "pladetektonik",
+      title: "Pladetektonik",
+      summary:
+        "Jordens indre, pladernes bevægelser og konsekvenser som vulkaner, jordskælv og tsunamier.",
+      emoji: "🌋",
+      topics: [pladetektonik],
+    },
     {
       slug: "regioner",
       title: "Regioner",

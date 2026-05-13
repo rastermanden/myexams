@@ -7,6 +7,7 @@ Built with [Next.js](https://nextjs.org) (App Router, static export) and Tailwin
 ## Subjects
 
 - **Geografi** — Naturgeografi & kulturgeografi.
+  - **Pladetektonik**: **Pladetektonik**
   - **Regioner**: **Afrikas Horn** og **Australien**
 - **Dansk litteratur** — Kommer snart.
 - **Matematik**
