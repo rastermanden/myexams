@@ -460,7 +460,7 @@ export default function ProbabilityFromScratchDemo() {
                 className="rounded-lg border border-zinc-300 px-3 py-2 text-left text-sm dark:border-zinc-700"
               >
                 Træk kugle fra pose (3 røde, 2 blå) →{" "}
-                <span key={`draw-${drawAnimationTick}`} className="font-medium animate-pulse">
+                <span key={`draw-${drawAnimationTick}`} className="animate-pulse font-medium">
                   {drawResult}
                 </span>
               </button>
