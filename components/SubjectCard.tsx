@@ -1,8 +1,9 @@
 import Link from "next/link";
 import type { Subject } from "@/lib/types";
+import { getSubjectTopicCount } from "@/content";
 
 export default function SubjectCard({ subject }: { subject: Subject }) {
-  const topicCount = subject.topics.length;
+  const topicCount = getSubjectTopicCount(subject);
   return (
     <Link
       href={`/${subject.slug}`}

@@ -8,5 +8,20 @@ export const matematik: Subject = {
   emoji: "📐",
   description:
     "Funktioner, differential- og integralregning, statistik og sandsynlighed — kerneområder fra gymnasiet.",
-  topics: [lineaerRegression, broeker],
+  categories: [
+    {
+      slug: "statistik",
+      title: "Statistik",
+      summary: "Dataanalyse, modeller og tolkning af variation i datasæt.",
+      emoji: "📊",
+      topics: [lineaerRegression],
+    },
+    {
+      slug: "tal-og-regning",
+      title: "Tal og regning",
+      summary: "Grundlæggende talforståelse, brøker og regneregler.",
+      emoji: "➗",
+      topics: [broeker],
+    },
+  ],
 };
