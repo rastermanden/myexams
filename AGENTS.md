@@ -3,3 +3,9 @@
 
 This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
 <!-- END:nextjs-agent-rules -->
+
+## Content model and routing
+
+- Subject data uses `categories[]`, and each category contains `topics[]`.
+- Canonical topic routes are `/<subject>/<category>/<topic>` and `/<subject>/<category>/<topic>/quiz`.
+- Legacy routes `/<subject>/<topic>` and `/<subject>/<topic>/quiz` are preserved via redirects.

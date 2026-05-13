@@ -6,5 +6,5 @@ export const dansk: Subject = {
   emoji: "📚",
   description:
     "Tekstanalyse, perioder og forfatterskaber — fra oplysningstiden til moderne dansk litteratur.",
-  topics: [],
+  categories: [],
 };

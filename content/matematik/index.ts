@@ -9,5 +9,27 @@ export const matematik: Subject = {
   emoji: "📐",
   description:
     "Geometri, funktioner, differential- og integralregning, statistik og sandsynlighed — fra folkeskole til gymnasium.",
-  topics: [geometri, lineaerRegression, broeker],
+  categories: [
+    {
+      slug: "geometri",
+      title: "Geometri",
+      summary: "Plangeometri, rumgeometri og vektorer fra folkeskole til gymnasium.",
+      emoji: "📐",
+      topics: [geometri],
+    },
+    {
+      slug: "statistik",
+      title: "Statistik",
+      summary: "Dataanalyse, modeller og tolkning af variation i datasæt.",
+      emoji: "📊",
+      topics: [lineaerRegression],
+    },
+    {
+      slug: "tal-og-regning",
+      title: "Tal og regning",
+      summary: "Grundlæggende talforståelse, brøker og regneregler.",
+      emoji: "➗",
+      topics: [broeker],
+    },
+  ],
 };

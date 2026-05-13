@@ -6,9 +6,13 @@ Built with [Next.js](https://nextjs.org) (App Router, static export) and Tailwin
 
 ## Subjects
 
-- **Geografi** — Naturgeografi & kulturgeografi. Topics: **Afrikas Horn** og **Australien**.
+- **Geografi** — Naturgeografi & kulturgeografi.
+  - **Regioner**: **Afrikas Horn** og **Australien**
 - **Dansk litteratur** — Kommer snart.
-- **Matematik** — Topics: **Geometri**, **Lineær regression** og **Regneregler for brøker**.
+- **Matematik**
+  - **Geometri**: **Geometri**
+  - **Statistik**: **Lineær regression**
+  - **Tal og regning**: **Brøker**
 
 Each topic explains its key concepts and ends with a multiple-choice quiz with explanations and a best-score tracker.
 
@@ -24,8 +28,9 @@ npm run lint
 ## Adding a topic
 
 1. Create `content/<subject>/<topic-slug>.ts` exporting a `Topic` (see `lib/types.ts`).
-2. Add it to the subject's `topics: []` in `content/<subject>/index.ts`.
-3. That's it — routes and quiz pages generate automatically.
+2. Add it under a category's `topics: []` in `content/<subject>/index.ts`.
+3. Topics are generated on `/<subject>/<category>/<topic>` (and `/quiz`) automatically.
+4. Legacy links on `/<subject>/<topic>` and `/<subject>/<topic>/quiz` redirect to the new URL.
 
 Images use [Wikimedia Commons](https://commons.wikimedia.org/) via the hash-agnostic `Special:FilePath/<filename>?width=...` URL pattern.
 
