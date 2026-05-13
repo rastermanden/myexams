@@ -151,7 +151,7 @@ export default function MaalOgEnhederDemo() {
           </h3>
 
           <p className="text-sm text-zinc-700 dark:text-zinc-300">
-            Omregn <span className="font-semibold">{conversionTask.value}</span> {" "}
+            Omregn <span className="font-semibold">{conversionTask.value}</span>{" "}
             {getUnitLabel(conversionTask.category, conversionTask.fromUnitId)} til{" "}
             {getUnitLabel(conversionTask.category, conversionTask.toUnitId)}.
           </p>
