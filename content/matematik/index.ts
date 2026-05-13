@@ -5,6 +5,7 @@ import { risikoforhold } from "./risikoforhold";
 import { sandsynlighedsregningFraBunden } from "./sandsynlighedsregning-fra-bunden";
 import { broeker } from "./broeker";
 import { geometri } from "./geometri";
+import { funktionerOgGrafer } from "./funktioner-og-grafer";
 
 export const matematik: Subject = {
   slug: "matematik",
@@ -19,6 +20,14 @@ export const matematik: Subject = {
       summary: "Ligninger, variable og isolering af x med trinvis progression.",
       emoji: "🧮",
       topics: [ligningerOgIsoleringAfX],
+    },
+    {
+      slug: "funktioner",
+      title: "Funktioner",
+      summary:
+        "Funktionsbegrebet, grafer og centrale funktionstyper fra folkeskole til gymnasium.",
+      emoji: "📈",
+      topics: [funktionerOgGrafer],
     },
     {
       slug: "geometri",
