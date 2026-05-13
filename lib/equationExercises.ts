@@ -26,6 +26,14 @@ function randomInt(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function randomNonZeroInt(min: number, max: number): number {
+  let value = 0;
+  while (value === 0) {
+    value = randomInt(min, max);
+  }
+  return value;
+}
+
 function shuffle<T>(values: T[]) {
   const clone = [...values];
   for (let i = clone.length - 1; i > 0; i -= 1) {
@@ -157,10 +165,7 @@ function level2Exercise(): EquationExercise {
 
 function level3Exercise(): EquationExercise {
   const a = randomInt(2, 9);
-  let b = randomInt(-12, 12);
-  if (b === 0) {
-    b = randomInt(1, 12) * (Math.random() < 0.5 ? -1 : 1);
-  }
+  const b = randomNonZeroInt(-12, 12);
   const x = randomInt(1, 12);
   const c = a * x + b;
   const firstAction =
@@ -284,9 +289,9 @@ function level4Exercise(): EquationExercise {
 }
 
 function level5Exercise(): EquationExercise {
-  const parenthesisVariant = Math.random() < 0.5;
+  const isParenthesisCase = Math.random() < 0.5;
 
-  if (parenthesisVariant) {
+  if (isParenthesisCase) {
     const factor = randomInt(2, 6);
     const inner = randomInt(1, 10);
     const x = randomInt(1, 10);
