@@ -15,9 +15,27 @@ export default function NaturgeografiProcesserDemo() {
             <polygon points="250,40 350,85 300,180 180,180" fill="#93c5fd" />
             <path d="M300 180 C340 165, 430 165, 580 188 L580 220 L300 220 Z" fill="#fde68a" />
             <path d="M300 175 C350 150, 410 145, 560 150" stroke="#22d3ee" strokeWidth="6" fill="none" />
-            <circle cx="130" cy="115" r="9" className="animate-pulse fill-sky-600" />
-            <circle cx="360" cy="160" r="8" className="animate-bounce fill-cyan-500" />
-            <circle cx="520" cy="178" r="8" className="animate-ping fill-amber-500" />
+            <circle
+              cx="130"
+              cy="115"
+              r="9"
+              className="animate-pulse fill-sky-600"
+              aria-label="Markør for isbevægelse"
+            />
+            <circle
+              cx="360"
+              cy="160"
+              r="8"
+              className="animate-bounce fill-cyan-500"
+              aria-label="Markør for smeltevandsstrøm"
+            />
+            <circle
+              cx="520"
+              cy="178"
+              r="8"
+              className="animate-ping fill-amber-500"
+              aria-label="Markør for aflejring"
+            />
             <text x="70" y="30" fontSize="14" fill="currentColor" className="text-zinc-700 dark:text-zinc-200">
               Isbevægelse
             </text>
