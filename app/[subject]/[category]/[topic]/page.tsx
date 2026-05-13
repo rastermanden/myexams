@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { ComponentType } from "react";
 import { getAllSubjects, getTopic } from "@/content";
 import ConceptSection from "@/components/ConceptSection";
+import DemografiDemo from "@/components/DemografiDemo";
 import EquationSolverDemo from "@/components/EquationSolverDemo";
 import FunktionerDemo from "@/components/FunktionerDemo";
 import GeometriDemo from "@/components/GeometriDemo";
@@ -17,6 +18,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import SaveToDesktopButton from "@/components/SaveToDesktopButton";
 
 const TOPIC_DEMO_COMPONENTS: Record<string, ComponentType> = {
+  demografi: DemografiDemo,
   "equation-solver": EquationSolverDemo,
   funktioner: FunktionerDemo,
   geometri: GeometriDemo,

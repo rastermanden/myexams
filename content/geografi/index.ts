@@ -9,6 +9,7 @@ import { europa } from "./europa";
 import { nordafrikaOgSahel } from "./nordafrika-og-sahel";
 import { centralasien } from "./centralasien";
 import { stillehavsstater } from "./stillehavsstater";
+import { demografi } from "./demografi";
 
 export const geografi: Subject = {
   slug: "geografi",
@@ -34,6 +35,13 @@ export const geografi: Subject = {
         centralasien,
         stillehavsstater,
       ],
+    },
+    {
+      slug: "demografi",
+      title: "Demografi",
+      summary: "Befolkningsudvikling, migration og urbanisering med data og sammenligninger.",
+      emoji: "👥",
+      topics: [demografi],
     },
   ],
 };
