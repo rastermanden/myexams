@@ -5,6 +5,7 @@ import { risikoforhold } from "./risikoforhold";
 import { sandsynlighedsregningFraBunden } from "./sandsynlighedsregning-fra-bunden";
 import { broeker } from "./broeker";
 import { geometri } from "./geometri";
+import { trigonometri } from "./trigonometri";
 
 export const matematik: Subject = {
   slug: "matematik",
@@ -26,6 +27,13 @@ export const matematik: Subject = {
       summary: "Plangeometri, rumgeometri og vektorer fra folkeskole til gymnasium.",
       emoji: "📐",
       topics: [geometri],
+    },
+    {
+      slug: "trigonometri",
+      title: "Trigonometri",
+      summary: "Retvinklet og generel trigonometri med enhedscirkel og funktioner.",
+      emoji: "📏",
+      topics: [trigonometri],
     },
     {
       slug: "statistik",
