@@ -6,6 +6,7 @@ import { sandsynlighedsregningFraBunden } from "./sandsynlighedsregning-fra-bund
 import { broeker } from "./broeker";
 import { maalOgEnheder } from "./maal-og-enheder";
 import { geometri } from "./geometri";
+import { funktionerOgGrafer } from "./funktioner-og-grafer";
 import { variableOgBogstavregning } from "./variable-og-bogstavregning";
 import { reduktionAfUdtryk } from "./reduktion-af-udtryk";
 import { parenteser } from "./parenteser";
@@ -39,6 +40,14 @@ export const matematik: Subject = {
         algebraiskeBroeker,
         kvadratsaetningerOgNotableIdentiteter,
       ],
+    },
+    {
+      slug: "funktioner",
+      title: "Funktioner",
+      summary:
+        "Funktionsbegrebet, grafer og centrale funktionstyper fra folkeskole til gymnasium.",
+      emoji: "📈",
+      topics: [funktionerOgGrafer],
     },
     {
       slug: "geometri",

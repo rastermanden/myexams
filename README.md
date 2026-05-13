@@ -11,6 +11,7 @@ Built with [Next.js](https://nextjs.org) (App Router, static export) and Tailwin
 - **Dansk litteratur** — Kommer snart.
 - **Matematik**
   - **Algebra**: **Variable og bogstavregning**, **Reduktion af udtryk**, **Parenteser**, **Ligninger og isolering af x**, **Uligheder med én ubekendt**, **To ligninger med to ubekendte**, **Andengradsligninger**, **Algebraiske brøker**, **Kvadratsætninger og notable identiteter**
+  - **Funktioner**: **Funktioner og grafer**
   - **Geometri**: **Geometri**
   - **Statistik**: **Lineær regression**
   - **Sandsynlighed**: **Sandsynlighedsregning fra bunden**
