@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useMemo, useState } from "react";
+import { useCallback, useState } from "react";
 import type { ImageRef } from "@/lib/types";
 
 function toSpecialFilePathUrl(fileName: string) {
@@ -52,8 +52,13 @@ export default function ImageWithCredit({
   image: ImageRef;
   priority?: boolean;
 }) {
-  const sources = useMemo(() => getFallbackUrls(image), [image]);
+  const sources = getFallbackUrls(image);
   const [sourceIndex, setSourceIndex] = useState(0);
+  const handleImageError = useCallback(() => {
+    setSourceIndex((currentIndex) =>
+      currentIndex < sources.length - 1 ? currentIndex + 1 : currentIndex
+    );
+  }, [sources.length]);
 
   return (
     <figure className="overflow-hidden rounded-xl border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900">
@@ -66,11 +71,7 @@ export default function ImageWithCredit({
           priority={priority}
           sizes="(max-width: 768px) 100vw, 800px"
           className="object-cover"
-          onError={() => {
-            setSourceIndex((currentIndex) =>
-              currentIndex < sources.length - 1 ? currentIndex + 1 : currentIndex
-            );
-          }}
+          onError={handleImageError}
         />
       </div>
       <figcaption className="border-t border-zinc-200 px-4 py-2 text-xs text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">
