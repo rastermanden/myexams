@@ -160,7 +160,7 @@ export default function LinearRegressionDemo() {
               onClick={() => setPoints(generateRandomPoints())}
               className="inline-flex min-h-11 items-center justify-center rounded-full bg-zinc-900 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200"
             >
-              Randomisér punkter
+              Randomiser punkter
             </button>
           </div>
         </div>
