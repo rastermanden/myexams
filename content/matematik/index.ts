@@ -6,6 +6,7 @@ import { sandsynlighedsregningFraBunden } from "./sandsynlighedsregning-fra-bund
 import { broeker } from "./broeker";
 import { maalOgEnheder } from "./maal-og-enheder";
 import { geometri } from "./geometri";
+import { talOgRegningFraBunden } from "./tal-og-regning-fra-bunden";
 import { trigonometri } from "./trigonometri";
 import { funktionerOgGrafer } from "./funktioner-og-grafer";
 import { variableOgBogstavregning } from "./variable-og-bogstavregning";
@@ -83,7 +84,7 @@ export const matematik: Subject = {
       title: "Tal og regning",
       summary: "Grundlæggende talforståelse, brøker, regneregler, mål og enheder.",
       emoji: "➗",
-      topics: [broeker, maalOgEnheder],
+      topics: [talOgRegningFraBunden, broeker, maalOgEnheder],
     },
   ],
 };

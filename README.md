@@ -15,7 +15,7 @@ Built with [Next.js](https://nextjs.org) (App Router, static export) and Tailwin
   - **Geometri**: **Geometri**
   - **Statistik**: **Lineær regression**
   - **Sandsynlighed**: **Sandsynlighedsregning fra bunden**
-  - **Tal og regning**: **Brøker** og **Mål og enheder**
+  - **Tal og regning**: **Tal og regning fra bunden**, **Brøker** og **Mål og enheder**
 
 Each topic explains its key concepts and ends with a multiple-choice quiz with explanations and a best-score tracker.
 
