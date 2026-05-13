@@ -175,7 +175,7 @@ export function primeFactors(n: number): number[] {
       factors.push(divisor);
       value /= divisor;
     }
-    // Efter 2 behøver vi kun teste ulige divisorer.
+    // Efter 2 behøves kun test af ulige divisorer.
     divisor = divisor === 2 ? 3 : divisor + 2;
   }
 
