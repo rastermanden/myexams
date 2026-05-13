@@ -1,6 +1,7 @@
 import type { Subject } from "@/lib/types";
 import { algebra } from "./categories/algebra";
 import { funktioner } from "./categories/funktioner";
+import { differentialOgIntegralregning } from "./categories/differential-og-integralregning";
 import { geometri } from "./categories/geometri";
 import { trigonometri } from "./categories/trigonometri";
 import { statistik } from "./categories/statistik";
@@ -17,6 +18,7 @@ export const matematik: Subject = {
   categories: [
     algebra,
     funktioner,
+    differentialOgIntegralregning,
     geometri,
     trigonometri,
     statistik,
