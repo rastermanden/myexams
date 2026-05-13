@@ -7,6 +7,7 @@ import EquationSolverDemo from "@/components/EquationSolverDemo";
 import GeometriDemo from "@/components/GeometriDemo";
 import ImageWithCredit from "@/components/ImageWithCredit";
 import LinearRegressionDemo from "@/components/LinearRegressionDemo";
+import MaalOgEnhederDemo from "@/components/MaalOgEnhederDemo";
 import ProbabilityFromScratchDemo from "@/components/ProbabilityFromScratchDemo";
 import RisikoforholdDemo from "@/components/RisikoforholdDemo";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -15,6 +16,7 @@ const TOPIC_DEMO_COMPONENTS: Record<string, ComponentType> = {
   "equation-solver": EquationSolverDemo,
   geometri: GeometriDemo,
   "linear-regression": LinearRegressionDemo,
+  "maal-og-enheder": MaalOgEnhederDemo,
   "probability-from-scratch": ProbabilityFromScratchDemo,
   risikoforhold: RisikoforholdDemo,
 };

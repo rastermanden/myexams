@@ -4,6 +4,7 @@ import { ligningerOgIsoleringAfX } from "./ligninger-og-isolering-af-x";
 import { risikoforhold } from "./risikoforhold";
 import { sandsynlighedsregningFraBunden } from "./sandsynlighedsregning-fra-bunden";
 import { broeker } from "./broeker";
+import { maalOgEnheder } from "./maal-og-enheder";
 import { geometri } from "./geometri";
 
 export const matematik: Subject = {
@@ -44,9 +45,9 @@ export const matematik: Subject = {
     {
       slug: "tal-og-regning",
       title: "Tal og regning",
-      summary: "Grundlæggende talforståelse, brøker og regneregler.",
+      summary: "Grundlæggende talforståelse, brøker, regneregler, mål og enheder.",
       emoji: "➗",
-      topics: [broeker],
+      topics: [broeker, maalOgEnheder],
     },
   ],
 };
