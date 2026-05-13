@@ -8,6 +8,7 @@ Built with [Next.js](https://nextjs.org) (App Router, static export) and Tailwin
 
 - **Geografi** — Naturgeografi & kulturgeografi.
   - **Regioner**: **Afrikas Horn** og **Australien**
+  - **Geopolitik**: **Geopolitik (overblik)**
 - **Dansk litteratur** — Kommer snart.
 - **Matematik**
   - **Geometri**: **Geometri**
