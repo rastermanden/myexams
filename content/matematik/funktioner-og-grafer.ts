@@ -15,7 +15,7 @@ export const funktionerOgGrafer: Topic = {
     {
       heading: "Tre repræsentationer af samme funktion",
       body:
-        "Den samme funktion kan beskrives som forskrift, tabel og graf. Forskiften viser regnereglen, tabellen gør det let at sammenligne enkelte værdier, og grafen giver overblik over vækst, toppunkt, skæringer og andre mønstre i koordinatsystemet.",
+        "Den samme funktion kan beskrives som forskrift, tabel og graf. Forskriften viser regnereglen, tabellen gør det let at sammenligne enkelte værdier, og grafen giver overblik over vækst, toppunkt, skæringer og andre mønstre i koordinatsystemet.",
     },
     {
       heading: "Vigtige funktionstyper",
