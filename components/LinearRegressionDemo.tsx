@@ -8,6 +8,9 @@ const MIN_X = 0;
 const MAX_X = 10;
 const MIN_Y = -5;
 const MAX_Y = 15;
+const SVG_WIDTH = 640;
+const SVG_HEIGHT = 360;
+const SVG_MARGIN = 36;
 
 const INITIAL_POINTS: Point[] = [
   { x: 1, y: 2.1 },
@@ -22,8 +25,9 @@ const INITIAL_POINTS: Point[] = [
 function randomPoints(): Point[] {
   const targetSlope = Math.random() * 2 + 0.3;
   const targetIntercept = Math.random() * 5 + 1;
-  return Array.from({ length: 8 }, (_, i) => {
-    const x = 1 + i;
+  const pointCount = 8;
+  return Array.from({ length: pointCount }, (_, i) => {
+    const x = MIN_X + (i / (pointCount - 1)) * (MAX_X - MIN_X);
     const noise = (Math.random() - 0.5) * 2.5;
     const y = targetSlope * x + targetIntercept + noise;
     return {
@@ -44,9 +48,9 @@ export default function LinearRegressionDemo() {
     return { x1: MIN_X, y1, x2: MAX_X, y2 };
   }, [slope, intercept]);
 
-  const width = 640;
-  const height = 360;
-  const margin = 36;
+  const width = SVG_WIDTH;
+  const height = SVG_HEIGHT;
+  const margin = SVG_MARGIN;
   const plotWidth = width - margin * 2;
   const plotHeight = height - margin * 2;
 
