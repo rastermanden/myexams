@@ -200,7 +200,9 @@ export default function ProbabilityFromScratchDemo() {
   const [coinResult, setCoinResult] = useState<string>("—");
   const [dieResult, setDieResult] = useState<number | null>(null);
   const [drawResult, setDrawResult] = useState<string>("—");
-  const [experimentMotion, setExperimentMotion] = useState(0);
+  const [coinAnimationTick, setCoinAnimationTick] = useState(0);
+  const [dieAnimationTick, setDieAnimationTick] = useState(0);
+  const [drawAnimationTick, setDrawAnimationTick] = useState(0);
 
   const [teacherMode, setTeacherMode] = useState(false);
   const [teacherStep, setTeacherStep] = useState(1);
@@ -257,18 +259,18 @@ export default function ProbabilityFromScratchDemo() {
   }
 
   function runCoinFlip() {
-    setExperimentMotion((value) => value + 1);
+    setCoinAnimationTick((value) => value + 1);
     setCoinResult(Math.random() < 0.5 ? "Krone" : "Plat");
   }
 
   function runDieRoll() {
-    setExperimentMotion((value) => value + 1);
+    setDieAnimationTick((value) => value + 1);
     setDieResult(Math.floor(Math.random() * 6) + 1);
   }
 
   function runBagDraw() {
     const bag = ["Rød", "Rød", "Rød", "Blå", "Blå"];
-    setExperimentMotion((value) => value + 1);
+    setDrawAnimationTick((value) => value + 1);
     setDrawResult(bag[Math.floor(Math.random() * bag.length)]);
   }
 
@@ -335,7 +337,7 @@ export default function ProbabilityFromScratchDemo() {
       <div className="mt-6 grid gap-4 lg:grid-cols-[1.1fr_1fr]">
         <div className="rounded-xl border border-zinc-200 p-4 dark:border-zinc-700">
           <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">
-            Opgave {((taskIndexByStep[currentStep] % activeStep.tasks.length) + 1).toString()} / {activeStep.tasks.length}
+            Opgave {(taskIndexByStep[currentStep] % activeStep.tasks.length) + 1} / {activeStep.tasks.length}
           </p>
           <p className="mt-2 text-base text-zinc-900 dark:text-zinc-50">{currentTask.prompt}</p>
           <div className="mt-4 grid gap-2">
@@ -437,21 +439,30 @@ export default function ProbabilityFromScratchDemo() {
                 onClick={runCoinFlip}
                 className="rounded-lg border border-zinc-300 px-3 py-2 text-left text-sm dark:border-zinc-700"
               >
-                Møntkast → <span className={experimentMotion % 2 === 0 ? "inline-block" : "inline-block animate-spin"}>{coinResult}</span>
+                Møntkast →{" "}
+                <span key={`coin-${coinAnimationTick}`} className="inline-block animate-spin">
+                  {coinResult}
+                </span>
               </button>
               <button
                 type="button"
                 onClick={runDieRoll}
                 className="rounded-lg border border-zinc-300 px-3 py-2 text-left text-sm dark:border-zinc-700"
               >
-                Terningekast → <span className={experimentMotion % 2 === 1 ? "inline-block animate-bounce" : "inline-block"}>{dieResult ?? "—"}</span>
+                Terningekast →{" "}
+                <span key={`die-${dieAnimationTick}`} className="inline-block animate-bounce">
+                  {dieResult ?? "—"}
+                </span>
               </button>
               <button
                 type="button"
                 onClick={runBagDraw}
                 className="rounded-lg border border-zinc-300 px-3 py-2 text-left text-sm dark:border-zinc-700"
               >
-                Træk kugle fra pose (3 røde, 2 blå) → <span className="font-medium">{drawResult}</span>
+                Træk kugle fra pose (3 røde, 2 blå) →{" "}
+                <span key={`draw-${drawAnimationTick}`} className="font-medium animate-pulse">
+                  {drawResult}
+                </span>
               </button>
             </div>
           </div>
