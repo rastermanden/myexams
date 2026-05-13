@@ -1,8 +1,14 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { ComponentType } from "react";
 import { getAllSubjects, getTopic } from "@/content";
 import ConceptSection from "@/components/ConceptSection";
 import ImageWithCredit from "@/components/ImageWithCredit";
+import LinearRegressionDemo from "@/components/LinearRegressionDemo";
+
+const TOPIC_DEMO_COMPONENTS: Record<string, ComponentType> = {
+  "linear-regression": LinearRegressionDemo,
+};
 
 export function generateStaticParams() {
   const params: { subject: string; topic: string }[] = [];
@@ -23,6 +29,7 @@ export default async function TopicPage({
   const result = getTopic(subjectSlug, topicSlug);
   if (!result) notFound();
   const { subject, topic } = result;
+  const TopicDemo = topic.demoKey ? TOPIC_DEMO_COMPONENTS[topic.demoKey] : undefined;
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
@@ -54,6 +61,8 @@ export default async function TopicPage({
       {topic.sections.map((section, i) => (
         <ConceptSection key={i} section={section} />
       ))}
+
+      {TopicDemo && <TopicDemo />}
 
       <div className="mt-12 rounded-2xl border border-zinc-200 bg-white p-6 text-center dark:border-zinc-800 dark:bg-zinc-900">
         <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-50">

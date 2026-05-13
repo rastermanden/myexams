@@ -32,6 +32,7 @@ export type Topic = {
   title: string;
   summary: string;
   hero?: ImageRef;
+  demoKey?: string;
   sections: ConceptSection[];
   quiz: QuizQuestion[];
 };
