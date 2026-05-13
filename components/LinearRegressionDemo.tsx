@@ -94,6 +94,52 @@ export default function LinearRegressionDemo() {
               stroke="currentColor"
               className="text-zinc-300 dark:text-zinc-700"
             />
+            {/* X-axis ticks and labels */}
+            {[0, 2, 4, 6, 8, 10].map((val) => (
+              <g key={`x-tick-${val}`}>
+                <line
+                  x1={toSvgX(val)}
+                  y1={margin + plotHeight}
+                  x2={toSvgX(val)}
+                  y2={margin + plotHeight + 5}
+                  stroke="currentColor"
+                  className="text-zinc-400 dark:text-zinc-600"
+                />
+                <text
+                  x={toSvgX(val)}
+                  y={margin + plotHeight + 18}
+                  textAnchor="middle"
+                  fontSize="11"
+                  fill="currentColor"
+                  className="text-zinc-500 dark:text-zinc-400"
+                >
+                  {val}
+                </text>
+              </g>
+            ))}
+            {/* Y-axis ticks and labels */}
+            {[-5, 0, 5, 10, 15].map((val) => (
+              <g key={`y-tick-${val}`}>
+                <line
+                  x1={margin - 5}
+                  y1={toSvgY(val)}
+                  x2={margin}
+                  y2={toSvgY(val)}
+                  stroke="currentColor"
+                  className="text-zinc-400 dark:text-zinc-600"
+                />
+                <text
+                  x={margin - 8}
+                  y={toSvgY(val) + 4}
+                  textAnchor="end"
+                  fontSize="11"
+                  fill="currentColor"
+                  className="text-zinc-500 dark:text-zinc-400"
+                >
+                  {val}
+                </text>
+              </g>
+            ))}
             <line
               x1={toSvgX(linePoints.x1)}
               y1={toSvgY(linePoints.y1)}
