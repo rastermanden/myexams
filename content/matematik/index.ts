@@ -5,6 +5,13 @@ import { risikoforhold } from "./risikoforhold";
 import { sandsynlighedsregningFraBunden } from "./sandsynlighedsregning-fra-bunden";
 import { broeker } from "./broeker";
 import { geometri } from "./geometri";
+import { problemloesningsstrategier } from "./problemloesningsstrategier";
+import { matematiskModellering } from "./matematisk-modellering";
+import { raesonnementOgBevisfoerelse } from "./raesonnement-og-bevisfoerelse";
+import { laesningAfMatematiskNotation } from "./laesning-af-matematisk-notation";
+import { brugAfCASVaerktoejer } from "./brug-af-cas-vaerktoejer";
+import { brugAfLommeregner } from "./brug-af-lommeregner";
+import { kommunikereMatematisk } from "./kommunikere-matematisk";
 
 export const matematik: Subject = {
   slug: "matematik",
@@ -47,6 +54,22 @@ export const matematik: Subject = {
       summary: "Grundlæggende talforståelse, brøker og regneregler.",
       emoji: "➗",
       topics: [broeker],
+    },
+    {
+      slug: "tvaergaaende-faerdigheder",
+      title: "Tværgående færdigheder",
+      summary:
+        "Generelle kompetencer som problemløsning, modellering, notation, hjælpemidler og matematikfaglig formidling.",
+      emoji: "🧠",
+      topics: [
+        problemloesningsstrategier,
+        matematiskModellering,
+        raesonnementOgBevisfoerelse,
+        laesningAfMatematiskNotation,
+        brugAfCASVaerktoejer,
+        brugAfLommeregner,
+        kommunikereMatematisk,
+      ],
     },
   ],
 };
