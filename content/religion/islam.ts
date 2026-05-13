@@ -75,6 +75,24 @@ export const islam: Topic = {
         "Pew Research Center: The Future of the Global Muslim Population (2011) og opdateringer. Esposito, John L.: Islam — The Straight Path. Den Store Danske: 'Islam'. Smart, Ninian: The World's Religions.",
     },
   ],
+  audioPrompt: {
+    intro:
+      "Fokus: tawhid, de fem søjler, sunni/shia/sufi, geografisk virkelighed (60 % i Asien-Stillehav, ikke arabisk), islam i Danmark og Smarts dimensioner.",
+    prompt: `Lav en audio-overview på dansk til en gymnasieelev (STX-religion) som forberedelse til mundtlig eksamen om islam. Brug en samtaleform mellem to værter på 12–15 minutter, faglig men letforståelig.
+
+Behandl præcis disse punkter i denne rækkefølge:
+1) Nøglefakta: monoteistisk abrahamitisk religion grundlagt i 7. årh. e.Kr., Muhammad (570–632) som Guds sidste profet (khātam al-anbiyāʾ), Koranen åbenbaret 610–632, hadith og sunna, hijra i 622 som tidsregningens nulpunkt, ~1,9 mia. tilhængere.
+2) Tawhid — Guds absolutte enhed — som den centrale læresætning. Forklar de fem søjler: shahāda, salāt, sawm, zakāt, hajj.
+3) Retninger: sunni (~85-90 %) med fire klassiske retsskoler (hanafi, maliki, shafi'i, hanbali), shia (~10-15 %, dominerer Iran og Irak, mener lederskabet skulle være gået til Ali), og sufismen som mystisk tværgående strømning (dhikr, tariqa, ihsān).
+4) Centrale begreber: sharia (vejen), fiqh (retsvidenskab), ulama, ummah, halal/haram, jihad (først og fremmest indre anstrengelse), kalifat vs. imamat.
+5) Geografi — afliv myten om at islam = arabisk: ~60 % af verdens muslimer bor i Asien-Stillehavsregionen, Indonesien er verdens største muslimske land (~240 mio.), kun ~25 % i Mellemøsten/Nordafrika.
+6) Islam i Danmark: ~320.000 muslimer (~5,5 %), største oprindelseslande Tyrkiet, Irak, Libanon, Pakistan, Somalia, Syrien. Hamad bin Khalifa Civilization Center i København, tildækningsforbuddet 2018, koranafbrændinger og blasfemilov 2023.
+7) Ligheder og forskelle: deler Abraham, Moses (Musa), Jesus (ʿĪsā, profet og jomfrufødt — men ikke Gud), Maria (Maryam) med jødedom og kristendom. Afviser eksplicit treenigheden og Jesu korsfæstelse. Kontrast til buddhismens non-teisme.
+8) Ninian Smarts syv dimensioner anvendt på islam — udfold alle syv med konkrete eksempler (Muhammads natterejse al-Isrāʾ = mytisk-fortællende, tawhid = doktrinær, halal/haram og sharia = etisk-juridisk, de fem daglige bønner = rituel, sufisk fana = erfaringsmæssig, ummah og moskéer = social-institutionel, Kaʿbaen, kalligrafi og kuppelarkitektur = materiel). Fremhæv at den rituelle dimension fylder usædvanlig meget — islam er først og fremmest noget man gør.
+9) Aktuelle problemstillinger: integration i Vesten, hovedtørklædedebat, sunni-shia-rivalisering (Saudi-Arabien vs. Iran), islamisme vs. islamofobi, reform-islam.
+
+Tone: præcis, ikke-essentialistisk. Brug arabisk-fagudtryk men oversæt dem. Afslut med 3–4 spørgsmål eleven bør kunne svare på.`,
+  },
   quiz: [
     {
       id: "q1",

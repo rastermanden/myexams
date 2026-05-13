@@ -5,6 +5,7 @@ import ConceptSection from "@/components/ConceptSection";
 import ImageWithCredit from "@/components/ImageWithCredit";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SaveToDesktopButton from "@/components/SaveToDesktopButton";
+import NotebookLmPromptCard from "@/components/NotebookLmPromptCard";
 
 export function generateStaticParams() {
   const params: { subject: string; category: string; topic: string }[] = [];
@@ -61,6 +62,13 @@ export default async function TopicPage({
       ))}
 
       {TopicDemo && <TopicDemo />}
+
+      {topic.audioPrompt && (
+        <NotebookLmPromptCard
+          audioPrompt={topic.audioPrompt}
+          topicTitle={topic.title}
+        />
+      )}
 
       <SaveToDesktopButton topicTitle={topic.title} />
 

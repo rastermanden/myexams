@@ -95,6 +95,31 @@ export const ninianSmart: Topic = {
         "Smart, Ninian: The World's Religions (Cambridge University Press, 1989/1998). Smart, Ninian: Dimensions of the Sacred: An Anatomy of the World's Beliefs (HarperCollins, 1996). Otto, Rudolf: Das Heilige (1917). Eliade, Mircea: Le sacré et le profane (1957). Asad, Talal: Genealogies of Religion (1993). Den Store Danske: 'Ninian Smart' og 'Religionsfænomenologi'. Religion.dk: temasider om religionsanalyse.",
     },
   ],
+  audioPrompt: {
+    intro:
+      "Fokus: baggrund, de syv (+1) dimensioner med eksempler fra flere religioner, hvordan modellen bruges i en analyse, dens styrker og kritikken fra fx Talal Asad.",
+    prompt: `Lav en audio-overview på dansk til en gymnasieelev (STX-religion) som forberedelse til mundtlig eksamen om Ninian Smarts dimensionsmodel. Brug en samtaleform mellem to værter på 12–15 minutter, faglig men letforståelig.
+
+Behandl præcis disse punkter i denne rækkefølge:
+1) Hvem var Ninian Smart? Skotsk religionsforsker (1927–2001), grundlagde det første sekulære religionsvidenskabelige institut i Storbritannien (Lancaster, 1967), senere UC Santa Barbara. Insisterede på ikke-konfessionel, komparativ religionsvidenskab. Hovedværk: The World's Religions (1989, opdateret 1998); senere Dimensions of the Sacred (1996) hvor den ottende dimension tilføjes.
+2) Hvorfor en dimensionsmodel? Smart ville bryde med (a) den protestantisk-vestlige bias om at religion primært handler om tro/doktriner, og (b) den reduktive sociologiske antagelse om at religion blot er overbygning på økonomi. Modellen er fænomenologisk i Husserls forstand: den suspenderer spørgsmålet om sandhedsværdi (epoché) og beskriver komparativt. Den er deskriptiv, ikke normativ — alle religioner stilles på samme akser uden at kristendom bliver normen.
+3) Udfold alle syv dimensioner med konkrete eksempler fra flere religioner pr. dimension:
+   - Den mytisk-fortællende: skabelsen og Jesu opstandelse (kristendom), Muhammads natterejse (islam), udgangen af Egypten (jødedom), Buddhas opvågnen (buddhisme), Dreamtime (aboriginalreligion).
+   - Den doktrinære-filosofiske: treenighed, tawhid, Maimonides' 13 trosartikler, De Fire Ædle Sandheder, mana/tapu.
+   - Den etisk-juridiske: de ti bud, halakha og 613 mitzvot, sharia og fiqh, panca sila, sædvaneret og forfædre-respekt.
+   - Den rituelle-praktiske: dåb og nadver, de fem daglige bønner og hajj, sabbat og seder, vipassana og zazen, shamanrejser og overgangsriter.
+   - Den erfaringsmæssige-emotionelle: Paulus' omvendelse, sufi-fana, chasidisk gudsglæde, satori, trance og vision. Nævn Rudolf Ottos numinøse (mysterium tremendum et fascinans).
+   - Den sociale-institutionelle: pavedømme og folkekirke, ulama og ummah, rabbinat og synagoge, sangha og dalai lama, stamme og klan.
+   - Den materielle: katedraler og ikoner, moskéer og kalligrafi, Tora-rulle og tallit, stupaer og mandalaer, totempæle og Uluru.
+4) Den ottende dimension: den politisk-økonomiske — tilføjet i Dimensions of the Sacred (1996). Eksempler: pavestatens historie, statskirkesystemer, kristen-demokratiske partier, hindutva, zakat og islamisk bankvæsen, zionismen, ortodoks-russisk symfoni.
+5) Sådan bruger man modellen i en analyse: (1) vælg fænomen, (2) gå dimension for dimension med konkrete eksempler, (3) vurder dimensionernes indbyrdes VÆGT — hvilke dominerer, hvilke er svagt udfoldede, (4) sammenlign eventuelt med en anden religion på samme akser, (5) drag konklusioner. Pinsekirkelig vækkelsesgudstjeneste vs. katolsk messe er et godt eksempel på forskellig vægtning.
+6) Modellen kan anvendes på sekulære ideologier — marxisme har mytisk-fortællende (klassekampens historie), doktrinær (Das Kapital), etisk (revolutionær solidaritet), rituel (1. maj), erfaringsmæssig (klassebevidsthed), social (partiet), materiel (røde faner) dimension. Det udfordrer sekulariseringstesens skarpe skel mellem religiøst og verdsligt.
+7) Styrker: komparativ uden at være reduktiv, inkluderer ikke-doktrinære religioner (naturreligioner, buddhisme), operationel i undervisning, anvendelig på sekulære fænomener, fænomenologisk neutralitet.
+8) Kritik — vigtig at have med til eksamen: modellen er statisk/deskriptiv, har stadig en vestlig forudsætning, risikerer mekanisk tjekliste-analyse, dimensionerne overlapper, magtdimensionen var oprindeligt undervægtet (derfor den 8.). Talal Asad (Genealogies of Religion, 1993) kritiserer fænomenologien for at forudsætte at 'religion' er en universel, transhistorisk størrelse — selve religionsbegrebet er en moderne vestlig konstruktion.
+9) Eksamenspointe: modellen er et REDSKAB, ikke en sandhed. Vurder dimensionernes vægt i stedet for blot at udfylde syv kasser. Brug den til SAMMENLIGNINGER. Inddrag eventuelt den 8. dimension og forbind til Rudolf Otto, Mircea Eliade (det hellige/profane), Émile Durkheim (kollektivforestilling) og Talal Asad.
+
+Tone: roligt forklarende, men ambitiøs faglig dybde. Afslut med 3–4 spørgsmål eleven bør kunne svare på.`,
+  },
   quiz: [
     {
       id: "q1",

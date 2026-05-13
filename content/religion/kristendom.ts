@@ -75,6 +75,23 @@ export const kristendom: Topic = {
         "Pew Research Center: The Global Religious Landscape (2012, opdateret 2022). Den Store Danske: 'Kristendom'. Religion.dk. Smart, Ninian: The World's Religions (1989/1998). World Christian Database, Gordon-Conwell Theological Seminary.",
     },
   ],
+  audioPrompt: {
+    intro:
+      "Fokus: treenighed, frelse ved nåde (sola gratia/fide/scriptura), retningerne (katolsk, ortodoks, protestantisk), Det Store Skisma 1054, reformationen 1517, folkekirken i Danmark og Ninian Smarts syv dimensioner.",
+    prompt: `Lav en audio-overview på dansk til en gymnasieelev (STX-religion) som forberedelse til mundtlig eksamen om kristendommen. Brug en samtaleform mellem to værter på 12–15 minutter, faglig men letforståelig.
+
+Behandl præcis disse punkter i denne rækkefølge:
+1) Nøglefakta: monoteistisk abrahamitisk religion, ~2,4 mia. tilhængere (verdens største), grundlagt i 1. årh. e.Kr., Jesus af Nazaret som Kristus/Messias, Bibelen (GT + NT), trosbekendelserne fra Nikæa/Konstantinopel 325/381.
+2) Retninger: katolsk (~1,3 mia., paven), ortodoks (~220 mio.), protestantisk (~800-900 mio. — lutheransk, reformert, anglikansk, baptist, metodist, pinse). Forklar Det Store Skisma 1054 og reformationen 1517 (Luther).
+3) Centrale begreber: treenighed, inkarnation, sola gratia / sola fide / sola scriptura, synd, nåde, dåb og nadver som sakramenter, eskatologi.
+4) Geografi: kristendommens tyngdepunkt er flyttet fra det globale nord til det globale syd — Afrika syd for Sahara og Latinamerika vokser, Europa sekulariserer.
+5) Kristendom i Danmark: folkekirken er evangelisk-luthersk og grundlovsfæstet (§4), ~71 % af befolkningen, Grundtvig og Kierkegaard som danske religionstænkere.
+6) Ligheder og forskelle: fælles abrahamitisk arv (Abraham, Moses, Maria) med jødedom og islam, men skilt fra dem af treenigheden og kristologien. Kontrast til buddhismens non-teisme og naturreligionernes immanens.
+7) Ninian Smarts syv dimensioner anvendt på kristendommen — kom kort ind på alle syv med konkrete eksempler (juleevangelium = mytisk-fortællende, treenighed = doktrinær, næstekærlighedsbud = etisk, dåb/nadver = rituel, pinseåndsdåb = erfaringsmæssig, folkekirkens struktur = social-institutionel, katedraler/ikoner = materiel).
+8) Aktuelle problemstillinger: sekularisering i Vesten, vækst i syd, samkønnede vielser, kristne mindretal under pres i Mellemøsten.
+
+Tone: rolig, forklarende, brug fagudtryk men forklar dem ved første brug. Brug korte eksempler frem for lange opremsninger. Afslut med 3–4 spørgsmål eleven bør kunne svare på.`,
+  },
   quiz: [
     {
       id: "q1",
