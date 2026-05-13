@@ -14,23 +14,16 @@ export type ExerciseStep = {
 };
 
 export type EquationExercise = {
-  id: string;
   level: DifficultyLevel;
   title: string;
   solution: number;
   steps: ExerciseStep[];
 };
 
-let exerciseIdCounter = 0;
-
 function randomInt(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function createExerciseId(prefix: string) {
-  exerciseIdCounter += 1;
-  return `${prefix}-${exerciseIdCounter}`;
-}
 
 function shuffled<T>(values: T[]) {
   const clone = [...values];
@@ -55,7 +48,7 @@ function formatLinear(coeff: number, constant: number): string {
   return `${formatXTerm(coeff)} ${sign} ${Math.abs(constant)}`;
 }
 
-function actionSet(correct: ExerciseAction, wrong: ExerciseAction[]) {
+function createShuffledActions(correct: ExerciseAction, wrong: ExerciseAction[]) {
   return shuffled([correct, ...wrong]).slice(0, 4);
 }
 
@@ -81,7 +74,6 @@ function level1Exercise(): EquationExercise {
       ];
 
   return {
-    id: createExerciseId("l1"),
     level: 1,
     title: "Niveau 1: x ± a = b",
     solution: x,
@@ -91,7 +83,7 @@ function level1Exercise(): EquationExercise {
         explanation:
           "Fjern tallet ved x ved at gøre den modsatte operation på begge sider af lighedstegnet.",
         correctAction: correct,
-        actions: actionSet(correct, wrong),
+        actions: createShuffledActions(correct, wrong),
         hint: "Husk reglen: gør det samme på begge sider af lighedstegnet.",
       },
       {
@@ -111,7 +103,6 @@ function level2Exercise(): EquationExercise {
     const b = a * x;
     const correct = { id: "div-a", label: `Dividér med ${a} på begge sider` };
     return {
-      id: createExerciseId("l2m"),
       level: 2,
       title: "Niveau 2: ax = b",
       solution: x,
@@ -121,7 +112,7 @@ function level2Exercise(): EquationExercise {
           explanation:
             "x er ganget med et tal. Ophæv det ved at dividere begge sider med samme tal (≠ 0).",
           correctAction: correct,
-          actions: actionSet(correct, [
+          actions: createShuffledActions(correct, [
             { id: "mul-a", label: `Gang med ${a} på begge sider` },
             { id: "add-a", label: `Læg ${a} til på begge sider` },
             { id: "sub-a", label: `Træk ${a} fra på begge sider` },
@@ -140,7 +131,6 @@ function level2Exercise(): EquationExercise {
   const solution = a * b;
   const correct = { id: "mul-a", label: `Gang med ${a} på begge sider` };
   return {
-    id: createExerciseId("l2d"),
     level: 2,
     title: "Niveau 2: x / a = b",
     solution,
@@ -149,7 +139,7 @@ function level2Exercise(): EquationExercise {
         equation: `x / ${a} = ${b}`,
         explanation: "x er divideret med et tal. Ophæv division ved at gange begge sider med samme tal.",
         correctAction: correct,
-        actions: actionSet(correct, [
+        actions: createShuffledActions(correct, [
           { id: "div-a", label: `Dividér med ${a} på begge sider` },
           { id: "add-a", label: `Læg ${a} til på begge sider` },
           { id: "sub-a", label: `Træk ${a} fra på begge sider` },
@@ -180,7 +170,6 @@ function level3Exercise(): EquationExercise {
   const secondAction = { id: "div-a", label: `Dividér med ${a} på begge sider` };
 
   return {
-    id: createExerciseId("l3"),
     level: 3,
     title: "Niveau 3: ax + b = c",
     solution: x,
@@ -189,7 +178,7 @@ function level3Exercise(): EquationExercise {
         equation: `${formatXTerm(a)} ${b >= 0 ? "+" : "-"} ${Math.abs(b)} = ${c}`,
         explanation: "Fjern konstantleddet først, så x-leddet står alene.",
         correctAction: firstAction,
-        actions: actionSet(firstAction, [
+        actions: createShuffledActions(firstAction, [
           { id: "div-a", label: `Dividér med ${a} på begge sider` },
           { id: "mul-a", label: `Gang med ${a} på begge sider` },
           b >= 0
@@ -202,7 +191,7 @@ function level3Exercise(): EquationExercise {
         equation: afterFirst,
         explanation: "Nu står x-leddet alene på venstre side.",
         correctAction: secondAction,
-        actions: actionSet(secondAction, [
+        actions: createShuffledActions(secondAction, [
           { id: "add-a", label: `Læg ${a} til på begge sider` },
           { id: "sub-a", label: `Træk ${a} fra på begge sider` },
           { id: "mul-a", label: `Gang med ${a} på begge sider` },
@@ -240,7 +229,6 @@ function level4Exercise(): EquationExercise {
   };
 
   return {
-    id: createExerciseId("l4"),
     level: 4,
     title: "Niveau 4: ax + b = cx + d",
     solution: x,
@@ -252,7 +240,7 @@ function level4Exercise(): EquationExercise {
         )}`,
         explanation: "Saml alle x-led på én side af lighedstegnet.",
         correctAction: firstAction,
-        actions: actionSet(firstAction, [
+        actions: createShuffledActions(firstAction, [
           {
             id: "add-right-coeff",
             label: `Læg ${rightCoeff === 1 ? "x" : `${rightCoeff}x`} til på begge sider`,
@@ -266,7 +254,7 @@ function level4Exercise(): EquationExercise {
         equation: `${formatLinear(newCoeff, leftConst)} = ${rightConst}`,
         explanation: "Nu fjerner du konstantleddet ved x.",
         correctAction: secondAction,
-        actions: actionSet(secondAction, [
+        actions: createShuffledActions(secondAction, [
           { id: "div-new-coeff", label: `Dividér med ${newCoeff} på begge sider` },
           leftConst >= 0
             ? { id: "add-const", label: `Læg ${leftConst} til på begge sider` }
@@ -279,7 +267,7 @@ function level4Exercise(): EquationExercise {
         equation: `${newCoeff}x = ${reducedRight}`,
         explanation: "Til sidst ophæver du gange med koefficienten foran x.",
         correctAction: thirdAction,
-        actions: actionSet(thirdAction, [
+        actions: createShuffledActions(thirdAction, [
           { id: "mul-new-coeff", label: `Gang med ${newCoeff} på begge sider` },
           { id: "sub-new-coeff", label: `Træk ${newCoeff} fra på begge sider` },
           { id: "add-new-coeff", label: `Læg ${newCoeff} til på begge sider` },
@@ -303,7 +291,6 @@ function level5Exercise(): EquationExercise {
     const x = randomInt(1, 10);
     const rhs = factor * (x + inner);
     return {
-      id: createExerciseId("l5p"),
       level: 5,
       title: "Niveau 5: parenteser",
       solution: x,
@@ -315,7 +302,7 @@ function level5Exercise(): EquationExercise {
             id: "div-factor",
             label: `Dividér med ${factor} på begge sider`,
           },
-          actions: actionSet(
+          actions: createShuffledActions(
             { id: "div-factor", label: `Dividér med ${factor} på begge sider` },
             [
               { id: "mul-factor", label: `Gang med ${factor} på begge sider` },
@@ -332,7 +319,7 @@ function level5Exercise(): EquationExercise {
             id: "sub-inner",
             label: `Træk ${inner} fra på begge sider`,
           },
-          actions: actionSet(
+          actions: createShuffledActions(
             { id: "sub-inner", label: `Træk ${inner} fra på begge sider` },
             [
               { id: "add-inner", label: `Læg ${inner} til på begge sider` },
@@ -355,7 +342,6 @@ function level5Exercise(): EquationExercise {
   const rhs = randomInt(2, 12);
   const x = divisor * rhs - inner;
   return {
-    id: createExerciseId("l5f"),
     level: 5,
     title: "Niveau 5: brøker",
     solution: x,
@@ -367,7 +353,7 @@ function level5Exercise(): EquationExercise {
           id: "mul-divisor",
           label: `Gang med ${divisor} på begge sider`,
         },
-        actions: actionSet(
+        actions: createShuffledActions(
           { id: "mul-divisor", label: `Gang med ${divisor} på begge sider` },
           [
             { id: "div-divisor", label: `Dividér med ${divisor} på begge sider` },
@@ -384,7 +370,7 @@ function level5Exercise(): EquationExercise {
           id: "sub-inner",
           label: `Træk ${inner} fra på begge sider`,
         },
-        actions: actionSet(
+        actions: createShuffledActions(
           { id: "sub-inner", label: `Træk ${inner} fra på begge sider` },
           [
             { id: "add-inner", label: `Læg ${inner} til på begge sider` },

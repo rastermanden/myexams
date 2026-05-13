@@ -157,7 +157,7 @@ export default function EquationSolverDemo() {
         {showSolution && (
           <ol className="mt-4 space-y-2 text-sm text-zinc-700 dark:text-zinc-200">
             {exercise.steps.map((step, index) => (
-              <li key={`${exercise.id}-${index}`} className="rounded-xl border border-zinc-200 p-3 dark:border-zinc-700">
+              <li key={index} className="rounded-xl border border-zinc-200 p-3 dark:border-zinc-700">
                 <p className="font-medium">
                   Trin {index + 1}: {step.equation}
                 </p>
