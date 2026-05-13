@@ -1,4 +1,5 @@
 import type { Subject } from "@/lib/types";
+import { deskriptivStatistik } from "./deskriptiv-statistik";
 import { lineaerRegression } from "./lineaer-regression";
 import { ligningerOgIsoleringAfX } from "./ligninger-og-isolering-af-x";
 import { risikoforhold } from "./risikoforhold";
@@ -32,7 +33,7 @@ export const matematik: Subject = {
       title: "Statistik",
       summary: "Dataanalyse, modeller og tolkning af variation i datasæt.",
       emoji: "📊",
-      topics: [lineaerRegression, risikoforhold],
+      topics: [deskriptivStatistik, lineaerRegression, risikoforhold],
     },
     {
       slug: "sandsynlighed",

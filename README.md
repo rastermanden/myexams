@@ -11,7 +11,7 @@ Built with [Next.js](https://nextjs.org) (App Router, static export) and Tailwin
 - **Dansk litteratur** — Kommer snart.
 - **Matematik**
   - **Geometri**: **Geometri**
-  - **Statistik**: **Lineær regression**
+  - **Statistik**: **Deskriptiv statistik**, **Lineær regression**, **Risikoforhold**
   - **Tal og regning**: **Brøker**
 
 Each topic explains its key concepts and ends with a multiple-choice quiz with explanations and a best-score tracker.
