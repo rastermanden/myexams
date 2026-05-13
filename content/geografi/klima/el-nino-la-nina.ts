@@ -35,12 +35,12 @@ export const elNinoLaNina: Topic = {
     {
       heading: "La Niña",
       body:
-        "La Niña er ENSOs kolde fase og på mange måder det modsatte af El Niño. Passatvindene er stærkere end normalt, og mere varmt vand hober sig op i Vestpacifik. Det østlige tropiske Stillehav er koldere end normalt. La Niña er forbundet med øget opling af næringsrigt, koldt vand langs Sydamerikas kyst, hvilket gavner fiskeriet. Globalt set giver La Niña-år typisk lidt lavere global middeltemperatur. La Niña-år forbindes med svigtende regntider i Østafrika og dele af Sydamerika, kraftigere atlantiske orkan-sæsoner og mere nedbør i Australien og Sydøstasien.",
+        "La Niña er ENSOs kolde fase og på mange måder det modsatte af El Niño. Passatvindene er stærkere end normalt, og mere varmt vand hober sig op i Vestpacifik. Det østlige tropiske Stillehav er koldere end normalt. La Niña er forbundet med øget opvælden af næringsrigt, koldt vand langs Sydamerikas kyst, hvilket gavner fiskeriet. Globalt set giver La Niña-år typisk lidt lavere global middeltemperatur. La Niña-år forbindes med svigtende regntider i Østafrika og dele af Sydamerika, kraftigere atlantiske orkan-sæsoner og mere nedbør i Australien og Sydøstasien.",
     },
     {
       heading: "Globale konsekvenser",
       body:
-        "ENSO's virkninger forplanter sig langt ud over Stillehavet via 'telekonnek­tioner' i atmosfæren. El Niño: tørke i Australien, Sydøstasien, Indien og Østafrika; kraftig nedbør i Peru og Californien; svagere atlantisk orkan-sæson; mildere vintre i Canada og det nordlige USA. La Niña: modsatte mønstre – mere nedbør i Australien og Østafrika; kraftigere atlantisk orkan­sæson; koldere vintre i USA's nordvest. ENSO påvirker også Afrikas Horn, Sydafrika, Brasilien og Europa. Den globale middeltemperatur er typisk 0,1–0,2 °C varmere i El Niño-år og tilsvarende koldere i La Niña-år.",
+        "ENSO's virkninger forplanter sig langt ud over Stillehavet via 'telekonnektioner' i atmosfæren. El Niño: tørke i Australien, Sydøstasien, Indien og Østafrika; kraftig nedbør i Peru og Californien; svagere atlantisk orkan-sæson; mildere vintre i Canada og det nordlige USA. La Niña: modsatte mønstre – mere nedbør i Australien og Østafrika; kraftigere atlantisk orkan­sæson; koldere vintre i USA's nordvest. ENSO påvirker også Afrikas Horn, Sydafrika, Brasilien og Europa. Den globale middeltemperatur er typisk 0,1–0,2 °C varmere i El Niño-år og tilsvarende koldere i La Niña-år.",
       image: {
         url: "https://commons.wikimedia.org/wiki/Special:FilePath/ENSO_teleconnections.jpg?width=800",
         alt: "Verdenskort der viser ENSOs globale telekonnek­tioner og vejrpåvirkninger",
@@ -101,7 +101,7 @@ export const elNinoLaNina: Topic = {
       prompt: "Hvad er en 'telekonnekion' i klimasystemet?",
       options: [
         { id: "a", text: "En satellitbaseret klimaovervågningsforbindel­se" },
-        { id: "b", text: "En fjernbetjent koblings­effekt, hvor klimafænomener ét sted påvirker vejret langt borte" },
+        { id: "b", text: "En fjernpåvirkning i atmosfæren, hvor klimafænomener ét sted påvirker vejret langt borte" },
         { id: "c", text: "En undervandstelekommunikations­kabel langs havbunden" },
         { id: "d", text: "En direkte forbindel­se mellem ITCZ og jetstrømmene" },
       ],
