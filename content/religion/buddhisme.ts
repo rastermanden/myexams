@@ -62,7 +62,7 @@ export const buddhisme: Topic = {
     {
       heading: "Formuleringer der imponerer læreren",
       body:
-        "Bemærk: buddhismen er filosofisk så subtil, at man bør formulere sig præcist. ► 'Buddhismen er definitorisk non-teistisk, men ikke ateistisk i moderne forstand: dens fokus er soteriologisk-praktisk — vejen til ophør af dukkha — og spørgsmålet om en skabergud kategoriseres som avyākata (en af de ubesvarede spørgsmål), fordi det ikke bidrager til befrielsen.' ► 'Anatta-læren — fraværet af et substantielt selv — er ikke nihilisme, men en kritik af enhver reificerende ontologi: Nagarjuna radikaliserer dette i madhyamaka-skolens lære om sūnyatā (tomhed), hvor selv tomheden er tom, hvilket grundlæggende dekonstruerer det indoeuropæiske substans-attribut-skema.' ► 'Den klassiske skelnen mellem theravada som 'lille' og mahayana som 'stort fartøj' er en mahayana-polemik; mere præcist er theravada en saviya-vejs-tradition orienteret mod arhat-idealet, mens mahayana udfolder bodhisattva-idealet inden for en kosmologisk skala præget af buddha-felter og prajñāpāramitā-litteraturens dialektik.' ► 'Vajrayana eller tantrisk buddhisme operationaliserer det mahayanske princip om upāya (frelsesmidler) gennem ritualiseret transformation af kleshas — således at lidenskaber ikke undertrykkes men sublimeres, hvilket gør den til et af de mest sofistikerede tilfælde af, hvad Smart kalder den rituelle dimension i interaktion med den doktrinære.' ► 'Karma-læren bør ikke forstås mekanistisk-vergeldende, men som en intentionalitetsetik: i kanoniske tekster er det cetanā (hensigt), der genererer karma — hvilket gør buddhismen sammenlignelig med kantianske pligtetikker på en måde, der modificerer den almindelige modstilling mellem østlig og vestlig moralfilosofi.'",
+        "Bemærk: buddhismen er filosofisk så subtil, at man bør formulere sig præcist — men start gerne med en kort, klar sætning. ► KORT OG KLART: 'Buddhismen er ikke ateistisk, men non-teistisk: spørgsmålet om en skabergud er ikke vigtigt, fordi det ikke hjælper én ud af lidelsen. Målet er nirvana — at slippe ud af genfødslens kredsløb.' ► KORT OG KLART: 'Når man bruger Ninian Smarts dimensioner på buddhismen, er det især den rituelle dimension (meditation) og den doktrinære (Fire Ædle Sandheder, Den Ottefoldige Vej), der fylder mest. Materielle og social-institutionelle udtryk er der også — stupaer, klostre, sangha — men der er ingen Gud i centrum.' ► 'Buddhismen er definitorisk non-teistisk, men ikke ateistisk i moderne forstand: dens fokus er soteriologisk-praktisk — vejen til ophør af dukkha — og spørgsmålet om en skabergud kategoriseres som avyākata (en af de ubesvarede spørgsmål), fordi det ikke bidrager til befrielsen.' ► 'Anatta-læren — fraværet af et substantielt selv — er ikke nihilisme, men en kritik af enhver reificerende ontologi: Nagarjuna radikaliserer dette i madhyamaka-skolens lære om sūnyatā (tomhed), hvor selv tomheden er tom, hvilket grundlæggende dekonstruerer det indoeuropæiske substans-attribut-skema.' ► 'Den klassiske skelnen mellem theravada som 'lille' og mahayana som 'stort fartøj' er en mahayana-polemik; mere præcist er theravada en saviya-vejs-tradition orienteret mod arhat-idealet, mens mahayana udfolder bodhisattva-idealet inden for en kosmologisk skala præget af buddha-felter og prajñāpāramitā-litteraturens dialektik.' ► 'Vajrayana eller tantrisk buddhisme operationaliserer det mahayanske princip om upāya (frelsesmidler) gennem ritualiseret transformation af kleshas — således at lidenskaber ikke undertrykkes men sublimeres, hvilket gør den til et af de mest sofistikerede tilfælde af, hvad Smart kalder den rituelle dimension i interaktion med den doktrinære.' ► 'Karma-læren bør ikke forstås mekanistisk-vergeldende, men som en intentionalitetsetik: i kanoniske tekster er det cetanā (hensigt), der genererer karma — hvilket gør buddhismen sammenlignelig med kantianske pligtetikker på en måde, der modificerer den almindelige modstilling mellem østlig og vestlig moralfilosofi.'",
     },
     {
       heading: "Kilder",
@@ -148,6 +148,84 @@ export const buddhisme: Topic = {
       correctOptionId: "c",
       explanation:
         "Ca. 99 % af alle buddhister bor i Asien-Stillehavsregionen — især Kina, Thailand, Japan, Myanmar, Sri Lanka og Vietnam.",
+    },
+    {
+      id: "q7",
+      prompt: "Fortællingen om prinsen Siddhartha Gautama, der ser en gammel, en syg, en død og en munk og dermed forlader paladset, er et eksempel på hvilken dimension?",
+      options: [
+        { id: "a", text: "Den mytisk-fortællende dimension" },
+        { id: "b", text: "Den etiske dimension" },
+        { id: "c", text: "Den materielle dimension" },
+        { id: "d", text: "Den rituelle dimension" },
+      ],
+      correctOptionId: "a",
+      explanation:
+        "Buddhas livshistorie — de fire syn, opvågningen under bodhi-træet — er klassiske fortællinger og hører til den mytisk-fortællende dimension.",
+    },
+    {
+      id: "q8",
+      prompt: "De Fire Ædle Sandheder og Den Ottefoldige Vej er eksempler på hvilken dimension?",
+      options: [
+        { id: "a", text: "Den materielle dimension" },
+        { id: "b", text: "Den doktrinære (filosofiske) dimension" },
+        { id: "c", text: "Den mytiske dimension" },
+        { id: "d", text: "Den erfaringsmæssige dimension" },
+      ],
+      correctOptionId: "b",
+      explanation:
+        "Buddhismens læresystem — de fire sandheder, karma, anatta, tomhed — hører til den doktrinære dimension.",
+    },
+    {
+      id: "q9",
+      prompt: "De fem leveregler (ikke dræbe, stjæle, lyve, misbruge seksualitet eller indtage rusmidler) hører til hvilken dimension?",
+      options: [
+        { id: "a", text: "Den mytiske dimension" },
+        { id: "b", text: "Den materielle dimension" },
+        { id: "c", text: "Den etiske dimension" },
+        { id: "d", text: "Den social-institutionelle dimension" },
+      ],
+      correctOptionId: "c",
+      explanation:
+        "Leveregler og klosterregler er den etiske dimension — religionens svar på, hvordan man bør handle.",
+    },
+    {
+      id: "q10",
+      prompt: "En zen-munk oplever pludselig satori — en momentan oplevelse af opvågning. Hvilken dimension passer bedst?",
+      options: [
+        { id: "a", text: "Den erfaringsmæssige (mystiske) dimension" },
+        { id: "b", text: "Den doktrinære dimension" },
+        { id: "c", text: "Den materielle dimension" },
+        { id: "d", text: "Den etiske dimension" },
+      ],
+      correctOptionId: "a",
+      explanation:
+        "Indre oplevelser af opvågning, indsigt, medfølelse og fred er den erfaringsmæssige/emotionelle dimension.",
+    },
+    {
+      id: "q11",
+      prompt: "Sanghaen — fællesskabet af munke og nonner, lægfolk og klostre — hører til hvilken dimension?",
+      options: [
+        { id: "a", text: "Den materielle dimension" },
+        { id: "b", text: "Den social-institutionelle dimension" },
+        { id: "c", text: "Den mytiske dimension" },
+        { id: "d", text: "Den erfaringsmæssige dimension" },
+      ],
+      correctOptionId: "b",
+      explanation:
+        "Sangha er navnet på det organiserede buddhistiske fællesskab — typisk for den social-institutionelle dimension sammen med dalai lama-institutionen.",
+    },
+    {
+      id: "q12",
+      prompt: "Stupaer, buddha-statuer, bedemøller, mandalaer og thangkaer er eksempler på hvilken dimension?",
+      options: [
+        { id: "a", text: "Den materielle dimension" },
+        { id: "b", text: "Den rituelle dimension" },
+        { id: "c", text: "Den doktrinære dimension" },
+        { id: "d", text: "Den etiske dimension" },
+      ],
+      correctOptionId: "a",
+      explanation:
+        "Religionens fysiske udtryk — bygninger, statuer, kunst og hellige genstande — er den materielle dimension.",
     },
   ],
 };

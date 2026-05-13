@@ -62,7 +62,7 @@ export const naturreligioner: Topic = {
     {
       heading: "Formuleringer der imponerer læreren",
       body:
-        "Området kræver metodisk omhu — begrebet 'naturreligion' er selv en konstruktion. ► 'Selve kategorien 'naturreligion' er en etisk-vestlig konstruktion med rødder i oplysningstidens evolutionistiske religionsteori (Tylor, Frazer): den implicerer et hierarki, hvor primale religioner placeres som forstadier til verdensreligionerne — en præmis, der med rette er kritiseret af blandt andre Talal Asad og J.Z. Smith som en kolonial epistemologi.' ► 'Animisme bør i moderne religionsvidenskab ikke forstås tylorisk som en fejlslagen protovidenskab, men som det Philippe Descola kalder en alternativ ontologi: hvor det vestlige naturalistiske skema adskiller natur og kultur, opererer animistiske kosmologier med en gradueret personhood, hvor mennesker, dyr, planter og landskaber er forbundet relationelt.' ► 'Shamanismen rummer i Mircea Eliades klassiske analyse en arkaisk teknik for ekstase, men nyere etnografi (Vitebsky, Atkinson) understreger, at den er institutionelt mangfoldig og ikke en universel ur-religion — at tale om 'shamanisme' i ental risikerer at universalisere et sibirisk-tungusisk fænomen.' ► 'Naturreligionernes synkretisme med kristendom og islam — Vodou, Santería, Candomblé i den atlantiske diaspora — er ikke 'urent' eller forfaldsfænomen, men en kreativ religiøs poesis, der med Robert Bastide kan analyseres som modstandshermeneutik mod kolonial undertrykkelse.' ► 'Ninian Smarts dimensionsmodel er særligt egnet til naturreligioner, fordi den undgår både den protestantiske kanon-præference og den kantianske vægt på doktrin: ved at give rituelle, erfaringsmæssige og materielle dimensioner ækvivalent vægt med doktrin og myte, dekoloniserer modellen den komparative religionsvidenskab.'",
+        "Området kræver metodisk omhu — begrebet 'naturreligion' er selv en konstruktion. Vælg en kort, klar sætning, hvis det tunge fagsprog bliver for meget. ► KORT OG KLART: 'Selve ordet 'naturreligion' er en vestlig opfindelse. Det blev brugt i 1800-tallet til at se andre religioner som mere primitive end kristendommen. I dag bruger man hellere udtryk som etniske eller oprindelige religioner.' ► KORT OG KLART: 'Ninian Smarts syv dimensioner er særligt nyttige her, fordi de behandler ritualer, oplevelser og materielle udtryk på lige fod med læresætninger. Det gør det muligt at sammenligne en religion uden skrift med kristendommen uden at gøre den førstnævnte mindre værd.' ► 'Selve kategorien 'naturreligion' er en etisk-vestlig konstruktion med rødder i oplysningstidens evolutionistiske religionsteori (Tylor, Frazer): den implicerer et hierarki, hvor primale religioner placeres som forstadier til verdensreligionerne — en præmis, der med rette er kritiseret af blandt andre Talal Asad og J.Z. Smith som en kolonial epistemologi.' ► 'Animisme bør i moderne religionsvidenskab ikke forstås tylorisk som en fejlslagen protovidenskab, men som det Philippe Descola kalder en alternativ ontologi: hvor det vestlige naturalistiske skema adskiller natur og kultur, opererer animistiske kosmologier med en gradueret personhood, hvor mennesker, dyr, planter og landskaber er forbundet relationelt.' ► 'Shamanismen rummer i Mircea Eliades klassiske analyse en arkaisk teknik for ekstase, men nyere etnografi (Vitebsky, Atkinson) understreger, at den er institutionelt mangfoldig og ikke en universel ur-religion — at tale om 'shamanisme' i ental risikerer at universalisere et sibirisk-tungusisk fænomen.' ► 'Naturreligionernes synkretisme med kristendom og islam — Vodou, Santería, Candomblé i den atlantiske diaspora — er ikke 'urent' eller forfaldsfænomen, men en kreativ religiøs poesis, der med Robert Bastide kan analyseres som modstandshermeneutik mod kolonial undertrykkelse.' ► 'Ninian Smarts dimensionsmodel er særligt egnet til naturreligioner, fordi den undgår både den protestantiske kanon-præference og den kantianske vægt på doktrin: ved at give rituelle, erfaringsmæssige og materielle dimensioner ækvivalent vægt med doktrin og myte, dekoloniserer modellen den komparative religionsvidenskab.'",
     },
     {
       heading: "Kilder",
@@ -148,6 +148,84 @@ export const naturreligioner: Topic = {
       correctOptionId: "c",
       explanation:
         "Shamanen (selve ordet stammer fra det sibiriske tungus-sprog) er specialisten, der i trance rejser til åndeverdenen for at helbrede, spå eller mægle.",
+    },
+    {
+      id: "q7",
+      prompt: "Fortællinger om trickster-figurer som Coyote (Lakota), Anansi (Akan) og Loke (nordisk) hører til hvilken af Smarts dimensioner?",
+      options: [
+        { id: "a", text: "Den mytisk-fortællende dimension" },
+        { id: "b", text: "Den etiske dimension" },
+        { id: "c", text: "Den materielle dimension" },
+        { id: "d", text: "Den doktrinære dimension" },
+      ],
+      correctOptionId: "a",
+      explanation:
+        "Trickster-fortællinger, skabelsesmyter og Dreamtime-historier er den mytisk-fortællende dimension — religionens fortællinger.",
+    },
+    {
+      id: "q8",
+      prompt: "Begreber som mana (kraft) i Polynesien og tabu (forbud) på Hawaii er eksempler på hvilken dimension?",
+      options: [
+        { id: "a", text: "Den materielle dimension" },
+        { id: "b", text: "Den doktrinære (filosofiske) dimension" },
+        { id: "c", text: "Den rituelle dimension" },
+        { id: "d", text: "Den social-institutionelle dimension" },
+      ],
+      correctOptionId: "b",
+      explanation:
+        "Selvom naturreligioner ofte ikke har systematisk teologi, har de tankegods om kraft, hellighed og åndeverdenen — det er deres doktrinære dimension.",
+    },
+    {
+      id: "q9",
+      prompt: "Regler om respekt for forfædre, slægtens forpligtelser og tabuer omkring jagt og mad hører til hvilken dimension?",
+      options: [
+        { id: "a", text: "Den mytiske dimension" },
+        { id: "b", text: "Den etisk-juridiske dimension" },
+        { id: "c", text: "Den materielle dimension" },
+        { id: "d", text: "Den doktrinære dimension" },
+      ],
+      correctOptionId: "b",
+      explanation:
+        "Sædvaneret, forfædre-respekt og tabuer er den etisk-juridiske dimension — religionens regler for, hvordan man bør leve.",
+    },
+    {
+      id: "q10",
+      prompt: "En shaman går i trance, tromler og 'rejser' til åndeverdenen for at helbrede. Hvilken dimension er det først og fremmest?",
+      options: [
+        { id: "a", text: "Den rituelle dimension" },
+        { id: "b", text: "Den doktrinære dimension" },
+        { id: "c", text: "Den social-institutionelle dimension" },
+        { id: "d", text: "Den materielle dimension" },
+      ],
+      correctOptionId: "a",
+      explanation:
+        "Shamanrejsen er en konkret praksis — den rituelle dimension. Selve oplevelsen af trance hører dog til den erfaringsmæssige dimension.",
+    },
+    {
+      id: "q11",
+      prompt: "I mange naturreligioner findes der ingen kirke eller global organisation — religionen bæres af klan, stamme og slægt. Hvilken dimension er det?",
+      options: [
+        { id: "a", text: "Den materielle dimension" },
+        { id: "b", text: "Den mytiske dimension" },
+        { id: "c", text: "Den social-institutionelle dimension" },
+        { id: "d", text: "Den etiske dimension" },
+      ],
+      correctOptionId: "c",
+      explanation:
+        "Hvordan religionen organiseres socialt — stamme, klan, slægt, shaman som specialist — er den social-institutionelle dimension.",
+    },
+    {
+      id: "q12",
+      prompt: "Totempæle, masker, trommer, hellige bjerge som Uluru og kultsteder er eksempler på hvilken dimension?",
+      options: [
+        { id: "a", text: "Den materielle dimension" },
+        { id: "b", text: "Den etiske dimension" },
+        { id: "c", text: "Den doktrinære dimension" },
+        { id: "d", text: "Den mytiske dimension" },
+      ],
+      correctOptionId: "a",
+      explanation:
+        "De fysiske ting og steder — hellige bjerge, masker, trommer, fetisher — er den materielle dimension. Den er ofte særligt rig i naturreligioner.",
     },
   ],
 };

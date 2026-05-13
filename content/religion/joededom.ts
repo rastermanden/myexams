@@ -62,7 +62,7 @@ export const joededom: Topic = {
     {
       heading: "Formuleringer der imponerer læreren",
       body:
-        "Sætninger der demonstrerer religionsfaglig modenhed. ► 'Jødedommens særkende er ikke primært en doxa, men en ortopraksis — pagtens (brit) forpligtelse til halakha gør den til en par excellence handlingsorienteret religion, hvor identitet realiseres performativt gennem mitzvot snarere end propositionelt gennem trosbekendelse.' ► 'Talmuds dialogiske form — Mishna kommenteret af Gemara med modsatrettede tannaim- og amoraim-stemmer — institutionaliserer en hermeneutisk pluralisme, der står i markant kontrast til islamisk og katolsk magisterium og gør jødedommen til, hvad Emmanuel Levinas kalder en 'svær frihed'.' ► 'Forholdet mellem jødedom og kristendom kan ikke korrekt beskrives som mor-datter-relation; det er, som Daniel Boyarin har påvist, snarere et tvilling-fænomen: rabbinsk jødedom og kristendom udgør parallelle reformuleringer af det antikke jødedom efter tempelødelæggelsen i år 70, hvor begge bevægelser har måttet erstatte tempelkulten med henholdsvis tekstualitet og kristologi.' ► 'Holocaust udgør et teodicé-brud uden fortilfælde og har genereret en distinkt post-Shoah-teologi (Fackenheim, Rubenstein, Levinas) — hvilket gør jødedommen til et eksemplarisk case i hvordan kollektiv katastrofe omformer religiøs hermeneutik.' ► 'Zionismen er ikke en organisk forlængelse af messianismen, men en sekulariseret eskatologi, der oversætter den traditionelle længsel efter Zion til et moderne nationalstatsligt projekt — en transformation Gershom Scholem analyserede som dialektisk: jødisk tradition leverer det semiotiske råstof, men politiserer det i en post-Haskala-grammatik.'",
+        "Sætninger der demonstrerer religionsfaglig modenhed — vælg en kort, klar formulering, hvis fagsproget er for tungt. ► KORT OG KLART: 'I jødedommen er det vigtigere, hvad man gør, end præcis hvad man tror. De 613 mitzvot og halakha gør jødedommen til en handlingsreligion — derfor passer Smarts etisk-juridiske dimension særlig godt på den.' ► KORT OG KLART: 'Jødedom og kristendom ligner ikke mor og datter — de er snarere to grene, der voksede ud af antikkens jødedom efter at templet blev ødelagt i år 70. Den ene erstattede templet med teksterne (Toraen og Talmud), den anden med Kristus.' ► 'Jødedommens særkende er ikke primært en doxa, men en ortopraksis — pagtens (brit) forpligtelse til halakha gør den til en par excellence handlingsorienteret religion, hvor identitet realiseres performativt gennem mitzvot snarere end propositionelt gennem trosbekendelse.' ► 'Talmuds dialogiske form — Mishna kommenteret af Gemara med modsatrettede tannaim- og amoraim-stemmer — institutionaliserer en hermeneutisk pluralisme, der står i markant kontrast til islamisk og katolsk magisterium og gør jødedommen til, hvad Emmanuel Levinas kalder en 'svær frihed'.' ► 'Forholdet mellem jødedom og kristendom kan ikke korrekt beskrives som mor-datter-relation; det er, som Daniel Boyarin har påvist, snarere et tvilling-fænomen: rabbinsk jødedom og kristendom udgør parallelle reformuleringer af det antikke jødedom efter tempelødelæggelsen i år 70, hvor begge bevægelser har måttet erstatte tempelkulten med henholdsvis tekstualitet og kristologi.' ► 'Holocaust udgør et teodicé-brud uden fortilfælde og har genereret en distinkt post-Shoah-teologi (Fackenheim, Rubenstein, Levinas) — hvilket gør jødedommen til et eksemplarisk case i hvordan kollektiv katastrofe omformer religiøs hermeneutik.' ► 'Zionismen er ikke en organisk forlængelse af messianismen, men en sekulariseret eskatologi, der oversætter den traditionelle længsel efter Zion til et moderne nationalstatsligt projekt — en transformation Gershom Scholem analyserede som dialektisk: jødisk tradition leverer det semiotiske råstof, men politiserer det i en post-Haskala-grammatik.'",
     },
     {
       heading: "Kilder",
@@ -148,6 +148,84 @@ export const joededom: Topic = {
       correctOptionId: "c",
       explanation:
         "Jødedommen anerkender ikke Jesus som Messias eller Guds søn og afviser treenigheden. Det er hovedforskellen til kristendommen.",
+    },
+    {
+      id: "q7",
+      prompt: "Påskefortællingen (Pesach) om udgangen af Egypten og Moses ved Det Røde Hav er et eksempel på hvilken af Smarts dimensioner?",
+      options: [
+        { id: "a", text: "Den mytisk-fortællende dimension" },
+        { id: "b", text: "Den materielle dimension" },
+        { id: "c", text: "Den doktrinære dimension" },
+        { id: "d", text: "Den social-institutionelle dimension" },
+      ],
+      correctOptionId: "a",
+      explanation:
+        "Religionens store fortællinger — skabelse, udgangen af Egypten, patriarkfortællingerne — er den mytisk-fortællende dimension.",
+    },
+    {
+      id: "q8",
+      prompt: "Pagten (brit) mellem Gud og Abraham — at jøderne er et udvalgt folk — er først og fremmest et eksempel på hvilken dimension?",
+      options: [
+        { id: "a", text: "Den rituelle dimension" },
+        { id: "b", text: "Den doktrinære dimension" },
+        { id: "c", text: "Den materielle dimension" },
+        { id: "d", text: "Den etiske dimension" },
+      ],
+      correctOptionId: "b",
+      explanation:
+        "Forestillingen om pagten er en læresætning om forholdet mellem Gud og folket — det hører til den doktrinære (filosofiske) dimension.",
+    },
+    {
+      id: "q9",
+      prompt: "En jødisk familie tænder lys, spiser challah og holder sabbat fra fredag aften til lørdag aften. Hvilken dimension er det først og fremmest?",
+      options: [
+        { id: "a", text: "Den doktrinære dimension" },
+        { id: "b", text: "Den rituelle dimension" },
+        { id: "c", text: "Den mytiske dimension" },
+        { id: "d", text: "Den materielle dimension" },
+      ],
+      correctOptionId: "b",
+      explanation:
+        "Sabbatsritualet er en konkret, gentagen handling — typisk for den rituelle (praktiske) dimension. Også omskærelse, seder-måltid og bar/bat mitzva hører hertil.",
+    },
+    {
+      id: "q10",
+      prompt: "Den chasidiske bevægelses dans, sang og inderlige glæde i bønnen passer bedst i hvilken dimension?",
+      options: [
+        { id: "a", text: "Den etiske dimension" },
+        { id: "b", text: "Den social-institutionelle dimension" },
+        { id: "c", text: "Den erfaringsmæssige (emotionelle) dimension" },
+        { id: "d", text: "Den materielle dimension" },
+      ],
+      correctOptionId: "c",
+      explanation:
+        "Den erfaringsmæssige dimension handler om følelser og inderlige oplevelser — chasidismens gudsglæde og kabbalaens mystik hører hertil.",
+    },
+    {
+      id: "q11",
+      prompt: "Synagogen, rabbinatet og staten Israel er eksempler på hvilken dimension?",
+      options: [
+        { id: "a", text: "Den social-institutionelle dimension" },
+        { id: "b", text: "Den materielle dimension" },
+        { id: "c", text: "Den mytiske dimension" },
+        { id: "d", text: "Den doktrinære dimension" },
+      ],
+      correctOptionId: "a",
+      explanation:
+        "Hvordan religionen organiserer sig — menigheder, ledere, lærdomssteder, stater — er den social-institutionelle dimension.",
+    },
+    {
+      id: "q12",
+      prompt: "Tora-rullen, kippaen, bedesjalet (tallit) og Klagemuren i Jerusalem er eksempler på hvilken dimension?",
+      options: [
+        { id: "a", text: "Den materielle dimension" },
+        { id: "b", text: "Den etiske dimension" },
+        { id: "c", text: "Den rituelle dimension" },
+        { id: "d", text: "Den doktrinære dimension" },
+      ],
+      correctOptionId: "a",
+      explanation:
+        "De fysiske ting og steder — skriftruller, beklædning, hellige bygninger — udgør den materielle dimension.",
     },
   ],
 };
