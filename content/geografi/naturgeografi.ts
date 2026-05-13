@@ -27,7 +27,7 @@ export const istiderOgIsensLandskabsdannelse: Topic = {
     {
       heading: "Kilder (udvalg)",
       body:
-        "GEUS (geus.dk), Den Store Danske om istider, Miljøstyrelsen om landskabsdannelse, Wikimedia Commons-kilder på figurer.",
+        "GEUS: https://www.geus.dk/, Den Store Danske (istid): https://denstoredanske.lex.dk/istid, Miljøstyrelsen (landskab/natur): https://mst.dk/, figurer med direkte kildelinks er angivet under hver illustration.",
     },
   ],
   quiz: [
@@ -154,7 +154,7 @@ export const floderOgVandloeb: Topic = {
     {
       heading: "Kilder (udvalg)",
       body:
-        "USGS Water Science School, GEUS om vandløb og sediment, Wikimedia Commons-kilder på figurer.",
+        "USGS Water Science School (rivers/streams): https://www.usgs.gov/special-topics/water-science-school/science/rivers-and-streams, GEUS: https://www.geus.dk/, figurer med direkte kildelinks er angivet under hver illustration.",
     },
   ],
   quiz: [
@@ -212,7 +212,8 @@ export const vandetsKredsloeb: Topic = {
     },
     {
       heading: "Kilder (udvalg)",
-      body: "DMI om nedbør og fordampning, GEUS om vandkredsløb, USGS Water Cycle.",
+      body:
+        "DMI (klimanormaler og nedbør): https://www.dmi.dk/, GEUS (vand og geologi): https://www.geus.dk/, USGS Water Cycle: https://www.usgs.gov/special-topics/water-science-school/science/water-cycle.",
     },
   ],
   quiz: [
@@ -261,7 +262,8 @@ export const grundvand: Topic = {
     },
     {
       heading: "Kilder (udvalg)",
-      body: "GEUS (grundvand.dk), Miljøstyrelsen om drikkevand og grundvandsbeskyttelse.",
+      body:
+        "GEUS (grundvand): https://www.geus.dk/faglige-omraader/grundvand, Miljøstyrelsen (drikkevand og grundvand): https://mst.dk/natur-vand/vand-i-hverdagen/drikkevand.",
     },
   ],
   quiz: [
@@ -370,7 +372,8 @@ export const oerkenerOgOerkendannelse: Topic = {
     },
     {
       heading: "Kilder (udvalg)",
-      body: "UNCCD, FAO om tørre landskaber og jordforringelse, IPCC-rapporter.",
+      body:
+        "UNCCD (desertification): https://www.unccd.int/, FAO (land degradation): https://www.fao.org/land-water/land/land-governance/land-degradation/en/, IPCC AR6 WGII: https://www.ipcc.ch/report/ar6/wg2/.",
     },
   ],
   quiz: [
@@ -428,7 +431,8 @@ export const skoveOgBiomer: Topic = {
     },
     {
       heading: "Kilder (udvalg)",
-      body: "WWF biome-oversigter, IPBES, Britannica om globale biomer.",
+      body:
+        "WWF (biomes): https://www.worldwildlife.org/biomes, IPBES assessment reports: https://www.ipbes.net/, Britannica (biome): https://www.britannica.com/science/biome.",
     },
   ],
   quiz: [
@@ -485,7 +489,8 @@ export const jordbundOgJordtyper: Topic = {
     },
     {
       heading: "Kilder (udvalg)",
-      body: "GEUS jorddata, USDA Soil Survey, Aarhus Universitet om jordbund.",
+      body:
+        "GEUS (jord og geodata): https://www.geus.dk/, USDA Soil Survey Manual: https://www.nrcs.usda.gov/resources/guides-and-instructions/soil-survey-manual, Aarhus Universitet DCA/DCE jordfaglige ressourcer: https://dca.au.dk/.",
     },
   ],
   quiz: [
@@ -536,7 +541,8 @@ export const forvitringOgErosion: Topic = {
     },
     {
       heading: "Kilder (udvalg)",
-      body: "USGS om weathering and erosion, GEUS undervisningsmateriale, Britannica.",
+      body:
+        "USGS (weathering and erosion): https://www.usgs.gov/media/images/weathering-and-erosion, GEUS undervisningsressourcer: https://www.geus.dk/formidling, Britannica (weathering): https://www.britannica.com/science/weathering.",
     },
   ],
   quiz: [
@@ -587,7 +593,7 @@ export const soeerOgVaadomraader: Topic = {
     {
       heading: "Kilder (udvalg)",
       body:
-        "Aarhus Universitet (DCE) om søtilstand, Miljøstyrelsen om vådområder, Ramsar Convention.",
+        "Aarhus Universitet DCE (vandmiljø): https://dce.au.dk/udgivelser, Miljøstyrelsen (vådområder): https://mst.dk/natur-vand/vandmiljoe, Ramsar Convention: https://www.ramsar.org/.",
     },
   ],
   quiz: [
