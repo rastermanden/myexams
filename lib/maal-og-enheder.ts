@@ -53,7 +53,7 @@ export const UNIT_DEFINITIONS: Record<UnitCategory, UnitDefinition[]> = {
     { id: "h", label: "time", toBaseFactor: 3600, metric: true },
     { id: "doegn", label: "døgn", toBaseFactor: 86400, metric: true },
     // Standardår på 365 døgn × 86.400 sekunder (skudår ignoreres).
-    { id: "aar", label: "år", toBaseFactor: 31536000, metric: true },
+    { id: "aar", label: "år", toBaseFactor: 365 * 86400, metric: true },
   ],
   hastighed: [
     { id: "mps", label: "m/s", toBaseFactor: 1 },
@@ -215,6 +215,7 @@ export function generateContextTask(): ContextTask {
 }
 
 export function isAnswerClose(expected: number, actual: number): boolean {
+  if (!Number.isFinite(expected)) return false;
   if (!Number.isFinite(actual)) return false;
   const tolerance = Math.max(MIN_ABSOLUTE_TOLERANCE, Math.abs(expected) * RELATIVE_TOLERANCE);
   return Math.abs(expected - actual) <= tolerance;

@@ -133,7 +133,10 @@ export default function MaalOgEnhederDemo() {
           </div>
 
           <p className="text-sm text-zinc-700 dark:text-zinc-300">
-            Resultat: <span className="font-semibold">{convertedValue === null ? "-" : formatNumber(convertedValue)}</span>
+            Resultat:{" "}
+            <span className="font-semibold">
+              {convertedValue === null ? "Ugyldig værdi" : formatNumber(convertedValue)}
+            </span>
           </p>
 
           <p className="text-xs text-zinc-600 dark:text-zinc-400">
