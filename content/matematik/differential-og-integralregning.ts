@@ -79,7 +79,7 @@ export const differentialOgIntegralregning: Topic = {
     },
     {
       id: "q5",
-      prompt: "Hvad er tangentligningen til f(x)=x^2 i x0=1?",
+      prompt: "Hvad er tangentligningen til f(x)=x^2 i x₀=1?",
       options: [
         { id: "a", text: "y = 2x - 1" },
         { id: "b", text: "y = x + 1" },

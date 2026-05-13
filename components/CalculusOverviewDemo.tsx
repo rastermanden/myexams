@@ -150,7 +150,7 @@ export default function CalculusOverviewDemo() {
           Træk en graf og se den afledede
         </h3>
         <p className="text-sm text-zinc-700 dark:text-zinc-300">
-          Træk punktet ved x=1 op/ned for at ændre a i f(x)=a·x². Den afledede opdateres som f&apos;(x)=2a·x.
+          Træk punktet ved x=1 op/ned for at ændre a i f(x)=a·x². Den afledede opdateres som f′(x)=2a·x.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
           <svg
@@ -189,7 +189,7 @@ export default function CalculusOverviewDemo() {
             <path d={derivativePath} fill="none" stroke="currentColor" strokeWidth="3" className="text-cyan-600 dark:text-cyan-400" />
           </svg>
         </div>
-        <p className="text-sm text-zinc-700 dark:text-zinc-300">Aktuel model: f(x) = {a.toFixed(2)}·x², f&apos;(x) = {(2 * a).toFixed(2)}·x</p>
+        <p className="text-sm text-zinc-700 dark:text-zinc-300">Aktuel model: f(x) = {a.toFixed(2)}·x², f′(x) = {(2 * a).toFixed(2)}·x</p>
       </div>
 
       <div className="space-y-3">
@@ -245,7 +245,7 @@ export default function CalculusOverviewDemo() {
               <li>d/dx(x³)=3x²</li>
               <li>d/dx(-3x²)=-6x</li>
               <li>d/dx(2x)=2</li>
-              <li>h&apos;(x)=3x²-6x+2</li>
+                <li>h′(x)=3x²-6x+2</li>
             </ol>
           </div>
           <div className="rounded-xl border border-zinc-200 p-4 text-sm text-zinc-700 dark:border-zinc-700 dark:text-zinc-300">
