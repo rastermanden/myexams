@@ -1,4 +1,5 @@
 import type { Subject } from "@/lib/types";
+import { tjekUp8Klasse } from "./categories/tjek-up-8-klasse";
 import { algebra } from "./categories/algebra";
 import { funktioner } from "./categories/funktioner";
 import { differentialOgIntegralregning } from "./categories/differential-og-integralregning";
@@ -16,6 +17,7 @@ export const matematik: Subject = {
   description:
     "Geometri, funktioner, differential- og integralregning, statistik og sandsynlighed — fra folkeskole til gymnasium.",
   categories: [
+    tjekUp8Klasse,
     algebra,
     funktioner,
     differentialOgIntegralregning,
