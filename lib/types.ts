@@ -8,9 +8,27 @@ export type ImageRef = {
   height?: number;
 };
 
+export type WorkedExampleStep = {
+  /** Selve mellemregningen, fx "0,18 × 250 = 45". */
+  expression: string;
+  /** Kort forklaring af, hvorfor trinnet ser sådan ud. */
+  explanation?: string;
+};
+
+/** Et gennemregnet eksempel med alle mellemregninger. */
+export type WorkedExample = {
+  title: string;
+  task: string;
+  steps: WorkedExampleStep[];
+  result: string;
+  /** Prøve eller overslag, der viser at svaret passer. */
+  check?: string;
+};
+
 export type ConceptSection = {
   heading: string;
   body: string;
+  examples?: WorkedExample[];
   image?: ImageRef;
 };
 
