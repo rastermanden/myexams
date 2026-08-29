@@ -1,12 +1,14 @@
 import type { Topic } from "@/lib/types";
+import BroekPlusSammeNaevnerDemo from "@/components/BroekPlusSammeNaevnerDemo";
 import { METODESAMLING_CREDIT } from "./credit";
 
 export const regningMedBroeker: Topic = {
   slug: "regning-med-broeker",
   title: "Regning med brøker",
   summary:
-    "Tæller og nævner som forholdet mellem to tal — forkortning, plus og minus med fællesnævner, multiplikation, division med den omvendte brøk og fortegn.",
+    "Tæller og nævner som forholdet mellem to tal — forkortning, plus med samme nævner trin for trin, fællesnævner, multiplikation, division med den omvendte brøk og fortegn.",
   credit: METODESAMLING_CREDIT,
+  demoComponent: BroekPlusSammeNaevnerDemo,
   sections: [
     {
       heading: "2.1 Hvad er en brøk?",
@@ -89,7 +91,31 @@ export const regningMedBroeker: Topic = {
           kind: "math",
           tex: "\\frac{a}{c} + \\frac{b}{c} = \\frac{a+b}{c} \\qquad \\frac{a}{c} - \\frac{b}{c} = \\frac{a-b}{c}",
         },
-        { kind: "text", text: "*Eksempel 1: Samme nævner*" },
+        { kind: "text", text: "**Plus med samme nævner**" },
+        {
+          kind: "text",
+          text: "Det er den letteste af de to slags plusstykker, og det er den, alle de andre ender med at blive lavet om til. Når nævnerne er ens, er stykkerne af kagen nemlig lige store — og lige store stykker kan tælles sammen ét for ét.",
+        },
+        {
+          kind: "text",
+          text: "Nævneren fortæller *hvor store* stykkerne er, ikke *hvor mange* man har. Derfor ændrer nævneren sig ikke, når man lægger sammen: to ottendedele plus tre ottendedele er fem ottendedele — stadig ottendedele.",
+        },
+        {
+          kind: "list",
+          ordered: true,
+          title: "Sådan gør du",
+          items: [
+            "Tjek, at nævnerne er ens — ellers skal der først findes en fællesnævner",
+            "Læg **tællerne** sammen: $a + b$",
+            "Lad **nævneren** stå, som den er: $c$",
+            "**Forkort** svaret til sidst, hvis tæller og nævner har en fælles divisor",
+          ],
+        },
+        { kind: "text", text: "*Eksempel 1: Tællerne lægges sammen*" },
+        {
+          kind: "text",
+          text: "Begge brøker har nævneren 8, så kagen er delt i 8 lige store stykker begge gange. Man har 3 stykker og får 2 mere:",
+        },
         {
           kind: "math",
           tex: "\\frac{3}{8} + \\frac{2}{8} = \\frac{3+2}{8} = \\frac{5}{8}",
@@ -106,7 +132,65 @@ export const regningMedBroeker: Topic = {
           },
           caption: "Stykkerne er lige store, så man tæller bare stykkerne sammen. Kagen (nævneren) er stadig delt i 8.",
         },
-        { kind: "text", text: "*Eksempel 2: Minus med samme nævner*" },
+        {
+          kind: "text",
+          text: "5 og 8 har ingen fælles divisor, så $\\frac{5}{8}$ er færdigt — der er ikke mere at forkorte.",
+        },
+        { kind: "text", text: "*Eksempel 2: Svaret kan forkortes*" },
+        {
+          kind: "text",
+          text: "Selve sammenlægningen foregår på præcis samme måde. Til sidst kan både 4 og 6 divideres med 2, og så skal svaret forkortes:",
+        },
+        {
+          kind: "math",
+          tex: "\\frac{1}{6} + \\frac{3}{6} = \\frac{1+3}{6} = \\frac{4}{6} = \\frac{4 : 2}{6 : 2} = \\frac{2}{3}",
+        },
+        {
+          kind: "figure",
+          figure: {
+            kind: "pies",
+            pies: [
+              { numerator: 1, denominator: 6, caption: "1/6" },
+              { numerator: 3, denominator: 6, caption: "+ 3/6" },
+              { numerator: 4, denominator: 6, caption: "= 4/6" },
+              { numerator: 2, denominator: 3, caption: "= 2/3" },
+            ],
+          },
+          caption: "4/6 og 2/3 er den samme del af kagen — den er bare skåret i færre og større stykker.",
+        },
+        { kind: "text", text: "*Eksempel 3: Svaret bliver større end 1*" },
+        {
+          kind: "text",
+          text: "Tællerne kan godt blive større tilsammen end nævneren. Så er svaret en **uægte brøk**, altså mere end en hel kage. Reglen er den samme — tællerne lægges sammen, nævneren står stille:",
+        },
+        {
+          kind: "math",
+          tex: "\\frac{5}{7} + \\frac{4}{7} = \\frac{5+4}{7} = \\frac{9}{7} = 1\\frac{2}{7}",
+        },
+        {
+          kind: "figure",
+          figure: {
+            kind: "pies",
+            pies: [
+              { numerator: 5, denominator: 7, caption: "5/7" },
+              { numerator: 4, denominator: 7, caption: "+ 4/7" },
+              { numerator: 7, denominator: 7, caption: "= 7/7 (en hel)" },
+              { numerator: 2, denominator: 7, caption: "+ 2/7" },
+            ],
+          },
+          caption: "9 syvendedele fylder en hel kage og 2 syvendedele mere.",
+        },
+        {
+          kind: "list",
+          title: "Pas på — plus med samme nævner",
+          items: [
+            "Nævneren lægges **aldrig** sammen: $\\frac{3}{8} + \\frac{2}{8}$ er $\\frac{5}{8}$, ikke $\\frac{5}{16}$",
+            "Nævnerne skal være ens, *før* man lægger tællerne sammen",
+            "Svaret forkortes til sidst — men først når tællerne er lagt sammen",
+            "Er tælleren større end nævneren, er svaret bare større end 1; det er ikke en fejl",
+          ],
+        },
+        { kind: "text", text: "*Eksempel 4: Minus med samme nævner*" },
         {
           kind: "math",
           tex: "\\frac{5}{9} - \\frac{2}{9} = \\frac{5-2}{9} = \\frac{3}{9} = \\frac{1}{3}",
@@ -120,7 +204,7 @@ export const regningMedBroeker: Topic = {
           kind: "text",
           text: "Har brøkerne *ikke* samme nævner, skal man først **forlænge** dem, så nævnerne bliver ens. At forlænge er at gange **både tæller og nævner med det samme tal** — så ændrer brøkens værdi sig ikke, kun måden den er skrevet på.",
         },
-        { kind: "text", text: "*Eksempel 3: Den ene nævner går op i den anden*" },
+        { kind: "text", text: "*Eksempel 5: Den ene nævner går op i den anden*" },
         {
           kind: "text",
           text: "Her er 4 allerede en fællesnævner, for $2 \\cdot 2 = 4$. Derfor forlænges kun den anden brøk med 2:",
@@ -141,7 +225,7 @@ export const regningMedBroeker: Topic = {
           },
           caption: "En halv kage er det samme som to fjerdedele — så er stykkerne lige store, og de kan lægges sammen.",
         },
-        { kind: "text", text: "*Eksempel 4: Gang nævnerne over kryds*" },
+        { kind: "text", text: "*Eksempel 6: Gang nævnerne over kryds*" },
         {
           kind: "text",
           text: "Går den ene nævner ikke op i den anden, kan man altid gange nævnerne med hinanden. Hver brøk forlænges med den *andens* nævner:",
@@ -154,12 +238,12 @@ export const regningMedBroeker: Topic = {
           kind: "math",
           tex: "\\frac{2}{3} + \\frac{1}{4} = \\frac{2 \\cdot 4}{3 \\cdot 4} + \\frac{1 \\cdot 3}{4 \\cdot 3} = \\frac{8}{12} + \\frac{3}{12} = \\frac{11}{12}",
         },
-        { kind: "text", text: "*Eksempel 5: Minus med forskellige nævnere*" },
+        { kind: "text", text: "*Eksempel 7: Minus med forskellige nævnere*" },
         {
           kind: "math",
           tex: "\\frac{3}{5} - \\frac{1}{3} = \\frac{3 \\cdot 3}{5 \\cdot 3} - \\frac{1 \\cdot 5}{3 \\cdot 5} = \\frac{9}{15} - \\frac{5}{15} = \\frac{4}{15}",
         },
-        { kind: "text", text: "*Eksempel 6: Helt tal plus brøk*" },
+        { kind: "text", text: "*Eksempel 8: Helt tal plus brøk*" },
         {
           kind: "text",
           text: "Et helt tal skrives som en brøk med nævner 1 og forlænges op til den nævner, den anden brøk har:",
@@ -307,6 +391,32 @@ export const regningMedBroeker: Topic = {
       correctOptionId: "b",
       explanation:
         "Nævnerne er ens, så man lægger kun tællerne sammen og lader nævneren stå: (3 + 2)/8 = 5/8.",
+    },
+    {
+      id: "q11",
+      prompt: "Hvad er 1/6 + 3/6, når svaret skal forkortes helt?",
+      options: [
+        { id: "a", text: "4/12" },
+        { id: "b", text: "4/6" },
+        { id: "c", text: "2/3" },
+        { id: "d", text: "1/2" },
+      ],
+      correctOptionId: "c",
+      explanation:
+        "Nævnerne er ens, så tællerne lægges sammen: (1 + 3)/6 = 4/6. Både 4 og 6 kan divideres med 2, så svaret forkortes til 2/3.",
+    },
+    {
+      id: "q12",
+      prompt: "Hvad er 5/7 + 4/7?",
+      options: [
+        { id: "a", text: "9/14" },
+        { id: "b", text: "9/7" },
+        { id: "c", text: "20/7" },
+        { id: "d", text: "Det kan ikke lade sig gøre — svaret bliver over 1" },
+      ],
+      correctOptionId: "b",
+      explanation:
+        "Tællerne lægges sammen, og nævneren står stille: (5 + 4)/7 = 9/7. At tælleren er større end nævneren er helt i orden — svaret er en uægte brøk, altså 1 hel og 2/7.",
     },
     {
       id: "q8",
