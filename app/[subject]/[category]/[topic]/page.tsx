@@ -49,6 +49,9 @@ export default async function TopicPage({
           {topic.title}
         </h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-300">{topic.summary}</p>
+        {topic.credit && (
+          <p className="text-sm text-zinc-500 dark:text-zinc-400">{topic.credit}</p>
+        )}
       </header>
 
       {topic.hero && (
