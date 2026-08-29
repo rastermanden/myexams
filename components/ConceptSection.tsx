@@ -1,6 +1,6 @@
 import type { ConceptSection as ConceptSectionType, WorkedExample } from "@/lib/types";
 import ImageWithCredit from "./ImageWithCredit";
-import DocBlocks from "./latex/DocBlocks";
+import DocBlocks, { Figure } from "./latex/DocBlocks";
 import { Tex } from "./latex/Tex";
 import { toTex } from "@/lib/mathText";
 
@@ -85,6 +85,12 @@ export default function ConceptSection({
 
           {section.blocks && section.blocks.length > 0 && (
             <DocBlocks blocks={section.blocks} />
+          )}
+
+          {section.figure && (
+            <div className="my-5 flex justify-center overflow-x-auto">
+              <Figure figure={section.figure} />
+            </div>
           )}
 
           {section.examples && section.examples.length > 0 && (

@@ -10,11 +10,19 @@ export const broekRepetition: Topic = {
   sections: [
     {
       heading: "Hvad en brøk fortæller",
+      figure: {
+        kind: "pies",
+        pies: [{ numerator: 3, denominator: 4, caption: "3/4" }],
+      },
       body:
         "En brøk består af en tæller (tallet over stregen) og en nævner (tallet under stregen). Nævneren fortæller, hvor mange lige store dele helheden er delt i, og tælleren fortæller, hvor mange af dem du har. I 3/4 er helheden delt i 4 dele, og du har 3 af dem. Brøkstregen betyder samtidig „divideret med“: 3/4 er det samme som 3 : 4 = 0,75. Er tælleren mindre end nævneren, er brøken mindre end 1 (en ægte brøk). Er tælleren større, er brøken større end 1 (en uægte brøk), fx 7/4 = 1¾.",
     },
     {
       heading: "Forkorte og forlænge",
+      figure: {
+        kind: "pies",
+        pies: [{ numerator: 6, denominator: 8, caption: "6/8" }, { numerator: 3, denominator: 4, caption: "3/4" }],
+      },
       body:
         "Du må gange eller dividere både tæller og nævner med det samme tal — brøkens værdi ændrer sig ikke. Dividerer du, forkorter du: 18/24 = (18 : 6)/(24 : 6) = 3/4, fordi 6 er den største fælles divisor. Ganger du, forlænger du: 2/5 = (2 × 3)/(5 × 3) = 6/15. Til prøven skal du altid aflevere svaret fuldt forkortet, altså hvor tæller og nævner ikke længere har en fælles faktor. Det, du ikke må, er at lægge det samme tal til tæller og nævner — 3/4 er ikke det samme som 4/5.",
       examples: [

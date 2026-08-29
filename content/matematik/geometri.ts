@@ -10,6 +10,17 @@ export const geometri: Topic = {
   sections: [
     {
       heading: "Vinkler, trekanter og Pythagoras",
+      figure: {
+        kind: "triangle",
+        base: 4,
+        height: 3,
+        size: 170,
+        angleLabel: "v",
+        adjacentLabel: "a",
+        oppositeLabel: "b",
+        hypotenuseLabel: "c (hypotenusen)",
+        caption: "I en retvinklet trekant gælder a² + b² = c²",
+      },
       body:
         "I geometri arbejder vi med vinkler (spids, ret, stump og fuld vinkel), trekantstyper og vinkelsum. En trekants vinkelsum er altid 180°. Pythagoras’ sætning gælder i retvinklede trekanter: a² + b² = c², hvor c er hypotenusen.",
     },
