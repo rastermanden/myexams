@@ -3,6 +3,20 @@
 :root {
   --background: #fafafa;
   --foreground: #18181b;
+
+  /* Sidens vandrette luft — figurerne bruger den til at brede sig ud
+     til skærmkanten på telefoner. */
+  --page-gutter: 1rem;
+
+  /* Cifferfeltet i regneopstillingerne. På de smalleste telefoner
+     krymper det, så en lang opstilling stadig kan ses på én gang. */
+  --latex-cell: 2.625rem;
+}
+
+@media (max-width: 24rem) {
+  :root {
+    --latex-cell: 2.125rem;
+  }
 }
 
 @theme inline {
@@ -56,23 +70,47 @@ body {
   line-height: 1.65;
 }
 
+/* Lige margener i begge sider kræver plads. På en telefon er spalten så
+   smal, at lige højremargen river ordmellemrummene fra hinanden, så
+   teksten står med "floder" ned gennem afsnittet. Derfor sættes den
+   ujævnt på små skærme og først lige, når spalten er bred nok. */
 .latex-doc p {
   margin: 0.85em 0;
-  text-align: justify;
+  text-align: left;
   hyphens: auto;
 }
 
-/* Som i LaTeX indrykkes efterfølgende afsnit — men ikke det første,
-   og ikke et afsnit, der lige har afbrudt en formel eller en figur. */
 .latex-doc p + p {
   margin-top: 0.6em;
-  text-indent: 1.5em;
+}
+
+@media (min-width: 40rem) {
+  .latex-doc p {
+    text-align: justify;
+  }
+
+  /* Som i LaTeX indrykkes efterfølgende afsnit — men ikke det første,
+     og ikke et afsnit, der lige har afbrudt en formel eller en figur.
+     Indrykningen koster bredde, så den venter til den brede spalte. */
+  .latex-doc p + p {
+    text-indent: 1.5em;
+  }
 }
 
 .latex-display {
   margin: 1.1em 0;
-  overflow-x: auto;
   overflow-y: hidden;
+}
+
+/* Vandret scroll for det, der ikke kan brydes: en formel eller en
+ * regneopstilling, der er bredere end telefonens skærm, scroller i sin
+ * egen ramme i stedet for at trække hele siden skæv.
+ */
+.latex-display,
+.latex-scroll {
+  overflow-x: auto;
+  /* Når man rammer enden, skal siden bagved ikke rykke med. */
+  overscroll-behavior-x: contain;
 }
 
 /* KaTeX sætter som standard matematik 1,21 gange så stort som teksten
@@ -93,6 +131,16 @@ body {
 .latex-doc .katex-display {
   margin: 0;
   padding: 0.15em 0;
+}
+
+/* En centreret formel, der er bredere end telefonens skærm, ville starte
+   uden for venstre kant — man ville se midten af formlen først. På små
+   skærme sættes den derfor til venstre, så begyndelsen altid er synlig. */
+@media (max-width: 39.99rem) {
+  .latex-doc .katex-display,
+  .latex-doc .katex-display > .katex {
+    text-align: left;
+  }
 }
 
 .latex-list {
@@ -127,6 +175,16 @@ body {
   margin: 1.4em 0;
 }
 
+/* Opstillingerne er brede. På en telefon får de lov at bruge hele
+   skærmens bredde ved at trække sig ud i sidernes padding, så der er
+   plads til flere cifre, før man skal scrolle vandret. */
+@media (max-width: 39.99rem) {
+  .latex-figure {
+    margin-inline: calc(-1 * var(--page-gutter, 1rem));
+    padding-inline: 0.25rem;
+  }
+}
+
 .latex-figure figcaption {
   margin-top: 0.5em;
   text-align: center;
@@ -139,5 +197,11 @@ body {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
-  gap: 1.5rem 2rem;
+  gap: 1rem 1.25rem;
+}
+
+@media (min-width: 40rem) {
+  .latex-figure-row {
+    gap: 1.5rem 2rem;
+  }
 }

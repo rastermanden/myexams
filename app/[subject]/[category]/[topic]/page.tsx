@@ -31,7 +31,7 @@ export default async function TopicPage({
   const TopicDemo = topic.demoComponent;
 
   return (
-    <article className="mx-auto max-w-3xl px-4 py-10">
+    <article className="mx-auto max-w-3xl px-4 py-6 sm:py-10">
       <Breadcrumbs
         items={[
           { label: "Alle fag", href: "/" },
@@ -41,14 +41,14 @@ export default async function TopicPage({
         ]}
       />
 
-      <header className="mb-8 flex flex-col gap-3">
+      <header className="mb-6 flex flex-col gap-3 sm:mb-8">
         <p className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
           {subject.emoji} {subject.title} · {category.title}
         </p>
-        <h1 className="text-4xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
+        <h1 className="text-3xl font-semibold tracking-tight text-balance text-zinc-900 dark:text-zinc-50 sm:text-4xl">
           {topic.title}
         </h1>
-        <p className="text-lg text-zinc-600 dark:text-zinc-300">{topic.summary}</p>
+        <p className="text-base text-zinc-600 dark:text-zinc-300 sm:text-lg">{topic.summary}</p>
         {topic.credit && (
           <p className="text-sm text-zinc-500 dark:text-zinc-400">{topic.credit}</p>
         )}
@@ -75,7 +75,7 @@ export default async function TopicPage({
 
       <SaveToDesktopButton topicTitle={topic.title} />
 
-      <div className="mt-12 rounded-2xl border border-zinc-200 bg-white p-6 text-center dark:border-zinc-800 dark:bg-zinc-900">
+      <div className="mt-10 rounded-2xl border border-zinc-200 bg-white p-5 text-center dark:border-zinc-800 dark:bg-zinc-900 sm:mt-12 sm:p-6">
         <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-50">
           Klar til at teste din viden?
         </h2>
@@ -84,7 +84,7 @@ export default async function TopicPage({
         </p>
         <Link
           href={`/${subject.slug}/${category.slug}/${topic.slug}/quiz`}
-          className="mt-4 inline-flex min-h-12 items-center justify-center rounded-full bg-zinc-900 px-6 py-3 text-base font-medium text-white hover:bg-zinc-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200"
+          className="mt-4 inline-flex w-full min-h-12 items-center justify-center rounded-full bg-zinc-900 px-6 py-3 text-base font-medium text-white hover:bg-zinc-700 sm:w-auto focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200"
         >
           Start quiz
         </Link>

@@ -67,8 +67,10 @@ export default function TjekUpTraening({
   const isCorrect = Boolean(exercise && isChecked && selected === exercise.correctOption);
 
   return (
-    <section className="mt-8 rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900">
-      <h2 className="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">{title}</h2>
+    <section className="mt-8 rounded-2xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900 sm:p-6">
+      <h2 className="text-xl font-semibold tracking-tight text-balance text-zinc-900 dark:text-zinc-50 sm:text-2xl">
+        {title}
+      </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">{intro}</p>
 
       {areaList.length > 1 && (
@@ -120,7 +122,7 @@ export default function TjekUpTraening({
         Rigtige: {correct} / {attempts} · Stime: {streak}
       </p>
 
-      <div className="mt-4 rounded-xl border border-zinc-200 p-4 dark:border-zinc-700">
+      <div className="mt-4 rounded-xl border border-zinc-200 p-3 dark:border-zinc-700 sm:p-4">
         {!exercise ? (
           <p className="text-sm text-zinc-600 dark:text-zinc-300">Henter opgave …</p>
         ) : (
@@ -128,7 +130,7 @@ export default function TjekUpTraening({
             <p className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
               {TJEK_UP_AREA_LABELS[exercise.area]} · {TJEK_UP_LEVEL_LABELS[exercise.level]}
             </p>
-            <p className="mt-2 text-base text-zinc-900 dark:text-zinc-50">{exercise.prompt}</p>
+            <p className="mt-2 text-lg leading-7 text-zinc-900 dark:text-zinc-50">{exercise.prompt}</p>
 
             <div className="mt-4 grid gap-2">
               {exercise.options.map((option) => {
@@ -153,7 +155,7 @@ export default function TjekUpTraening({
                       if (isChecked) return;
                       setSelected(option);
                     }}
-                    className={`min-h-11 rounded-xl border px-4 py-3 text-left text-sm ${style}`}
+                    className={`min-h-12 rounded-xl border px-4 py-3 text-left text-base ${style}`}
                   >
                     {option}
                   </button>
@@ -161,26 +163,26 @@ export default function TjekUpTraening({
               })}
             </div>
 
-            <div className="mt-4 flex flex-wrap gap-2">
+            <div className="mt-4 grid grid-cols-2 gap-2 sm:flex sm:flex-wrap">
               <button
                 type="button"
                 onClick={handleCheck}
                 disabled={!selected || isChecked}
-                className="inline-flex min-h-11 items-center justify-center rounded-full bg-zinc-900 px-5 py-2 text-sm font-medium text-white disabled:opacity-40 dark:bg-zinc-50 dark:text-zinc-900"
+                className="col-span-2 inline-flex min-h-12 items-center justify-center rounded-full bg-zinc-900 px-5 py-2 text-base font-medium text-white disabled:opacity-40 dark:bg-zinc-50 dark:text-zinc-900 sm:min-h-11 sm:text-sm"
               >
                 Tjek svar
               </button>
               <button
                 type="button"
                 onClick={() => setShowSteps((value) => !value)}
-                className="inline-flex min-h-11 items-center justify-center rounded-full border border-zinc-300 px-5 py-2 text-sm font-medium text-zinc-800 dark:border-zinc-700 dark:text-zinc-100"
+                className="inline-flex min-h-12 items-center justify-center rounded-full border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-800 dark:border-zinc-700 dark:text-zinc-100 sm:min-h-11 sm:px-5"
               >
                 {showSteps ? "Skjul fremgangsmåde" : "Vis fremgangsmåde"}
               </button>
               <button
                 type="button"
                 onClick={() => newExercise(area, level)}
-                className="inline-flex min-h-11 items-center justify-center rounded-full border border-zinc-300 px-5 py-2 text-sm font-medium text-zinc-800 dark:border-zinc-700 dark:text-zinc-100"
+                className="inline-flex min-h-12 items-center justify-center rounded-full border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-800 dark:border-zinc-700 dark:text-zinc-100 sm:min-h-11 sm:px-5"
               >
                 Ny opgave
               </button>
@@ -205,7 +207,7 @@ export default function TjekUpTraening({
             </p>
 
             {showSteps && (
-              <ol className="mt-3 list-decimal space-y-1 rounded-xl border border-zinc-200 px-6 py-3 text-sm text-zinc-700 dark:border-zinc-700 dark:text-zinc-200">
+              <ol className="mt-3 list-decimal space-y-1 rounded-xl border border-zinc-200 py-3 pl-8 pr-4 text-sm leading-6 text-zinc-700 dark:border-zinc-700 dark:text-zinc-200">
                 {exercise.steps.map((step, index) => (
                   <li key={index}>{step}</li>
                 ))}

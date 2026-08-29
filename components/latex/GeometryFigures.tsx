@@ -17,7 +17,7 @@ export function PieRow({ pies }: { pies: PieFigure[] }) {
   const c = size / 2;
 
   return (
-    <div className="flex flex-wrap items-start justify-center gap-8 py-2">
+    <div className="flex flex-wrap items-start justify-center gap-5 py-2 sm:gap-8">
       {pies.map((pie, i) => {
         const sweep = (pie.numerator / pie.denominator) * 360;
         const start = polar(c, c, r, 0);
@@ -119,14 +119,14 @@ export function TriangleDiagram({ figure }: { figure: TriangleFigure }) {
   const cy = pad.top; // toppunkt
 
   return (
-    <figure className="m-0 overflow-x-auto py-2">
+    <figure className="latex-scroll m-0 py-2">
       <svg
         width={pad.left + w + pad.right}
         height={pad.top + h + pad.bottom}
         viewBox={`0 0 ${pad.left + w + pad.right} ${pad.top + h + pad.bottom}`}
         role="img"
         aria-label={`Retvinklet trekant med vinklen ${angleLabel}`}
-        className="text-zinc-800 dark:text-zinc-200"
+        className="mx-auto block h-auto max-w-full text-zinc-800 dark:text-zinc-200"
         style={{ fontSize: 13 }}
       >
         <polygon
@@ -241,7 +241,7 @@ export function UnitCircleDiagram({ figure }: { figure: UnitCircleFigure }) {
         viewBox={`0 0 ${size} ${size}`}
         role="img"
         aria-label={`Enhedscirkel med radius tegnet ved ${angle} grader`}
-        className="text-zinc-800 dark:text-zinc-200"
+        className="h-auto max-w-full text-zinc-800 dark:text-zinc-200"
         style={{ fontSize: 12 }}
       >
         <defs>
