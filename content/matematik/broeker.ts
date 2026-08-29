@@ -8,6 +8,10 @@ export const broeker: Topic = {
   sections: [
     {
       heading: "Hvad er en brøk?",
+      figure: {
+        kind: "pies",
+        pies: [{ numerator: 3, denominator: 4, caption: "3/4" }],
+      },
       body:
         "En brøk er en måde at skrive en del af en helhed på. Brøken a/b består af en tæller (a) øverst og en nævner (b) nederst. Nævneren fortæller, hvor mange lige store dele helheden er delt i, og tælleren fortæller, hvor mange af de dele vi har. Eksempel: 3/4 betyder, at helheden er delt i 4 dele, og vi har 3 af dem. Brøken 1/2 svarer til en halv, 1/4 svarer til en kvart, og 2/3 svarer til to tredjedele.",
     },

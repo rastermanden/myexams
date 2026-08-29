@@ -31,6 +31,8 @@ export type ConceptSection = {
   body?: string;
   /** LaTeX-agtige dokumentblokke — bruges af emner fra metodesamlingen. */
   blocks?: DocBlock[];
+  /** Tegnet figur, der viser afsnittets figur eller legeme. */
+  figure?: DocFigure;
   examples?: WorkedExample[];
   image?: ImageRef;
 };
@@ -181,6 +183,47 @@ export type UnitCircleFigure = {
   showArrow?: boolean;
 };
 
+/**
+ * Mål, der kan sættes på en figur. Kun de mål, figuren faktisk har,
+ * bliver brugt — en kugle har fx kun en radius.
+ */
+export type ShapeLabels = {
+  /** Længde langs figurens forkant. */
+  length?: string;
+  /** Bredde ind i dybden (rumlige figurer) eller lodret side (plane). */
+  width?: string;
+  height?: string;
+  radius?: string;
+  /** Sidelængde i en terning eller et kvadrat. */
+  side?: string;
+  /** Grundlinje i en trekant, et parallelogram eller en trapez. */
+  base?: string;
+  /** Den korte parallelle side i en trapez. */
+  top?: string;
+};
+
+/** En rumlig figur tegnet i skråprojektion. */
+export type SolidFigure = {
+  kind: "solid";
+  shape: "box" | "cube" | "prism" | "cylinder" | "cone" | "pyramid" | "sphere";
+  labels?: ShapeLabels;
+  caption?: string;
+};
+
+/** En plan figur set forfra. */
+export type PlaneFigure = {
+  kind: "shape";
+  shape:
+    | "rectangle"
+    | "square"
+    | "triangle"
+    | "parallelogram"
+    | "trapezoid"
+    | "circle";
+  labels?: ShapeLabels;
+  caption?: string;
+};
+
 /** En lagkage, hvor en del af cirklen er skraveret. */
 export type PieFigure = {
   numerator: number;
@@ -205,7 +248,9 @@ export type DocFigure =
   | { kind: "stick"; divisor: string; steps: StickStep[]; remainder?: string }
   | { kind: "pies"; pies: PieFigure[] }
   | TriangleFigure
-  | UnitCircleFigure;
+  | UnitCircleFigure
+  | SolidFigure
+  | PlaneFigure;
 
 export type DocBlock =
   /** Et almindeligt afsnit. Må indeholde **fed**, *kursiv* og $matematik$. */

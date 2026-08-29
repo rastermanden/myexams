@@ -10,11 +10,23 @@ export const areal: Topic = {
   sections: [
     {
       heading: "Areal, omkreds og enheder",
+      figure: {
+        kind: "shape",
+        shape: "square",
+        labels: { side: "1 cm" },
+        caption: "Enhedskvadratet: 1 cm × 1 cm = 1 cm²",
+      },
       body:
         "Arealet er, hvor meget flade en figur dækker, og det måles i kvadratenheder: mm², cm², dm², m², ha og km². Omkredsen er turen hele vejen rundt om figuren og måles i almindelige længdeenheder: mm, cm, m og km. En af de hyppigste fejl til prøven er at bytte rundt på de to — eller at glemme kvadraten i enheden. Husk også, at alle mål skal være i samme enhed, før du regner: er den ene side i meter og den anden i centimeter, skal du omregne først.",
     },
     {
       heading: "Rektangel og kvadrat",
+      figure: {
+        kind: "shape",
+        shape: "rectangle",
+        labels: { length: "12 cm", width: "7 cm" },
+        caption: "A = l × b = 12 × 7 = 84 cm², og O = 2 × (12 + 7) = 38 cm",
+      },
       body:
         "Arealet af et rektangel er længde gange bredde: A = l × b. Et rektangel på 12 cm × 7 cm har arealet 84 cm². Omkredsen er O = 2 × (l + b) = 2 × 19 = 38 cm. Et kvadrat er et rektangel, hvor alle sider er lige lange, så A = s × s = s² og O = 4 × s. Et kvadrat med siden 9 m har arealet 81 m² og omkredsen 36 m.",
       examples: [
@@ -48,6 +60,12 @@ export const areal: Topic = {
     },
     {
       heading: "Trekant",
+      figure: {
+        kind: "shape",
+        shape: "triangle",
+        labels: { base: "14 cm", height: "9 cm" },
+        caption: "Højden står vinkelret på grundlinjen: A = (14 × 9) : 2 = 63 cm²",
+      },
       body:
         "En trekant er præcis det halve af et rektangel med samme grundlinje og samme højde, og derfor er A = (g × h) : 2. En trekant med grundlinje 14 cm og højde 9 cm har arealet (14 × 9) : 2 = 63 cm². Højden skal altid stå vinkelret på grundlinjen — det er ikke den skrå side. I en retvinklet trekant kan du bruge de to kateter som grundlinje og højde. Omkredsen finder du derimod ved at lægge alle tre sider sammen.",
       examples: [
@@ -87,6 +105,12 @@ export const areal: Topic = {
     },
     {
       heading: "Parallelogram og trapez",
+      figure: {
+        kind: "shape",
+        shape: "parallelogram",
+        labels: { base: "9 cm", height: "6 cm" },
+        caption: "A = g × h = 9 × 6 = 54 cm². Højden er den vinkelrette afstand — ikke den skrå side.",
+      },
       body:
         "Et parallelogram kan klippes om til et rektangel, så arealet er grundlinje gange højde: A = g × h. Med g = 9 cm og h = 6 cm får du 54 cm². Et trapez har to parallelle sider, a og b. Arealet er gennemsnittet af dem ganget med højden: A = ((a + b) : 2) × h. Med a = 6 cm, b = 10 cm og h = 8 cm bliver det (16 : 2) × 8 = 8 × 8 = 64 cm². Igen: brug højden, ikke den skrå side.",
       examples: [
@@ -123,6 +147,12 @@ export const areal: Topic = {
     },
     {
       heading: "Cirkel",
+      figure: {
+        kind: "shape",
+        shape: "circle",
+        labels: { radius: "r", length: "d = 2r" },
+        caption: "A = π × r², og O = 2 × π × r = π × d",
+      },
       body:
         "En cirkels radius r går fra centrum til kanten, og diameteren d er dobbelt så lang: d = 2r. Arealet er A = π × r², og omkredsen er O = 2 × π × r, som også kan skrives O = π × d. Tallet π er cirka 3,14. En cirkel med radius 5 cm har arealet π × 25 ≈ 78,5 cm², og en cirkel med diameter 10 cm har omkredsen π × 10 ≈ 31,4 cm. Pas på: r² betyder r × r — ikke r × 2. Får du opgivet diameteren, skal du huske at halvere den, før du regner arealet.",
       examples: [
@@ -191,6 +221,12 @@ export const areal: Topic = {
     },
     {
       heading: "Baglæns og omregning af arealenheder",
+      figure: {
+        kind: "shape",
+        shape: "triangle",
+        labels: { base: "12 cm", height: "h = ?" },
+        caption: "Kendt areal 48 cm²: 48 = (12 × h) : 2, altså 96 = 12 × h og h = 8 cm",
+      },
       body:
         "Kender du arealet og mangler en side, sætter du ind i formlen og isolerer. Har en trekant arealet 48 cm² og grundlinjen 12 cm, giver A = (g × h) : 2 at 48 = (12 × h) : 2, altså 96 = 12 × h og h = 8 cm. Ved omregning af arealenheder ganger du med omregningstallet to gange, fordi arealet er længde gange længde: 1 m² = 100 cm × 100 cm = 10.000 cm², så 3 m² = 30.000 cm². På samme måde er 1 ha = 10.000 m², og 1 km² = 1.000.000 m².",
       examples: [

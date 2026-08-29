@@ -7,6 +7,7 @@ import {
   StickFigure,
 } from "./ArithmeticFigures";
 import { PieRow, TriangleDiagram, UnitCircleDiagram } from "./GeometryFigures";
+import { PlaneDiagram, SolidDiagram } from "./ShapeFigures";
 
 function Figure({ figure }: { figure: DocFigure }) {
   switch (figure.kind) {
@@ -38,8 +39,14 @@ function Figure({ figure }: { figure: DocFigure }) {
       return <TriangleDiagram figure={figure} />;
     case "unitCircle":
       return <UnitCircleDiagram figure={figure} />;
+    case "solid":
+      return <SolidDiagram figure={figure} />;
+    case "shape":
+      return <PlaneDiagram figure={figure} />;
   }
 }
+
+export { Figure };
 
 /**
  * Gengiver de opsatte blokke i et afsnit. Selve typografien kommer fra

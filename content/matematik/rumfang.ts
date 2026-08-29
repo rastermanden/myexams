@@ -10,11 +10,23 @@ export const rumfang: Topic = {
   sections: [
     {
       heading: "Rumfang og enheder",
+      figure: {
+        kind: "solid",
+        shape: "cube",
+        labels: { side: "1 cm" },
+        caption: "Enhedsterningen: 1 cm × 1 cm × 1 cm = 1 cm³",
+      },
       body:
         "Rumfang (volumen) er, hvor meget der er plads til inde i en figur. Det måles i kubikenheder: mm³, cm³, dm³ og m³ — eller i rummål som milliliter og liter. Sammenhængen er værd at kunne udenad: 1 liter = 1 dm³ = 1.000 cm³, 1 milliliter = 1 cm³, og 1 m³ = 1.000 liter. Ved omregning mellem kubikenheder ganger eller dividerer du med omregningstallet tre gange, fordi rumfang er længde gange længde gange længde: 1 m³ = 100 cm × 100 cm × 100 cm = 1.000.000 cm³.",
     },
     {
       heading: "Kasse og terning",
+      figure: {
+        kind: "solid",
+        shape: "box",
+        labels: { length: "10 cm", width: "6 cm", height: "4 cm" },
+        caption: "V = længde × bredde × højde = 240 cm³",
+      },
       body:
         "En kasse (et retvinklet prisme) har rumfanget V = længde × bredde × højde. En kasse på 10 cm × 6 cm × 4 cm rummer 240 cm³. En terning har lige lange sider, så V = s × s × s = s³; en terning med siden 5 cm har rumfanget 125 cm³. Bland ikke rumfang sammen med overfladeareal: terningens overflade er 6 × s² = 150 cm², og den måles i cm², ikke cm³.",
       examples: [
@@ -49,6 +61,12 @@ export const rumfang: Topic = {
     },
     {
       heading: "Prismer: grundflade gange højde",
+      figure: {
+        kind: "solid",
+        shape: "prism",
+        labels: { base: "8 cm", height: "5 cm", length: "12 cm" },
+        caption: "Grundfladen er trekanten: (8 × 5) : 2 = 20 cm², og V = 20 × 12 = 240 cm³",
+      },
       body:
         "Alle prismer og cylindre følger den samme regel: V = grundflade × højde. Grundfladen er den flade, figuren har hele vejen igennem. Er endefladen en trekant med grundlinje 8 cm og højde 5 cm, er grundfladen (8 × 5) : 2 = 20 cm², og er prismet 12 cm langt, er rumfanget 20 × 12 = 240 cm³. Reglen er nem at huske sådan: du stabler grundfladen oven på sig selv, indtil du når højden.",
       examples: [
@@ -70,6 +88,12 @@ export const rumfang: Topic = {
     },
     {
       heading: "Cylinder",
+      figure: {
+        kind: "solid",
+        shape: "cylinder",
+        labels: { radius: "3 cm", height: "10 cm" },
+        caption: "V = π × r² × h = π × 9 × 10 ≈ 282,7 cm³",
+      },
       body:
         "En cylinder har en cirkel som grundflade, så V = π × r² × h. En cylinder med radius 3 cm og højde 10 cm har rumfanget π × 9 × 10 ≈ 282,7 cm³ — altså cirka 0,28 liter. Får du opgivet diameteren, skal du huske at halvere den først: en dåse med diameter 8 cm har radius 4 cm. Overfladen af en cylinder er noget andet: to cirkler plus den udrullede side, 2 × π × r² + 2 × π × r × h.",
       examples: [
@@ -93,6 +117,12 @@ export const rumfang: Topic = {
     },
     {
       heading: "Kegle og pyramide — 1/3-reglen",
+      figure: {
+        kind: "solid",
+        shape: "cone",
+        labels: { radius: "3 cm", height: "10 cm" },
+        caption: "Keglen fylder en tredjedel af cylinderen med samme grundflade og højde",
+      },
       body:
         "En kegle fylder præcis en tredjedel af den cylinder, der har samme grundflade og samme højde: V = (π × r² × h) : 3. Med r = 3 cm og h = 10 cm bliver det 282,7 : 3 ≈ 94,2 cm³. Præcis samme regel gælder for pyramiden i forhold til kassen: V = (grundflade × højde) : 3. En pyramide med kvadratisk grundflade på 6 cm × 6 cm og højden 10 cm har rumfanget (36 × 10) : 3 = 120 cm³. Højden er den lodrette højde fra grundfladen op til toppunktet — ikke den skrå sidekant.",
       examples: [
@@ -126,6 +156,12 @@ export const rumfang: Topic = {
     },
     {
       heading: "Kugle",
+      figure: {
+        kind: "solid",
+        shape: "sphere",
+        labels: { radius: "6 cm" },
+        caption: "V = 4/3 × π × r³ ≈ 904,8 cm³",
+      },
       body:
         "En kugle har rumfanget V = 4/3 × π × r³. Radius skal altså i tredje potens. En kugle med radius 6 cm har rumfanget 4/3 × π × 216 ≈ 904,8 cm³. Kuglens overfladeareal er 4 × π × r² ≈ 452,4 cm² — samme tal, to helt forskellige formler og enheder. Bliver r fordoblet, bliver rumfanget otte gange så stort (2³ = 8), mens overfladen kun bliver fire gange så stor.",
       examples: [
@@ -149,6 +185,12 @@ export const rumfang: Topic = {
     },
     {
       heading: "Liter, baglæns udregning og typiske fejl",
+      figure: {
+        kind: "solid",
+        shape: "box",
+        labels: { length: "40 cm", width: "25 cm", height: "30 cm" },
+        caption: "Akvariet: 30.000 cm³ = 30 liter",
+      },
       body:
         "Prøveopgaver spørger tit om liter: et akvarium på 40 cm × 25 cm × 30 cm rummer 30.000 cm³, og det er 30.000 : 1.000 = 30 liter. Skal du den anden vej og mangler en side, dividerer du: har en kasse rumfanget 360 cm³ og en grundflade på 12 cm × 5 cm = 60 cm², er højden 360 : 60 = 6 cm. De typiske fejl er: at glemme at halvere diameteren, at glemme at dividere med 3 ved kegle og pyramide, at blande rumfang og overfladeareal sammen, og at bruge mål i forskellige enheder i samme udregning.",
       examples: [
