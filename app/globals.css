@@ -36,3 +36,95 @@ body {
     "Noto Sans",
     sans-serif;
 }
+
+/* ------------------------------------------------------------------ *
+ * Metodesamling: LaTeX-agtig typografi
+ *
+ * Brødteksten sættes med serif og lige margener som i et LaTeX-
+ * dokument, mens selve formlerne sættes af KaTeX i Computer Modern.
+ * ------------------------------------------------------------------ */
+
+.latex-doc {
+  font-family:
+    ui-serif,
+    "Latin Modern Roman",
+    "Computer Modern Serif",
+    Georgia,
+    "Times New Roman",
+    serif;
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+.latex-doc p {
+  margin: 0.85em 0;
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* Som i LaTeX indrykkes efterfølgende afsnit — men ikke det første,
+   og ikke et afsnit, der lige har afbrudt en formel eller en figur. */
+.latex-doc p + p {
+  margin-top: 0.6em;
+  text-indent: 1.5em;
+}
+
+.latex-display {
+  margin: 1.1em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* KaTeX sætter selv display-formler centreret; her fjernes blot den
+   ekstra luft, så afstanden styres af .latex-display. */
+.latex-doc .katex-display {
+  margin: 0;
+  padding: 0.15em 0;
+}
+
+.latex-list {
+  margin: 0.85em 0;
+}
+
+.latex-list-title {
+  margin-bottom: 0.35em;
+  font-weight: 600;
+  text-align: left;
+}
+
+.latex-list ul,
+.latex-list ol {
+  margin: 0;
+  padding-left: 1.6em;
+}
+
+.latex-list ul {
+  list-style: disc;
+}
+
+.latex-list ol {
+  list-style: decimal;
+}
+
+.latex-list li {
+  margin: 0.3em 0;
+}
+
+.latex-figure {
+  margin: 1.4em 0;
+}
+
+.latex-figure figcaption {
+  margin-top: 0.5em;
+  text-align: center;
+  font-size: 0.9em;
+  color: color-mix(in srgb, currentColor 70%, transparent);
+}
+
+.latex-figure-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem 2rem;
+}

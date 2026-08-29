@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import "katex/dist/katex.min.css";
 import NavBar from "@/components/NavBar";
 import PwaInit from "@/components/PwaInit";
 import { withBasePath } from "@/lib/basePath";
