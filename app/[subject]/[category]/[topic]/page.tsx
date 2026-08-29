@@ -61,7 +61,7 @@ export default async function TopicPage({
       )}
 
       {topic.sections.map((section, i) => (
-        <ConceptSection key={i} section={section} />
+        <ConceptSection key={i} section={section} latex={subject.slug === "matematik"} />
       ))}
 
       {TopicDemo && <TopicDemo />}
