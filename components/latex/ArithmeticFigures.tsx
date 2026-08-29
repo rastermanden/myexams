@@ -1,7 +1,11 @@
 import type { ArrowDigit, ColumnRow, GridRow, StickStep } from "@/lib/types";
 
-/* Fælles mål, så cifre står i samme kolonner på tværs af figurerne. */
+/* Fælles mål, så cifre står i samme kolonner på tværs af figurerne.
+   Til HTML-opstillingerne læses målet fra `--latex-cell`, så feltet kan
+   krympe på telefoner; SVG-figurerne tegnes i det faste koordinatmål og
+   skaleres af browseren. */
 const CELL = 42;
+const CELL_SIZE = { width: "var(--latex-cell)", height: "var(--latex-cell)" };
 
 function ruleClass(rule: ColumnRow["rule"]): string {
   if (rule === "double") return "border-b-4 border-double border-zinc-700 dark:border-zinc-300";
@@ -15,15 +19,18 @@ function ruleClass(rule: ColumnRow["rule"]): string {
  */
 export function ColumnFigure({ rows }: { rows: ColumnRow[] }) {
   return (
-    <div className="flex justify-center overflow-x-auto py-2">
-      <div className="flex items-stretch">
+    <div className="latex-scroll py-2">
+      {/* `mx-auto w-fit` i stedet for `justify-center` på scroll-containeren:
+          centrering dér ville lægge venstre kant uden for rækkevidde, når
+          opstillingen er bredere end skærmen. */}
+      <div className="mx-auto flex w-fit items-stretch">
         {/* Regnetegnene står uden for selve tabellen, som i den trykte udgave. */}
         <div className="flex flex-col justify-center pr-2">
           {rows.map((row, i) => (
             <div
               key={i}
               className="flex items-center justify-end text-xl"
-              style={{ height: CELL }}
+              style={{ height: CELL_SIZE.height }}
             >
               {row.operator}
             </div>
@@ -37,7 +44,7 @@ export function ColumnFigure({ rows }: { rows: ColumnRow[] }) {
                 <div
                   key={j}
                   className="flex items-center justify-center border-r border-zinc-300 last:border-r-0 dark:border-zinc-700"
-                  style={{ width: CELL, height: CELL }}
+                  style={CELL_SIZE}
                 >
                   {cell.carry && (
                     <sup className="mr-0.5 text-[0.65em] leading-none">{cell.carry}</sup>
@@ -81,14 +88,14 @@ export function ArrowsFigure({
   const sourceX = x(fromIndex);
 
   return (
-    <div className="flex justify-center overflow-x-auto py-2">
+    <div className="latex-scroll py-2">
       <svg
         width={width}
         height={106}
         viewBox={`0 0 ${width} 106`}
         role="img"
         aria-label={`${left.join("")} ${operator} ${right.map((d) => d.text).join("")} — pile fra cifret ${left[fromIndex]} ind i hvert ciffer`}
-        className="text-zinc-700 dark:text-zinc-300"
+        className="mx-auto block h-auto max-w-full text-zinc-700 dark:text-zinc-300"
       >
         <defs>
           <marker
@@ -166,14 +173,14 @@ export function GridFigure({ header, rows }: { header: string[]; rows: GridRow[]
   const columns = Math.max(header.length, ...rows.map((r) => r.cells.length));
 
   return (
-    <div className="flex justify-center overflow-x-auto py-2">
-      <div>
+    <div className="latex-scroll py-2">
+      <div className="mx-auto w-fit">
         <div className="flex">
           {Array.from({ length: columns }, (_, i) => (
             <div
               key={i}
               className="flex items-center justify-center text-lg"
-              style={{ width: CELL, height: CELL }}
+              style={CELL_SIZE}
             >
               {header[i] ?? ""}
             </div>
@@ -187,7 +194,7 @@ export function GridFigure({ header, rows }: { header: string[]; rows: GridRow[]
                 <div
                   key={j}
                   className="flex items-center justify-center border-r border-dashed border-zinc-300 last:border-r-0 dark:border-zinc-700"
-                  style={{ width: CELL, height: CELL }}
+                  style={CELL_SIZE}
                 >
                   <span className={row.emphasis?.includes(j) ? "font-bold" : undefined}>
                     {row.cells[j] ?? ""}
@@ -216,7 +223,7 @@ export function StickFigure({
   remainder?: string;
 }) {
   return (
-    <div className="overflow-x-auto py-2">
+    <div className="latex-scroll py-2">
       <div className="mx-auto w-fit">
         <div className="flex justify-center pl-16">
           <span className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-zinc-500 dark:border-zinc-400">
@@ -228,7 +235,7 @@ export function StickFigure({
           {steps.map((step, i) => {
             const carried = step.carried ?? 0;
             return (
-              <div key={i} className="flex items-center" style={{ height: CELL }}>
+              <div key={i} className="flex items-center" style={{ height: CELL_SIZE.height }}>
                 <div className="w-16 pr-3 text-right tabular-nums">
                   {/* Den nedførte rest sættes kursivt, som i den trykte udgave. */}
                   <i>{step.dividend.slice(0, carried)}</i>
@@ -237,7 +244,7 @@ export function StickFigure({
                 <div className="h-full w-px shrink-0 bg-zinc-500 dark:bg-zinc-400" />
                 <div className="w-12 pl-3 tabular-nums">{step.quotient}</div>
                 {step.note && (
-                  <div className="whitespace-nowrap pl-4 text-sm text-zinc-600 dark:text-zinc-400">
+                  <div className="whitespace-nowrap pl-3 text-xs text-zinc-600 dark:text-zinc-400 sm:pl-4 sm:text-sm">
                     {step.note}
                   </div>
                 )}
@@ -246,10 +253,10 @@ export function StickFigure({
           })}
 
           {remainder !== undefined && (
-            <div className="flex items-center" style={{ height: CELL }}>
+            <div className="flex items-center" style={{ height: CELL_SIZE.height }}>
               <div className="w-16" />
               <div className="h-full w-px shrink-0 bg-zinc-500 dark:bg-zinc-400" />
-              <div className="whitespace-nowrap pl-3 text-sm">
+              <div className="whitespace-nowrap pl-3 text-xs sm:text-sm">
                 Rest <i>{remainder}</i>
               </div>
             </div>
