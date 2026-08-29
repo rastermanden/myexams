@@ -75,8 +75,21 @@ body {
   overflow-y: hidden;
 }
 
-/* KaTeX sætter selv display-formler centreret; her fjernes blot den
-   ekstra luft, så afstanden styres af .latex-display. */
+/* KaTeX sætter som standard matematik 1,21 gange så stort som teksten
+   omkring. Det er for meget her, hvor formler står midt i brødtekst og i
+   punktopstillinger — så bliver linjerne ujævne. Inline matematik holdes
+   derfor tæt på tekstens egen størrelse, mens formler på egen linje får
+   lidt mere luft. */
+.latex-doc .katex {
+  font-size: 1.05em;
+}
+
+.latex-doc .katex-display > .katex {
+  font-size: 1.15em;
+}
+
+/* Display-formler centreres af KaTeX selv; her fjernes blot den ekstra
+   luft, så afstanden styres af .latex-display. */
 .latex-doc .katex-display {
   margin: 0;
   padding: 0.15em 0;

@@ -42,13 +42,12 @@ function Figure({ figure }: { figure: DocFigure }) {
 }
 
 /**
- * Gengiver et afsnit fra metodesamlingen. Typografien sættes af
- * `.latex-doc` i globals.css, så teksten får samme serif-look som
- * den trykte udgave.
+ * Gengiver de opsatte blokke i et afsnit. Selve typografien kommer fra
+ * `.latex-doc`, som ConceptSection lægger uden om.
  */
 export default function DocBlocks({ blocks }: { blocks: DocBlock[] }) {
   return (
-    <div className="latex-doc">
+    <>
       {blocks.map((block, i) => {
         switch (block.kind) {
           case "text":
@@ -101,6 +100,6 @@ export default function DocBlocks({ blocks }: { blocks: DocBlock[] }) {
             );
         }
       })}
-    </div>
+    </>
   );
 }
